@@ -1,0 +1,88 @@
+%if 0%{?suse_version}
+Prefer:     logrotate
+Prefer:     psmisc
+Prefer:     cron
+Prefer:     gstreamer-0_10
+%endif
+
+%if 0%{?suse_version} == 1100
+Prefer:     libquicktime0
+%endif
+
+%if 0%{?suse_version} == 1110
+Prefer:     libxmlsec1-nss1 libxmlsec1-1
+Prefer:     libquicktime0
+%endif
+
+%if 0%{?suse_version} < 1120
+Substitute: libSDL-devel SDL-devel
+%endif
+
+%if 0%{?suse_version} == 1120
+Prefer:     libquicktime0
+%endif
+
+%if 0%{?suse_version} == 1130
+Prefer:     libdirac-devel libquicktime0 liborc0_4-0
+%endif
+
+Prefer:     liboil-0_3-0
+Prefer:     fam-devel
+Prefer:     libspeex1
+Prefer:     sndfile-devel libsndfile1
+Prefer:     wxWidgets
+Prefer:     wxWidgets-gl
+Prefer:     xmms
+Prefer:     libcaca0
+
+Substitute: libjack-devel libjack-devel
+
+# speex devel exists as package so it would be preferred always
+Substitute: speex-devel libspeex-devel
+
+Substitute: wavpack-devel libwavpack-devel
+
+Support:    build-compare rpmlint-rpmgroups
+
+%define _without_distributable 1
+%define _without_onlynondistributable 1
+%define _with_pulseaudio 1
+%define _with_sdl 1
+%define _with_aalib 1
+%define _with_arts 1
+%define _with_esd 1
+%define _with_jack 1
+%define _with_gnome_vfs 1
+%define _with_directfb 1
+%define _with_modplug 1
+%define BUILD_ORIG 1
+%define BUILD_ORIG_ADDON 1
+%define _with_gamin 1
+%define _with_cunit 1
+%define _with_restricted 1
+%define _with_libsidplay 1
+%define _with_gme 1
+%define _with_jbigkit 1
+
+Macros:
+%vendor http://packman.links2linux.de
+%packman_bs 1
+%_without_distributable 1
+%_without_onlynondistributable 1
+%_with_pulseaudio 1
+%_with_sdl 1
+%_with_aalib 1
+%_with_arts 1
+%_with_esd 1
+%_with_jack 1
+%_with_gnome_vfs 1
+%_with_directfb 1
+%_with_modplug 1
+%BUILD_ORIG 1
+%BUILD_ORIG_ADDON 1
+%_with_gamin 1
+%_with_cunit 1
+%_with_restricted 1
+%_with_libsidplay 1
+%_with_gme 1
+%_with_jbigkit 1
