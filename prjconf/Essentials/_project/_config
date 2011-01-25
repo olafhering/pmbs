@@ -42,7 +42,7 @@ Substitute: speex-devel libspeex-devel
 
 Substitute: wavpack-devel libwavpack-devel
 
-#Support:    build-compare
+Support:    build-compare
 
 %define _without_distributable 1
 %define _without_onlynondistributable 1
