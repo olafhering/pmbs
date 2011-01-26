@@ -5,13 +5,11 @@ Prefer:     cron
 Prefer:     gstreamer-0_10
 %endif
 
-%if 0%{?suse_version} == 1100
-Prefer:     libquicktime0
-%endif
 
 %if 0%{?suse_version} == 1110
 Prefer:     libxmlsec1-nss1 libxmlsec1-1
 Prefer:     libquicktime0
+Prefer:     libspeexdsp1
 %endif
 
 %if 0%{?suse_version} < 1120
@@ -27,7 +25,7 @@ Prefer:     libdirac-devel libquicktime0 liborc0_4-0
 %endif
 
 %if 0%{?suse_version} == 1140
-Prefer:     libspeexdsp1
+#
 %endif
 
 Prefer:     liboil-0_3-0
