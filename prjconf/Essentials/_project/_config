@@ -26,6 +26,10 @@ Prefer:     libquicktime0
 Prefer:     libdirac-devel libquicktime0 liborc0_4-0
 %endif
 
+%if 0%{?suse_version} == 1140
+Prefer:     libspeexdsp1
+%endif
+
 Prefer:     liboil-0_3-0
 Prefer:     fam-devel
 Prefer:     libspeex1
