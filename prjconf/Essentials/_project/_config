@@ -1,5 +1,9 @@
 %if %suse_version == 1110
-Prefer:     libspeexdsp1
+Prefer:     libspeexdsp1 libspeex1
+%endif
+
+%if %suse_version == 1120
+Prefer:     libspeex1
 %endif
 
 Support:    build-compare
