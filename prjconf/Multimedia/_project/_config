@@ -1,0 +1,7 @@
+%if %suse_version == 1120
+Prefer:     gamin-devel
+%endif
+
+%if %suse_version == 1130
+Prefer:     gamin-devel
+%endif
