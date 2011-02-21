@@ -30,6 +30,7 @@ Support:    build-compare
 
 Macros:
 %vendor http://packman.links2linux.de
+%packager packman@links2linux.de
 %packman_bs 1
 %_without_distributable 1
 %_without_onlynondistributable 1
