@@ -5,3 +5,6 @@ Prefer:     gamin-devel
 %if %suse_version == 1130
 Prefer:     gamin-devel
 %endif
+
+Macros:
+%vendor http://packman.links2linux.de
