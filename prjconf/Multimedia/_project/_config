@@ -3,7 +3,11 @@ Prefer:     libspeexdsp1 libspeex1
 %endif
 
 %if %suse_version == 1120
-Prefer:     libspeex1
+Prefer:     libspeex1 fam-devel
+%endif
+
+%if %suse_version == 1130
+Prefer:     fam-devel
 %endif
 
 Support:    build-compare
