@@ -3,11 +3,11 @@ Prefer:     libspeexdsp1 libspeex1
 %endif
 
 %if %suse_version == 1120
-Prefer:     libspeex1 fam-devel
+Prefer:     libspeex1 fam-devel wxWidgets
 %endif
 
 %if %suse_version == 1130
-Prefer:     fam-devel
+Prefer:     fam-devel wxWidgets
 %endif
 
 Support:    build-compare
