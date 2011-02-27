@@ -12,6 +12,7 @@ Prefer:     fam-devel wxWidgets
 
 %if %suse_version == 1140
 Prefer:     libwx_baseu-2_8-0-compat-lib-wxcontainer
+Prefer:     libwx_gtk2u_core-2_8-0-compat-lib-wxcontainer
 %endif
 
 Support:    build-compare
