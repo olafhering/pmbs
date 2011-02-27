@@ -10,6 +10,10 @@ Prefer:     libspeex1 fam-devel wxWidgets
 Prefer:     fam-devel wxWidgets
 %endif
 
+%if %suse_version == 1140
+Prefer:     libwx_baseu-2_8-0-compat-lib-wxcontainer
+%endif
+
 Support:    build-compare
 
 %define _without_distributable 1
