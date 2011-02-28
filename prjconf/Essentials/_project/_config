@@ -32,6 +32,11 @@ Support:    build-compare
 %define _with_ffmpeg 1
 %define _with_mad 1
 %define _with_twolame 1
+%define _with ffmpeg 1
+%define _with mad 1
+%define _with lame 1
+%define _with amrwb 1
+%define _with amrnb 1
 
 Macros:
 %vendor http://packman.links2linux.de
@@ -59,3 +64,9 @@ Macros:
 %_with_ffmpeg 1
 %_with_mad 1
 %_with_twolame 1
+%_with ffmpeg 1
+%_with mad 1
+%_with lame 1
+%_with amrwb 1
+%_with amrnb 1
+
