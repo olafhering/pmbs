@@ -29,6 +29,9 @@ Support:    build-compare
 %define _with_libsidplay 1
 %define _with_gme 1
 %define _with_jbigkit 1
+%define _with_ffmpeg 1
+%define _with_mad 1
+%define _with_twolame 1
 
 Macros:
 %vendor http://packman.links2linux.de
@@ -53,3 +56,6 @@ Macros:
 %_with_libsidplay 1
 %_with_gme 1
 %_with_jbigkit 1
+%_with_ffmpeg 1
+%_with_mad 1
+%_with_twolame 1
