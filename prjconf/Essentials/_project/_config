@@ -1,9 +1,11 @@
 %if %suse_version == 1110
 Prefer:     libspeexdsp1 libspeex1
+Substitute: libspeex-devel speex-devel
 %endif
 
 %if %suse_version == 1120
 Prefer:     libspeex1
+Substitute: libspeex-devel speex-devel
 %endif
 
 Prefer:     fam-devel
