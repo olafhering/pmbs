@@ -1,6 +1,5 @@
 %if %suse_version == 1110
 Prefer:     libspeexdsp1 libspeex1
-Substitute: cdparanoia-devel cdparanoia
 %endif
 
 %if %suse_version == 1120
