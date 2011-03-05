@@ -1,11 +1,17 @@
 %if %suse_version == 1110
 Prefer:     libspeexdsp1 libspeex1
+# Needed because some packages require libspeex-devel even if the openSUSE name has been always speex-devel
 Substitute: libspeex-devel speex-devel
+# Some packages directly (Build)Require libspeex1. Probably those packages are broken and should be fixed.
+Substitute: libspeex1 libspeex
 %endif
 
 %if %suse_version == 1120
 Prefer:     libspeex1
+# Needed because some packages require libspeex-devel even if the openSUSE name has been always speex-devel
 Substitute: libspeex-devel speex-devel
+# Some packages directly (Build)Require libspeex1. Probably those packages are broken and should be fixed.
+Substitute: libspeex1 libspeex
 %endif
 
 Prefer:     fam-devel
