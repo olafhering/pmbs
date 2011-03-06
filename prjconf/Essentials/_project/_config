@@ -3,6 +3,8 @@
 Substitute: libspeex-devel speex-devel
 # Some packages directly (Build)Require libspeex1. Probably those packages are broken and should be fixed.
 Substitute: libspeex1 libspeex
+# Needed because some packages require libdirac-devel even if the openSUSE name has been always dirac-devel
+Substitute: libdirac-devel dirac-devel
 %endif
 
 %if %suse_version < 1140
