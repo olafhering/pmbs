@@ -46,6 +46,8 @@ Support:    build-compare
 %define _with_amrwb 1
 %define _with amrnb 1
 %define _with_amrnb 1
+%define _with_libmms 1
+%define _with_LV2 1
 
 Macros:
 %vendor http://packman.links2linux.de
@@ -81,4 +83,5 @@ Macros:
 %_with_amrwb 1
 %_with amrnb 1
 %_with_amrnb 1
-
+%_with_libmms 1
+%_with_LV2 1
