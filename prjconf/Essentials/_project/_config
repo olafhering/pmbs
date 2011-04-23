@@ -47,6 +47,7 @@ Support:    build-compare
 %define _with amrnb 1
 %define _with_amrnb 1
 %define _with_libmms 1
+# Needed because of gstreamer-0_10-plugins-bad. Should dissapear in the future, once slv2 and lv2core are in openSUSE.
 %define _with_LV2 1
 
 Macros:
