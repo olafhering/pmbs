@@ -39,15 +39,12 @@ Support:    build-compare
 %define _with_mad 1
 %define _with_lame 1
 %define _with_twolame 1
-%define _with ffmpeg 1
-%define _with mad 1
-%define _with lame 1
-%define _with amrwb 1
 %define _with_amrwb 1
-%define _with amrnb 1
 %define _with_amrnb 1
 %define _with_libmms 1
-# Needed because of gstreamer-0_10-plugins-bad. Should dissapear in the future, once slv2 and lv2core are in openSUSE.
+%define _with_ggi 1
+# Needed because of gstreamer-0_10-plugins-bad. Should dissapear in the future, once slv2 and lv2core 
+are in openSUSE.
 %define _with_LV2 1
 
 Macros:
@@ -77,12 +74,8 @@ Macros:
 %_with_mad 1
 %_with_lame 1
 %_with_twolame 1
-%_with ffmpeg 1
-%_with mad 1
-%_with lame 1
-%_with amrwb 1
 %_with_amrwb 1
 %_with amrnb 1
-%_with_amrnb 1
 %_with_libmms 1
+%_with_ggi 1
 %_with_LV2 1
