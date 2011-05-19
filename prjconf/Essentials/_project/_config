@@ -12,6 +12,11 @@ Substitute: libdirac-devel dirac-devel
 Substitute: libschroedinger-devel schroedinger-devel
 %endif
 
+%if %suse_version <= 1140
+# Before 12.1 it was named "taglib"
+Prefer:     libtag1
+%endif
+
 Prefer:     fam-devel
 
 Support:    build-compare
@@ -43,7 +48,7 @@ Support:    build-compare
 %define _with_amrnb 1
 %define _with_libmms 1
 # Needed because of gstreamer-0_10-plugins-bad. Should dissapear in the future, once slv2 and lv2core 
-are in openSUSE.
+# are in openSUSE.
 %define _with_LV2 1
 
 Macros:
