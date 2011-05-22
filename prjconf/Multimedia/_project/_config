@@ -8,11 +8,14 @@ Prefer:     libspeex1 fam-devel wxWidgets
 
 %if %suse_version == 1130
 Prefer:     fam-devel wxWidgets
+Prefer:     libquicktime0
 %endif
 
 %if %suse_version == 1140
 Prefer:     libwx_baseu-2_8-0-compat-lib-wxcontainer
 Prefer:     libwx_gtk2u_core-2_8-0-compat-lib-wxcontainer
+Prefer:     libquicktime0
+
 %endif
 
 Support:    build-compare
