@@ -1,3 +1,7 @@
+%if %suse_version = 1110
+Prefer:     libcaca0
+%endif
+
 %if %suse_version < 1130
 # Needed because some packages require libspeex-devel even if the openSUSE name has been always speex-devel
 Substitute: libspeex-devel speex-devel
