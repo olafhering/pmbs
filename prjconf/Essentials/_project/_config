@@ -2,6 +2,11 @@
 Prefer:     libcaca0
 %endif
 
+%if %suse_version > 1140
+Prefer:     libfam0
+%endif
+Prefer:     fam-devel
+
 %if %suse_version < 1130
 # Needed because some packages require libspeex-devel even if the openSUSE name has been always speex-devel
 Substitute: libspeex-devel speex-devel
@@ -20,8 +25,6 @@ Substitute: libschroedinger-devel schroedinger-devel
 # Before 12.1 it was named "taglib"
 Prefer:     libtag1
 %endif
-
-Prefer:     fam-devel
 
 Support:    build-compare
 
