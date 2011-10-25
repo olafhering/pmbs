@@ -18,6 +18,8 @@ Prefer:     libquicktime0
 
 %endif
 
+Prefer:     clucene-core-devel
+
 Support:    build-compare
 
 %define _without_distributable 1
