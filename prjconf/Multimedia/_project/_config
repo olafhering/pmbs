@@ -19,6 +19,7 @@ Prefer:     libquicktime0
 %endif
 
 Prefer:     clucene-core-devel
+Prefer:     frei0r-plugins-devel
 
 Support:    build-compare
 
