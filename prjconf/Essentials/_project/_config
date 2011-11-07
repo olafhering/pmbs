@@ -91,7 +91,3 @@ Macros:
 %_with amrnb 1
 %_with_libmms 1
 %_with_LV2 1
-
-%if %suse_version < 1120
-%make_install make install DESTDIR=%{?buildroot}
-%endif
