@@ -26,6 +26,8 @@ Substitute: libschroedinger-devel schroedinger-devel
 Prefer:     libtag1
 %endif
 
+Substitute: libopenjpeg-devel openjpeg-devel
+
 Support:    build-compare
 
 %define _without_distributable 1
