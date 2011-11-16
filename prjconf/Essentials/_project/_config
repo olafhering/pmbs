@@ -26,7 +26,9 @@ Substitute: libschroedinger-devel schroedinger-devel
 Prefer:     libtag1
 %endif
 
-%if 0%{?suse_version} == 1130
+%if 0%{?suse_version} == 1110
+Prefer: mozilla-xulrunner190-devel
+%elif 0%{?suse_version} == 1130
 Prefer: mozilla-xulrunner192-devel
 %elif 0%{?suse_version} == 1140
 Prefer: mozilla-xulrunner20-devel
