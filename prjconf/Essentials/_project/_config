@@ -28,13 +28,17 @@ Prefer:     libtag1
 
 %if 0%{?sles_version} == 11
 Prefer: mozilla-xulrunner192-devel
-%elseif 0%{?suse_version} == 1110
+%endif
+%if 0%{?suse_version} == 1110 && 0%{?sles_version} == 0
 Prefer: mozilla-xulrunner190-devel
-%elseif 0%{?suse_version} == 1130
+%endif
+%if 0%{?suse_version} == 1130
 Prefer: mozilla-xulrunner192-devel
-%elseif 0%{?suse_version} == 1140
+%endif
+%if 0%{?suse_version} == 1140
 Prefer: mozilla-xulrunner20-devel
-%elseif 0%{?suse_version} >= 1210
+%endif
+%if 0%{?suse_version} >= 1210
 Prefer: xulrunner-devel
 %endif
 
