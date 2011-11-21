@@ -27,7 +27,7 @@ Prefer:     libtag1
 %endif
 
 %if 0%{?suse_version} < 1130 
-Substitute pkgconfig(libxul) mozilla-xulrunner192-devel
+Substitute: pkgconfig(libxul) mozilla-xulrunner192-devel
 %endif
 %if 0%{?suse_version} == 1130
 Prefer: mozilla-xulrunner192-devel
@@ -37,6 +37,10 @@ Prefer: mozilla-xulrunner20-devel
 %endif
 %if 0%{?suse_version} >= 1210
 Prefer: xulrunner-devel
+%endif
+
+%if 0%{?suse_version} <= 1120
+Substitute: pkgconfig(xorg-macros) xorg-x11-proto-devel
 %endif
 
 Substitute: libopenjpeg-devel openjpeg-devel
