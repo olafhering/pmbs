@@ -41,7 +41,9 @@ Prefer: xulrunner-devel
 
 Substitute: libopenjpeg-devel openjpeg-devel
 
+%if %suse_version > 1110
 Support:    build-compare
+%endif
 
 # We have kdemultimedia4 because of ffmpegthumbs from kdemultimedia4-thumbnailers. We don't want the rest.
 PublishFilter: -^dragonplayer-[0-9].*\.rpm$
