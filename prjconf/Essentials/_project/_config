@@ -39,10 +39,6 @@ Prefer: mozilla-xulrunner20-devel
 Prefer: xulrunner-devel
 %endif
 
-%if 0%{?suse_version} <= 1120
-Substitute: pkgconfig(xorg-macros) xorg-x11-proto-devel
-%endif
-
 Substitute: libopenjpeg-devel openjpeg-devel
 
 Support:    build-compare
