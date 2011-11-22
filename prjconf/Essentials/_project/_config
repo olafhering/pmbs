@@ -41,6 +41,8 @@ Prefer: xulrunner-devel
 
 Substitute: libopenjpeg-devel openjpeg-devel
 
+Prefer: libsndfile1
+
 Support:    build-compare
 
 # We have kdemultimedia4 because of ffmpegthumbs from kdemultimedia4-thumbnailers. We don't want the rest.
