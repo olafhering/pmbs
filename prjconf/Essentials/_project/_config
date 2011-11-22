@@ -41,7 +41,9 @@ Prefer: xulrunner-devel
 
 Substitute: libopenjpeg-devel openjpeg-devel
 
+%if 0%{?suse_version} < 1140
 Prefer: libsndfile1
+%endif
 
 Support:    build-compare
 
