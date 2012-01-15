@@ -45,6 +45,10 @@ Substitute: libopenjpeg-devel openjpeg-devel
 Prefer: libsndfile1
 %endif
 
+%if 0%{?suse_version} <= 1210
+Substitute: mjpegtools-devel libmjpegutils-devel
+%endif
+
 Support:    build-compare
 
 # We have kdemultimedia4 because of ffmpegthumbs from kdemultimedia4-thumbnailers. We don't want the rest.
