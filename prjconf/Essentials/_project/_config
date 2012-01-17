@@ -21,11 +21,6 @@ Substitute: libdirac-devel dirac-devel
 Substitute: libschroedinger-devel schroedinger-devel
 %endif
 
-%if %suse_version <= 1140
-# Before 12.1 it was named "taglib"
-Prefer:     libtag1
-%endif
-
 %if 0%{?suse_version} < 1130 
 Substitute: pkgconfig(libxul) mozilla-xulrunner192-devel
 %endif
@@ -50,6 +45,7 @@ Prefer: libsndfile1
 Substitute: mjpegtools-devel libmjpegutils-devel
 %if %suse_version < 1210
 Prefer: -libquicktime
+Substitute: taglib-devel libtag-devel
 %endif
 %endif
 
