@@ -45,8 +45,12 @@ Substitute: libopenjpeg-devel openjpeg-devel
 Prefer: libsndfile1
 %endif
 
+# Because of package renames. We want the new packages.
 %if 0%{?suse_version} <= 1210
 Substitute: mjpegtools-devel libmjpegutils-devel
+%if %suse_version < 1210
+Prefer: -libquicktime
+%endif
 %endif
 
 Support:    build-compare
