@@ -21,6 +21,8 @@ Prefer:     libquicktime0
 Prefer:     clucene-core-devel
 Prefer:     frei0r-plugins-devel
 
+Prefer:     python-setuptools
+
 Support:    build-compare
 
 %define _without_distributable 1
