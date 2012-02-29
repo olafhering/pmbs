@@ -62,11 +62,6 @@ Substitute: pkgconfig(xext) xorg-x11-libXext-devel
 Substitute: pkgconfig(xfixes) xorg-x11-libXfixes-devel
 %endif
 
-# Try to support %make_install in pre-11.2 distros
-%if 0%{?suse_version} < 1120
-%define make_install make install DESTDIR=%{?buildroot}
-%endif
-
 Support:    build-compare
 
 # We have kdemultimedia4 because of ffmpegthumbs from kdemultimedia4-thumbnailers. We don't want the rest.
@@ -140,3 +135,8 @@ Macros:
 %_with amrnb 1
 %_with_libmms 1
 %_with_LV2 1
+
+# Try to support %make_install in pre-11.2 distros
+%if 0%{?suse_version} < 1120
+%make_install make install DESTDIR=%{?buildroot}
+%endif
