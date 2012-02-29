@@ -53,6 +53,14 @@ Substitute: libunique1-devel libunique-devel
 %endif
 %endif
 
+# Try to support pkgconfig() BuildRequires in old distros
+%if 0%{?suse_version} <= 1120
+Substitute: pkgconfig(gl) Mesa-devel
+Substitute: pkgconfig(libdrm) libdrm-devel
+Substitute: pkgconfig(xext) xorg-x11-libXext-devel
+Substitute: pkgconfig(xfixes) xorg-x11-libXfixes-devel
+%endif
+
 Support:    build-compare
 
 # We have kdemultimedia4 because of ffmpegthumbs from kdemultimedia4-thumbnailers. We don't want the rest.
