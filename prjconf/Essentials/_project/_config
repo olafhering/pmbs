@@ -63,7 +63,9 @@ Substitute: pkgconfig(xfixes) xorg-x11-libXfixes-devel
 %endif
 
 # Try to support %make_install in pre-11.2 distros
+%if 0%{?suse_version} < 1120
 %define make_install make install DESTDIR=%{?buildroot}
+%endif
 
 Support:    build-compare
 
