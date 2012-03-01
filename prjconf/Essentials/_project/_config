@@ -104,15 +104,6 @@ PublishFilter: -^libkcompactdisc[0-9]+-[0-9].*\.rpm$
 # are in openSUSE.
 %define _with_LV2 1
 
-# Try to support %make_install in pre-11.2 distros
-%if 0%{?suse_version} < 1120
-%if %{undefined buildroot}
-%define %buildroot %{_buildrootdir}/%{name}-%{version}-%{release}.%{_arch}
-export RPM_BUILD_ROOT=%{_buildrootdir}/%{name}-%{version}-%{release}.%{_arch}
-%endif
-%define make_install make install DESTDIR=%{?buildroot}
-%endif
-
 Macros:
 %vendor http://packman.links2linux.de
 %packager packman@links2linux.de
