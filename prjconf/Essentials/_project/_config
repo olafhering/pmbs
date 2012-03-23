@@ -63,7 +63,7 @@ Substitute: pkgconfig(xext) xorg-x11-libXext-devel
 Substitute: pkgconfig(xfixes) xorg-x11-libXfixes-devel
 %endif
 
-Support:    build-compare
+Support:    !build-compare
 
 # We have kdemultimedia4 because of ffmpegthumbs from kdemultimedia4-thumbnailers. We don't want the rest.
 PublishFilter: -^dragonplayer-[0-9].*\.rpm$
