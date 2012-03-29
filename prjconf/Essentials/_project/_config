@@ -63,6 +63,16 @@ Substitute: pkgconfig(libdrm) libdrm-devel
 Substitute: pkgconfig(libdrm_intel) libdrm-devel
 Substitute: pkgconfig(xext) xorg-x11-libXext-devel
 Substitute: pkgconfig(xfixes) xorg-x11-libXfixes-devel
+Substitute: pkgconfig(alsa) alsa-devel
+Substitute: pkgconfig(gio-2.0) glib2-devel
+Substitute: pkgconfig(gthread-2.0) glib2-devel
+# Let's hope GTK2 is enough. GTK3 wasn't available until openSUSE 11.4
+Substitute: pkgconfig(gtk+-3.0) gtk2-devel
+Substitute: pkgconfig(libpulse) libpulse-devel
+Substitute: pkgconfig(libpulse-mainloop-glib) libpulse-devel
+Substitute: pkgconfig(x11) xorg-x11-libX11-devel
+Substitute: pkgconfig(xi) libXi6-devel
+Substitute: pkgconfig(xmu) xorg-x11-libXmu-devel
 %endif
 %endif
 
