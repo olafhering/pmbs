@@ -79,14 +79,22 @@ Substitute: pkgconfig(xmu) xorg-x11-libXmu-devel
 Support:    build-compare
 
 # We have kdemultimedia4 because of ffmpegthumbs from kdemultimedia4-thumbnailers. We don't want the rest.
-PublishFilter: -^dragonplayer-[0-9].*\.rpm$
-PublishFilter: -^juk-[0-9].*\.rpm$
-PublishFilter: -^kdemultimedia4-[0-9].*\.rpm$
-PublishFilter: -^kio_audiocd-[0-9].*\.rpm$
-PublishFilter: -^kmix-[0-9].*\.rpm$
-PublishFilter: -^kscd-[0-9].*\.rpm$
-PublishFilter: -^libkcddb[0-9]+-[0-9].*\.rpm$
-PublishFilter: -^libkcompactdisc[0-9]+-[0-9].*\.rpm$
+PublishFilter: ^dragonplayer-[0-9].*\.rpm$
+ExportFilter: ^dragonplayer-[0-9].*\.rpm$
+PublishFilter: ^juk-[0-9].*\.rpm$
+ExportFilter: ^juk-[0-9].*\.rpm$
+PublishFilter: ^kdemultimedia4-[0-9].*\.rpm$
+ExportFilter: ^kdemultimedia4-[0-9].*\.rpm$
+PublishFilter: ^kio_audiocd-[0-9].*\.rpm$
+ExportFilter: ^kio_audiocd-[0-9].*\.rpm$
+PublishFilter: ^kmix-[0-9].*\.rpm$
+ExportFilter: ^kmix-[0-9].*\.rpm$
+PublishFilter: ^kscd-[0-9].*\.rpm$
+ExportFilter: ^kscd-[0-9].*\.rpm$
+PublishFilter: ^libkcddb[0-9]+-[0-9].*\.rpm$
+ExportFilter: ^libkcddb[0-9]+-[0-9].*\.rpm$
+PublishFilter: ^libkcompactdisc[0-9]+-[0-9].*\.rpm$
+ExportFilter: ^libkcompactdisc[0-9]+-[0-9].*\.rpm
 
 %define _without_distributable 1
 %define _without_onlynondistributable 1
