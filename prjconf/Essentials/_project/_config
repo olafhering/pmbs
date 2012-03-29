@@ -71,7 +71,7 @@ Substitute: pkgconfig(gtk+-3.0) gtk2-devel
 Substitute: pkgconfig(libpulse) libpulse-devel
 Substitute: pkgconfig(libpulse-mainloop-glib) libpulse-devel
 Substitute: pkgconfig(x11) xorg-x11-libX11-devel
-Substitute: pkgconfig(xi) libXi6-devel
+Substitute: pkgconfig(xi) xorg-x11-devel
 Substitute: pkgconfig(xmu) xorg-x11-libXmu-devel
 %endif
 %endif
