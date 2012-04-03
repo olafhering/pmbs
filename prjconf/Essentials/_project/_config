@@ -73,6 +73,10 @@ Substitute: pkgconfig(libpulse-mainloop-glib) libpulse-devel
 Substitute: pkgconfig(x11) xorg-x11-libX11-devel
 Substitute: pkgconfig(xi) xorg-x11-devel
 Substitute: pkgconfig(xmu) xorg-x11-libXmu-devel
+Substitute: pkgconfig(enca) enca-devel
+Substitute: pkgconfig(fontconfig) fontconfig-devel
+Substitute: pkgconfig(freetype2) freetype2-devel
+Substitute: pkgconfig(fribidi) fribidi-devel
 %endif
 %endif
 
