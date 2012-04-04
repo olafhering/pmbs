@@ -40,6 +40,11 @@ Substitute: libopenjpeg-devel openjpeg-devel
 Prefer: libsndfile1
 %endif
 
+# needed because we have xz for older distros, and rpm needs it for SLE-11-SP2, with multiple providers:
+%if 0%{?suse_version} < 1140
+Prefer: liblzma5
+%endif
+
 # Because of pkgconfig() type BuildRequires
 Prefer: -libffmpeg_oldabi-devel
 
