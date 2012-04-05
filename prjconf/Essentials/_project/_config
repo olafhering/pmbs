@@ -40,6 +40,9 @@ Substitute: libopenjpeg-devel openjpeg-devel
 Prefer: libsndfile1
 %endif
 
+# OBS fails to understand that libportaudio2 obsoletes portaudio
+Prefer: libportaudio2
+
 # needed because we have xz for older distros, and rpm needs it for SLE-11-SP2, with multiple providers:
 %if 0%{?suse_version} < 1140
 Prefer: liblzma5
