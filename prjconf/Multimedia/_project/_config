@@ -25,6 +25,7 @@ Prefer:     python-setuptools
 
 # conflict between libfam0 and libfam0-gamin
 Prefer:     libfam0-gamin
+Exclude:    libfam0
 
 Support:    build-compare
 
