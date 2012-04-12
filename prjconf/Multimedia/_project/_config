@@ -23,6 +23,9 @@ Prefer:     frei0r-plugins-devel
 
 Prefer:     python-setuptools
 
+# conflict between libfam0 and libfam0-gamin
+Prefer:     libfam0-gamin
+
 Support:    build-compare
 
 %define _without_distributable 1
