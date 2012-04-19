@@ -86,6 +86,12 @@ Substitute: pkgconfig(enca) enca-devel
 Substitute: pkgconfig(fontconfig) fontconfig-devel
 Substitute: pkgconfig(freetype2) freetype2-devel
 Substitute: pkgconfig(fribidi) fribidi-devel
+Substitute: pkgconfig(cairo) cairo-devel
+Substitute: pkgconfig(gdk-pixbuf-2.0) gdk-pixbuf-devel
+Substitute: pkgconfig(gdk-x11-2.0) gtk2-devel
+Substitute: pkgconfig(gobject-2.0) glib2-devel
+Substitute: pkgconfig(gtk+-x11-2.0) gtk2-devel
+Substitute: pkgconfig(libvlc) vlc-devel
 %endif
 %endif
 
