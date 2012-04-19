@@ -23,6 +23,7 @@ Substitute: libschroedinger-devel schroedinger-devel
 
 %if 0%{?suse_version} < 1130 
 Substitute: pkgconfig(libxul) mozilla-xulrunner192-devel
+Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel
 %endif
 %if 0%{?suse_version} == 1130
 Prefer: mozilla-xulrunner192-devel
