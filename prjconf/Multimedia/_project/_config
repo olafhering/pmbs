@@ -23,6 +23,9 @@ Prefer:     frei0r-plugins-devel
 
 Prefer:     python-setuptools
 
+# https://bugs.links2linux.org/browse/PM-16
+Prefer:     libcdio-devel
+
 # conflict between libfam0 and libfam0-gamin
 Prefer:     libfam0-gamin
 
