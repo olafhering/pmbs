@@ -95,6 +95,11 @@ Substitute: pkgconfig(gobject-2.0) glib2-devel
 Substitute: pkgconfig(gtk+-x11-2.0) gtk2-devel
 Substitute: pkgconfig(libvlc) vlc-devel
 Substitute: pkgconfig(libudev) libudev-devel
+Substitute: pkgconfig(libdv) libdv-devel
+Substitute: pkgconfig(libpng14) libpng14-devel
+Substitute: pkgconfig(libquicktime) libquicktime-devel
+Substitute: pkgconfig(SDL_gfx) libSDL_gfx-devel
+Substitute: pkgconfig(sdl) libSDL-devel
 %endif
 %endif
 
