@@ -100,6 +100,7 @@ Substitute: pkgconfig(libpng14) libpng14-devel
 Substitute: pkgconfig(libquicktime) libquicktime-devel
 Substitute: pkgconfig(SDL_gfx) SDL_gfx-devel
 Substitute: pkgconfig(sdl) SDL-devel
+Substitute: pkgconfig(libpng) libpng-devel
 %endif
 %endif
 
