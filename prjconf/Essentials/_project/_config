@@ -98,8 +98,8 @@ Substitute: pkgconfig(libudev) libudev-devel
 Substitute: pkgconfig(libdv) libdv-devel
 Substitute: pkgconfig(libpng14) libpng14-devel
 Substitute: pkgconfig(libquicktime) libquicktime-devel
-Substitute: pkgconfig(SDL_gfx) libSDL_gfx-devel
-Substitute: pkgconfig(sdl) libSDL-devel
+Substitute: pkgconfig(SDL_gfx) SDL_gfx-devel
+Substitute: pkgconfig(sdl) SDL-devel
 %endif
 %endif
 
