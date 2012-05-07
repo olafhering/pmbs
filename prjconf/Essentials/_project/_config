@@ -101,6 +101,11 @@ Substitute: pkgconfig(libquicktime) libquicktime-devel
 Substitute: pkgconfig(SDL_gfx) SDL_gfx-devel
 Substitute: pkgconfig(sdl) SDL-devel
 Substitute: pkgconfig(libpng) libpng-devel
+Substitute: pkgconfig(fluidsynth) fluidsynth-devel
+Substitute: pkgconfig(gstreamer-controller-0.10) gstreamer-0_10-devel
+Substitute: pkgconfig(gstreamer-plugins-base-0.10) gstreamer-0_10-plugins-base-devel
+Substitute: pkgconfig(libbml) libbml-devel
+Substitute: pkgconfig(orc-0.4) orc-devel
 %endif
 %endif
 
