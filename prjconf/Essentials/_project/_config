@@ -108,6 +108,7 @@ Substitute: pkgconfig(libbml) libbml-devel
 Substitute: pkgconfig(orc-0.4) orc-devel
 Substitute  pkgconfig(hunspell) hunspell-devel
 Substitute  pkgconfig(libass) libass-devel
+Substitute  pkgconfig(lua) lua-devel
 %endif
 %endif
 
