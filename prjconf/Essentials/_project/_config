@@ -106,6 +106,8 @@ Substitute: pkgconfig(gstreamer-controller-0.10) gstreamer-0_10-devel
 Substitute: pkgconfig(gstreamer-plugins-base-0.10) gstreamer-0_10-plugins-base-devel
 Substitute: pkgconfig(libbml) libbml-devel
 Substitute: pkgconfig(orc-0.4) orc-devel
+Substitute  pkgconfig(hunspell) hunspell-devel
+Substitute  pkgconfig(libass) libass-devel
 %endif
 %endif
 
