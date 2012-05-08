@@ -76,7 +76,7 @@ Substitute: pkgconfig(cairo) cairo-devel=
 Substitute: pkgconfig(enca) enca-devel=
 Substitute: pkgconfig(fluidsynth) fluidsynth-devel=
 Substitute: pkgconfig(fontconfig) fontconfig-devel=
-Substitute: pkgconfig(freetype2) freetype2-devel=
+Substitute: pkgconfig(freetype2) freetype2-devel
 Substitute: pkgconfig(fribidi) fribidi-devel=
 Substitute: pkgconfig(gdk-pixbuf-2.0) gdk-pixbuf-devel=
 Substitute: pkgconfig(gdk-x11-2.0) gtk2-devel=
