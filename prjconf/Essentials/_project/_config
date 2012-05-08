@@ -13,34 +13,34 @@ Prefer:     fam-devel
 
 %if %suse_version < 1130
 # Needed because some packages require libspeex-devel even if the openSUSE name has been always speex-devel
-Substitute: libspeex-devel speex-devel
+Substitute: libspeex-devel speex-devel=
 # Some packages directly (Build)Require libspeex1. Probably those packages are broken and should be fixed.
-Substitute: libspeex1 libspeex
+Substitute: libspeex1 libspeex=
 # Needed because some packages require libdirac-devel even if the openSUSE name has been always dirac-devel
-Substitute: libdirac-devel dirac-devel
+Substitute: libdirac-devel dirac-devel=
 %endif
 
 %if %suse_version < 1140
 # Needed because some packages require libschroedinger-devel even if the openSUSE name has been always schroedinger-devel
-Substitute: libschroedinger-devel schroedinger-devel
+Substitute: libschroedinger-devel schroedinger-devel=
 %endif
 
 %if 0%{?suse_version} < 1130 
-Substitute: pkgconfig(libxul) mozilla-xulrunner192-devel
-Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel
+Substitute: pkgconfig(libxul) mozilla-xulrunner192-devel=
+Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel=
 %endif
 %if 0%{?suse_version} == 1130
 Prefer: mozilla-xulrunner192-devel
 %endif
 %if 0%{?suse_version} == 1140
 Prefer: mozilla-xulrunner20-devel
-Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel
+Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
 %endif
 %if 0%{?suse_version} >= 1210
 Prefer: xulrunner-devel
 %endif
 
-Substitute: libopenjpeg-devel openjpeg-devel
+Substitute: libopenjpeg-devel openjpeg-devel=
 
 %if 0%{?suse_version} < 1140
 Prefer: libsndfile1
@@ -59,61 +59,61 @@ Prefer: -libffmpeg_oldabi-devel
 
 # Because of package renames. We want the new packages.
 %if 0%{?suse_version} <= 1210
-Substitute: mjpegtools-devel libmjpegutils-devel
+Substitute: mjpegtools-devel libmjpegutils-devel=
 %if %suse_version < 1210
 Prefer: -libquicktime
-Substitute: taglib-devel libtag-devel
-Substitute: libunique1-devel libunique-devel
+Substitute: taglib-devel libtag-devel=
+Substitute: libunique1-devel libunique-devel=
 %endif
 %endif
 
 # Support pkgconfig() BuildRequires in old distros
 %if 0%{?suse_version} <= 1140
-Substitute: pkgconfig(id3tag) libid3tag-devel
+Substitute: pkgconfig(id3tag) libid3tag-devel=
 %if 0%{?suse_version} <= 1120
-Substitute: pkgconfig(gl) Mesa-devel
-Substitute: pkgconfig(glib-2.0) glib2-devel
-Substitute: pkgconfig(libdrm) libdrm-devel
-Substitute: pkgconfig(libdrm_intel) libdrm-devel
-Substitute: pkgconfig(xext) xorg-x11-libXext-devel
-Substitute: pkgconfig(xfixes) xorg-x11-libXfixes-devel
-Substitute: pkgconfig(alsa) alsa-devel
-Substitute: pkgconfig(gio-2.0) glib2-devel
-Substitute: pkgconfig(gstreamer-0.10) gstreamer-0_10-devel
-Substitute: pkgconfig(gthread-2.0) glib2-devel
+Substitute: pkgconfig(gl) Mesa-devel=
+Substitute: pkgconfig(glib-2.0) glib2-devel=
+Substitute: pkgconfig(libdrm) libdrm-devel=
+Substitute: pkgconfig(libdrm_intel) libdrm-devel=
+Substitute: pkgconfig(xext) xorg-x11-libXext-devel=
+Substitute: pkgconfig(xfixes) xorg-x11-libXfixes-devel=
+Substitute: pkgconfig(alsa) alsa-devel=
+Substitute: pkgconfig(gio-2.0) glib2-devel=
+Substitute: pkgconfig(gstreamer-0.10) gstreamer-0_10-devel=
+Substitute: pkgconfig(gthread-2.0) glib2-devel=
 # Let's hope GTK2 is enough. GTK3 wasn't available until openSUSE 11.4
-Substitute: pkgconfig(gtk+-3.0) gtk2-devel
-Substitute: pkgconfig(libpulse) libpulse-devel
-Substitute: pkgconfig(libpulse-mainloop-glib) libpulse-devel
-Substitute: pkgconfig(x11) xorg-x11-libX11-devel
-Substitute: pkgconfig(xi) xorg-x11-devel
-Substitute: pkgconfig(xmu) xorg-x11-libXmu-devel
-Substitute: pkgconfig(enca) enca-devel
-Substitute: pkgconfig(fontconfig) fontconfig-devel
-Substitute: pkgconfig(freetype2) freetype2-devel
-Substitute: pkgconfig(fribidi) fribidi-devel
-Substitute: pkgconfig(cairo) cairo-devel
-Substitute: pkgconfig(gdk-pixbuf-2.0) gdk-pixbuf-devel
-Substitute: pkgconfig(gdk-x11-2.0) gtk2-devel
-Substitute: pkgconfig(gobject-2.0) glib2-devel
-Substitute: pkgconfig(gtk+-x11-2.0) gtk2-devel
-Substitute: pkgconfig(libvlc) vlc-devel
-Substitute: pkgconfig(libudev) libudev-devel
-Substitute: pkgconfig(libdv) libdv-devel
-Substitute: pkgconfig(libpng14) libpng14-devel
-Substitute: pkgconfig(libquicktime) libquicktime-devel
-Substitute: pkgconfig(SDL_gfx) SDL_gfx-devel
-Substitute: pkgconfig(sdl) SDL-devel
-Substitute: pkgconfig(libpng) libpng-devel
-Substitute: pkgconfig(fluidsynth) fluidsynth-devel
-Substitute: pkgconfig(gstreamer-controller-0.10) gstreamer-0_10-devel
-Substitute: pkgconfig(gstreamer-plugins-base-0.10) gstreamer-0_10-plugins-base-devel
-Substitute: pkgconfig(libbml) libbml-devel
-Substitute: pkgconfig(orc-0.4) orc-devel
-Substitute  pkgconfig(hunspell) hunspell-devel
-Substitute  pkgconfig(libass) libass-devel
-Substitute  pkgconfig(lua) lua-devel
-Substitute  pkgconfig(openal) openal-devel
+Substitute: pkgconfig(gtk+-3.0) gtk2-devel=
+Substitute: pkgconfig(libpulse) libpulse-devel=
+Substitute: pkgconfig(libpulse-mainloop-glib) libpulse-devel=
+Substitute: pkgconfig(x11) xorg-x11-libX11-devel=
+Substitute: pkgconfig(xi) xorg-x11-devel=
+Substitute: pkgconfig(xmu) xorg-x11-libXmu-devel=
+Substitute: pkgconfig(enca) enca-devel=
+Substitute: pkgconfig(fontconfig) fontconfig-devel=
+Substitute: pkgconfig(freetype2) freetype2-devel=
+Substitute: pkgconfig(fribidi) fribidi-devel=
+Substitute: pkgconfig(cairo) cairo-devel=
+Substitute: pkgconfig(gdk-pixbuf-2.0) gdk-pixbuf-devel=
+Substitute: pkgconfig(gdk-x11-2.0) gtk2-devel=
+Substitute: pkgconfig(gobject-2.0) glib2-devel=
+Substitute: pkgconfig(gtk+-x11-2.0) gtk2-devel=
+Substitute: pkgconfig(libvlc) vlc-devel=
+Substitute: pkgconfig(libudev) libudev-devel=
+Substitute: pkgconfig(libdv) libdv-devel=
+Substitute: pkgconfig(libpng14) libpng14-devel=
+Substitute: pkgconfig(libquicktime) libquicktime-devel=
+Substitute: pkgconfig(SDL_gfx) SDL_gfx-devel=
+Substitute: pkgconfig(sdl) SDL-devel=
+Substitute: pkgconfig(libpng) libpng-devel=
+Substitute: pkgconfig(fluidsynth) fluidsynth-devel=
+Substitute: pkgconfig(gstreamer-controller-0.10) gstreamer-0_10-devel=
+Substitute: pkgconfig(gstreamer-plugins-base-0.10) gstreamer-0_10-plugins-base-devel=
+Substitute: pkgconfig(libbml) libbml-devel=
+Substitute: pkgconfig(orc-0.4) orc-devel=
+Substitute  pkgconfig(hunspell) hunspell-devel=
+Substitute  pkgconfig(libass) libass-devel=
+Substitute  pkgconfig(lua) lua-devel=
+Substitute  pkgconfig(openal) openal-devel=
 %endif
 %endif
 
