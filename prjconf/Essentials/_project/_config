@@ -67,6 +67,10 @@ Substitute: libunique1-devel libunique-devel=
 %endif
 %endif
 
+%if 0%{?suse_version} <= 1120
+Substitute: wxWidgets-devel wxGTK-devel=
+%endif
+
 # Support pkgconfig() BuildRequires in old distros
 %if 0%{?suse_version} <= 1140
 Substitute: pkgconfig(id3tag) libid3tag-devel=
