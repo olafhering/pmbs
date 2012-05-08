@@ -1,3 +1,7 @@
+%if 0%{?sles_version} == 11 
+Prefer: popt
+%endif
+
 %if %suse_version = 1110
 Prefer:     libcaca0
 %endif
