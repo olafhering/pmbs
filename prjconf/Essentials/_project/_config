@@ -109,6 +109,7 @@ Substitute: pkgconfig(orc-0.4) orc-devel
 Substitute  pkgconfig(hunspell) hunspell-devel
 Substitute  pkgconfig(libass) libass-devel
 Substitute  pkgconfig(lua) lua-devel
+Substitute  pkgconfig(openal) openal-devel
 %endif
 %endif
 
