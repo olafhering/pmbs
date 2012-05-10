@@ -113,6 +113,7 @@ Substitute  pkgconfig(openal) openal-devel=
 Substitute: pkgconfig(orc-0.4) orc-devel=
 Substitute: pkgconfig(SDL_gfx) SDL_gfx-devel=
 Substitute: pkgconfig(sdl) SDL-devel=
+Substitute: pkgconfig(sndfile) libsndfile-devel=
 Substitute: pkgconfig(x11) xorg-x11-libX11-devel=
 Substitute: pkgconfig(xext) xorg-x11-libXext-devel=
 Substitute: pkgconfig(xfixes) xorg-x11-libXfixes-devel=
