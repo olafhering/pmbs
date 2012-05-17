@@ -171,8 +171,16 @@ ExportFilter: ^libkcompactdisc[0-9]+-[0-9].*\.rpm
 # Needed because of gstreamer-0_10-plugins-bad. Should dissapear in the future, once slv2 and lv2core 
 # are in openSUSE.
 %define _with_LV2 1
+%if 0%{?sles_version} == 11
+%define make_install make install DESTDIR=%{?buildroot}
+%endif
 
+%if 0%{?sles_version} == 11
 Macros:
+%make_install make install DESTDIR=%{?buildroot}
+else
+Macros:
+%endif
 %vendor http://packman.links2linux.de
 %packager packman@links2linux.de
 %packman_bs 1
