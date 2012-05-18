@@ -103,6 +103,7 @@ Substitute: pkgconfig(libbml) libbml-devel=
 Substitute: pkgconfig(libdrm_intel) libdrm-devel=
 Substitute: pkgconfig(libdrm) libdrm-devel=
 Substitute: pkgconfig(libdv) libdv-devel=
+Substitute: pkgconfig(liboil-0.3) liboil-devel=
 Substitute: pkgconfig(libpng14) libpng14-devel=
 Substitute: pkgconfig(libpng) libpng-devel=
 Substitute: pkgconfig(libpulse) libpulse-devel=
