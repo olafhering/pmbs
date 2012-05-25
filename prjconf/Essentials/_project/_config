@@ -1,5 +1,9 @@
 Substitute: bs2b-devel libbs2b-devel
 
+%if 0%{?suse_version} == 1210
+Prefer: libffi%{gcc_version}-32bit
+%endif
+
 %if 0%{?sles_version} == 11 
 Prefer: popt
 %endif
