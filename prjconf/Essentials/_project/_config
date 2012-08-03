@@ -70,6 +70,7 @@ Prefer: -libffmpeg_oldabi-devel
 # Because of package renames. We want the new packages.
 %if 0%{?suse_version} <= 1210
 Substitute: mjpegtools-devel libmjpegutils-devel=
+Prefer: -libcdio-mini-devel
 %if %suse_version < 1210
 Prefer: -libquicktime
 Substitute: taglib-devel libtag-devel=
