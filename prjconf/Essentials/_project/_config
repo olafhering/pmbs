@@ -116,6 +116,7 @@ Substitute: pkgconfig(libdv) libdv-devel=
 Substitute: pkgconfig(liboil-0.3) liboil-devel=
 Substitute: pkgconfig(libpng14) libpng14-devel=
 Substitute: pkgconfig(libpng) libpng-devel=
+Substitute: pkgconfig(libprojectM) libprojectM-devel=
 Substitute: pkgconfig(libpulse) libpulse-devel=
 Substitute: pkgconfig(libpulse-mainloop-glib) libpulse-devel=
 Substitute: pkgconfig(libquicktime) libquicktime-devel=
