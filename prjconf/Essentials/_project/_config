@@ -75,6 +75,7 @@ Prefer: -libffmpeg_oldabi-devel
 %if 0%{?suse_version} <= 1210
 Substitute: mjpegtools-devel libmjpegutils-devel=
 Prefer: -libcdio-mini-devel
+Prefer: -libxine1-devel
 %if %suse_version < 1210
 Prefer: -libquicktime
 Substitute: taglib-devel libtag-devel=
