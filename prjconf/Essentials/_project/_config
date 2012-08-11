@@ -21,6 +21,10 @@ Prefer:     fam-devel
 Substitute: libxine1-devel libxine-devel=
 %endif
 
+%if %suse_version <= 1220
+Prefer: -lv2core-devel
+%endif
+
 %if %suse_version < 1130
 # Needed because some packages require libspeex-devel even if the openSUSE name has been always speex-devel
 Substitute: libspeex-devel speex-devel=
