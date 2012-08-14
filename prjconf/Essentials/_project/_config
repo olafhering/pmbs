@@ -43,7 +43,7 @@ Prefer: libvpx0
 
 
 # Because of pkgconfig() type BuildRequires
-#Prefer: -libffmpeg_oldabi-devel
+Prefer: -libffmpeg_oldabi-devel
 
 
 #Substitute: bs2b-devel libbs2b-devel=
