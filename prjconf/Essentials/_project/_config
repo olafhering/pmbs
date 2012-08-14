@@ -5,6 +5,7 @@ Prefer: liblzma5
 Prefer: libtheora0
 Prefer: librcc0
 Prefer: librcd0
+Prefer: libvpx0
 %endif
 
 #%if 0%{?suse_version} == 1210
