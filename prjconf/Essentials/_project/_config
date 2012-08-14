@@ -1,7 +1,9 @@
-#%if 0%{?sles_version} == 11 
-#Prefer: popt
-#%endif
-#
+# SLE-11-SP2 has -x86/-32bit versions
+%if 0%{?sles_version} == 11 
+Prefer: popt
+Prefer: liblzma5
+%endif
+
 #%if 0%{?suse_version} == 1210
 #Prefer: libffi%{gcc_version}-32bit
 #%endif
