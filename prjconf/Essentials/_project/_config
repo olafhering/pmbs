@@ -2,6 +2,8 @@
 %if 0%{?sles_version} == 11 
 Prefer: popt
 Prefer: liblzma5
+Prefer: libtheora0
+Prefer: librcc0
 %endif
 
 #%if 0%{?suse_version} == 1210
