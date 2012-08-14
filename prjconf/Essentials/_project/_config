@@ -1,91 +1,81 @@
-Substitute: bs2b-devel libbs2b-devel
-
-%if 0%{?suse_version} == 1210
-Prefer: libffi%{gcc_version}-32bit
-%endif
-
-%if 0%{?sles_version} == 11 
-Prefer: popt
-%endif
-
-%if %suse_version = 1110
-Prefer:     libcaca0
-%endif
-
-%if %suse_version > 1140
-Prefer:     libfam0
-%endif
-Prefer:     fam-devel
-
-%if %suse_version >= 1220
-Substitute: libxine1-devel libxine-devel=
-%endif
-
-%if %suse_version <= 1220
-Prefer: -lv2core-devel
-%endif
-
-%if %suse_version < 1130
-# Needed because some packages require libspeex-devel even if the openSUSE name has been always speex-devel
-Substitute: libspeex-devel speex-devel=
-# Some packages directly (Build)Require libspeex1. Probably those packages are broken and should be fixed.
-Substitute: libspeex1 libspeex=
-# Needed because some packages require libdirac-devel even if the openSUSE name has been always dirac-devel
-Substitute: libdirac-devel dirac-devel=
-%endif
-
-%if %suse_version < 1140
-# Needed because some packages require libschroedinger-devel even if the openSUSE name has been always schroedinger-devel
-Substitute: libschroedinger-devel schroedinger-devel=
-%endif
-
-%if 0%{?suse_version} < 1130 
-Substitute: pkgconfig(libxul) mozilla-xulrunner192-devel=
-Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel=
-%endif
-%if 0%{?suse_version} == 1130
-Prefer: mozilla-xulrunner192-devel
-%endif
-%if 0%{?suse_version} == 1140
-Prefer: mozilla-xulrunner20-devel
-Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
-%endif
-%if 0%{?suse_version} >= 1210
-Prefer: xulrunner-devel
-%endif
-
-Substitute: libopenjpeg-devel openjpeg-devel=
-
-%if 0%{?suse_version} < 1140
-Prefer: libsndfile1
-%endif
-
+#%if 0%{?sles_version} == 11 
+#Prefer: popt
+#%endif
+#
+#%if 0%{?suse_version} == 1210
+#Prefer: libffi%{gcc_version}-32bit
+#%endif
+#
+#%if %suse_version = 1110
+#Prefer:     libcaca0
+#%endif
+#
+#%if %suse_version > 1140
+#Prefer:     libfam0
+#%endif
+#Prefer:     fam-devel
+#
+#%if %suse_version >= 1220
+#Substitute: libxine1-devel libxine-devel=
+#%endif
+#
+#%if %suse_version <= 1220
+#Prefer: -lv2core-devel
+#%endif
+#
+#%if 0%{?suse_version} < 1140
+#Prefer: libsndfile1
+#%endif
+#
 # OBS fails to understand that libportaudio2 obsoletes portaudio
-Prefer: libportaudio2
-
+#Prefer: libportaudio2
+#
 # needed because we have xz for older distros, and rpm needs it for SLE-11-SP2, with multiple providers:
-%if 0%{?suse_version} < 1140
-Prefer: liblzma5
-%endif
+#%if 0%{?suse_version} < 1140
+#Prefer: liblzma5
+#%endif
+
 
 # Because of pkgconfig() type BuildRequires
-Prefer: -libffmpeg_oldabi-devel
+#Prefer: -libffmpeg_oldabi-devel
 
-# Because of package renames. We want the new packages.
-%if 0%{?suse_version} <= 1210
-Substitute: mjpegtools-devel libmjpegutils-devel=
-Prefer: -libcdio-mini-devel
-Prefer: -libxine1-devel
-%if %suse_version < 1210
-Prefer: -libquicktime
-Substitute: taglib-devel libtag-devel=
-Substitute: libunique1-devel libunique-devel=
-%endif
-%endif
 
-%if 0%{?suse_version} <= 1120
-Substitute: wxWidgets-devel wxGTK-devel=
-%endif
+#Substitute: bs2b-devel libbs2b-devel=
+#Substitute: libopenjpeg-devel openjpeg-devel=
+
+#%if 0%{?suse_version} < 1220
+#Substitute: mjpegtools-devel libmjpegutils-devel=
+#Prefer: -libcdio-mini-devel
+#Prefer: -libxine1-devel
+#%if %suse_version < 1210
+#Prefer: -libquicktime
+#Substitute: taglib-devel libtag-devel=
+#Substitute: libunique1-devel libunique-devel=
+#%if %suse_version < 1140
+#Substitute: libschroedinger-devel schroedinger-devel=
+#Substitute: libspeex-devel speex-devel=
+#Substitute: libspeex1 libspeex=
+#Substitute: libdirac-devel dirac-devel=
+#Substitute: wxWidgets-devel wxGTK-devel=
+#%endif
+#%endif
+#%endif
+#%endif
+
+
+# The XUL thing...
+#%if 0%{?suse_version} < 1130
+#Substitute: pkgconfig(libxul) mozilla-xulrunner192-devel=
+#Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel=
+#%endif
+#%if 0%{?suse_version} == 1140
+#Prefer: mozilla-xulrunner20-devel
+#Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
+#%endif
+#%if 0%{?suse_version} >= 1210
+#Prefer: xulrunner-devel
+#%endif
+
 
 # Support pkgconfig() BuildRequires in old distros
 %if 0%{?suse_version} <= 1140
