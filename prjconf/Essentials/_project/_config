@@ -13,6 +13,7 @@ Prefer: libx264-125
 Prefer: libmp3lame0
 Prefer: libva1
 Prefer: libcdda_interface0
+Prefer: fribidi
 %endif
 
 #%if 0%{?suse_version} == 1210
