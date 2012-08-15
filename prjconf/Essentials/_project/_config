@@ -74,10 +74,10 @@ Prefer: -libquicktime
 #Substitute: pkgconfig(libxul) mozilla-xulrunner192-devel=
 #Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel=
 #%endif
-#%if 0%{?suse_version} == 1140
+%if 0%{?suse_version} == 1140
 #Prefer: mozilla-xulrunner20-devel
-#Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
-#%endif
+Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
+%endif
 #%if 0%{?suse_version} >= 1210
 #Prefer: xulrunner-devel
 #%endif
