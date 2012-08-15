@@ -6,6 +6,10 @@ Prefer: libtheora0
 Prefer: librcc0
 Prefer: librcd0
 Prefer: libvpx0
+Prefer: libavcodec54
+Prefer: libfaad2
+Prefer: libswscale2
+Prefer: libx264-125
 %endif
 
 #%if 0%{?suse_version} == 1210
