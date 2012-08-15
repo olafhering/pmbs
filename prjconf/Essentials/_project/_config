@@ -157,6 +157,7 @@ Substitute: pkgconfig(sdl) SDL-devel=
 Substitute: pkgconfig(sndfile) libsndfile-devel=
 Substitute: pkgconfig(sox) sox-devel=
 Substitute: pkgconfig(tsmux) libtsmux-devel=
+Substitute: pkgconfig(vdpau) libvdpau-devel=
 Substitute: pkgconfig(vorbisfile) libvorbis-devel=
 Substitute: pkgconfig(x11) xorg-x11-libX11-devel=
 Substitute: pkgconfig(xext) xorg-x11-libXext-devel=
