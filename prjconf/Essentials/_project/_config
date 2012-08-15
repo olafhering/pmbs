@@ -53,8 +53,8 @@ Prefer: -libffmpeg_oldabi-devel
 #Substitute: mjpegtools-devel libmjpegutils-devel=
 Prefer: -libcdio-mini-devel
 #Prefer: -libxine1-devel
-#%if %suse_version < 1210
-#Prefer: -libquicktime
+%if %suse_version < 1210
+Prefer: -libquicktime
 #Substitute: taglib-devel libtag-devel=
 #Substitute: libunique1-devel libunique-devel=
 #%if %suse_version < 1140
@@ -65,7 +65,7 @@ Prefer: -libcdio-mini-devel
 #Substitute: wxWidgets-devel wxGTK-devel=
 #%endif
 #%endif
-#%endif
+%endif
 %endif
 
 
