@@ -10,6 +10,8 @@ Prefer: libavcodec54
 Prefer: libfaad2
 Prefer: libswscale2
 Prefer: libx264-125
+Prefer: libmp3lame0
+Prefer: libva1
 %endif
 
 #%if 0%{?suse_version} == 1210
