@@ -18,79 +18,29 @@ Prefer: liblash1
 Prefer: libgstreamer-0_10-0
 %endif
 
-#%if 0%{?suse_version} == 1210
-#Prefer: libffi%{gcc_version}-32bit
-#%endif
-#
-#%if %suse_version = 1110
-#Prefer:     libcaca0
-#%endif
-#
-#%if %suse_version > 1140
-#Prefer:     libfam0
-#%endif
-#Prefer:     fam-devel
-#
-#%if %suse_version >= 1220
-#Substitute: libxine1-devel libxine-devel=
-#%endif
-#
-#%if %suse_version <= 1220
-#Prefer: -lv2core-devel
-#%endif
-#
-#%if 0%{?suse_version} < 1140
-#Prefer: libsndfile1
-#%endif
-#
-# OBS fails to understand that libportaudio2 obsoletes portaudio
-#Prefer: libportaudio2
-#
-# needed because we have xz for older distros, and rpm needs it for SLE-11-SP2, with multiple providers:
-#%if 0%{?suse_version} < 1140
-#Prefer: liblzma5
-#%endif
-
-
 # Because of pkgconfig() type BuildRequires
 Prefer: -libffmpeg_oldabi-devel
 
 
-#Substitute: bs2b-devel libbs2b-devel=
-#Substitute: libopenjpeg-devel openjpeg-devel=
-
 %if 0%{?suse_version} < 1220
-#Substitute: mjpegtools-devel libmjpegutils-devel=
+# Because there are too many packages that need to update its BuildRequires
+Substitute: mjpegtools-devel libmjpegutils-devel=
+# Because pkgconfig() style BuildRequires
 Prefer: -libcdio-mini-devel
-#Prefer: -libxine1-devel
 %if %suse_version < 1210
+# Because Packman provides it own version and there was a rename
 Prefer: -libquicktime
-#Substitute: taglib-devel libtag-devel=
-#Substitute: libunique1-devel libunique-devel=
-#%if %suse_version < 1140
-#Substitute: libschroedinger-devel schroedinger-devel=
-#Substitute: libspeex-devel speex-devel=
-#Substitute: libspeex1 libspeex=
-#Substitute: libdirac-devel dirac-devel=
-#Substitute: wxWidgets-devel wxGTK-devel=
-#%endif
-#%endif
 %endif
 %endif
 
 
 # The XUL thing...
 %if 0%{?suse_version} < 1130
-#Substitute: pkgconfig(libxul) mozilla-xulrunner192-devel=
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel=
 %endif
 %if 0%{?suse_version} == 1140
-#Prefer: mozilla-xulrunner20-devel
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
 %endif
-#%if 0%{?suse_version} >= 1210
-#Prefer: xulrunner-devel
-#%endif
 
 
 # Support pkgconfig() BuildRequires in old distros
@@ -118,8 +68,6 @@ Substitute: pkgconfig(gstreamer-controller-0.10) gstreamer-0_10-devel=
 Substitute: pkgconfig(gstreamer-plugins-base-0.10) gstreamer-0_10-plugins-base-devel=
 Substitute: pkgconfig(gthread-2.0) glib2-devel=
 Substitute: pkgconfig(gtk+-2.0) gtk2-devel=
-# Let's hope GTK2 is enough. GTK3 wasn't available until openSUSE 11.4
-Substitute: pkgconfig(gtk+-3.0) gtk2-devel=
 Substitute: pkgconfig(gtk+-x11-2.0) gtk2-devel=
 Substitute: pkgconfig(jack) libjack-devel=
 Substitute: pkgconfig(hunspell) hunspell-devel=
