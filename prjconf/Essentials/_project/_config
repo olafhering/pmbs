@@ -48,8 +48,11 @@ Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel=
 
 
 # Support pkgconfig() BuildRequires in old distros
+%if 0%{?suse_version} <= 1210
+Substitute: pkgconfig(expat) libexpat-devel=
 %if 0%{?suse_version} <= 1140
 Substitute: pkgconfig(id3tag) libid3tag-devel=
+Substitute: pkgconfig(soundtouch) soundtouch-devel=
 %if 0%{?suse_version} <= 1120
 Substitute: pkgconfig(alsa) alsa-devel=
 Substitute: pkgconfig(cairo) cairo-devel=
@@ -120,6 +123,7 @@ Substitute: pkgconfig(xext) xorg-x11-libXext-devel=
 Substitute: pkgconfig(xfixes) xorg-x11-libXfixes-devel=
 Substitute: pkgconfig(xi) xorg-x11-devel=
 Substitute: pkgconfig(xmu) xorg-x11-libXmu-devel=
+%endif
 %endif
 %endif
 
