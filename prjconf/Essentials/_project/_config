@@ -24,6 +24,7 @@ Prefer: -libffmpeg_oldabi-devel
 
 
 %if 0%{?suse_version} < 1220
+Support: xz
 # Because there are too many packages that need to update its BuildRequires
 Substitute: mjpegtools-devel libmjpegutils-devel=
 # Because pkgconfig() style BuildRequires
