@@ -47,6 +47,7 @@ Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel=
 %endif
 
+Prefer: liborc-0_4-0
 
 # Support pkgconfig() BuildRequires in old distros
 %if 0%{?suse_version} <= 1210
