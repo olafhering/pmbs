@@ -88,6 +88,7 @@ Substitute: pkgconfig(libavcodec) libffmpeg-devel=
 Substitute: pkgconfig(libavdevice) libffmpeg-devel=
 Substitute: pkgconfig(libavformat) libffmpeg-devel=
 Substitute: pkgconfig(libavutil) libffmpeg-devel=
+Substitute: pkgconfig(libpostproc) libffmpeg-devel=
 Substitute: pkgconfig(libswscale) libffmpeg-devel=
 Substitute: pkgconfig(libbml) libbml-devel=
 Substitute: pkgconfig(libdrm_intel) libdrm-devel=
