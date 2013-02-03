@@ -122,6 +122,7 @@ Substitute: pkgconfig(sox) sox-devel=
 Substitute: pkgconfig(tsmux) libtsmux-devel=
 Substitute: pkgconfig(vdpau) libvdpau-devel=
 Substitute: pkgconfig(vorbisfile) libvorbis-devel=
+Substitute: pkgconfig(vo-aacenc) libvo-aacenc-devel=
 Substitute: pkgconfig(x11) xorg-x11-libX11-devel=
 Substitute: pkgconfig(xext) xorg-x11-libXext-devel=
 Substitute: pkgconfig(xfixes) xorg-x11-libXfixes-devel=
