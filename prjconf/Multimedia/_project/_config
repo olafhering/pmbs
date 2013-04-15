@@ -1,1 +1,2 @@
 Prefer: python-setuptools
+Prefer: libffmpeg-devel
