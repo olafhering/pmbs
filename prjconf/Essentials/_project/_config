@@ -23,7 +23,7 @@ Prefer: libtwolame0
 
 # Because of pkgconfig() type BuildRequires
 Prefer: -libffmpeg_oldabi-devel
-
+Prefer: -libffmpeg1-devel
 
 %if 0%{?suse_version} < 1220
 Support: xz
