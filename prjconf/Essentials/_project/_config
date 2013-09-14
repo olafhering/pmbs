@@ -27,9 +27,7 @@ Constraint: hostlabel QEMU_ARM
 
 %ifarch armv6l armv6hl
 %define _with_enable_rpi_build 1
-Macros:
-%_with_enable_rpi_build 1
-:Macros
+# Macro defined ar end of file
 %endif
 
 # Because of pkgconfig() type BuildRequires
@@ -208,5 +206,7 @@ Macros:
 %_with amrnb 1
 %_with_libmms 1
 %_with_LV2 1
-
+%ifarch armv6l armv6hl
+%_with_enable_rpi_build 1
+%endif
 
