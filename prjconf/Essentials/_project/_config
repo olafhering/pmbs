@@ -27,7 +27,9 @@ Constraint: hostlabel QEMU_ARM
 
 %ifarch armv6l armv6hl
 %define _with_enable_rpi_build 1
-# Macro defined ar end of file
+Macros:
+%_with_enable_rpi_build 1
+:Macros
 %endif
 
 # Because of pkgconfig() type BuildRequires
@@ -175,10 +177,11 @@ Support:    build-compare
 # are in openSUSE.
 %define _with_LV2 1
 
+
 Macros:
 %vendor http://packman.links2linux.de
 %packager packman@links2linux.de
-%packman_bs 1
+%packman_bs 
 %_without_distributable 1
 %_without_onlynondistributable 1
 %_with_pulseaudio 1
@@ -206,4 +209,3 @@ Macros:
 %_with amrnb 1
 %_with_libmms 1
 %_with_LV2 1
-%_with_enable_rpi_build 1
