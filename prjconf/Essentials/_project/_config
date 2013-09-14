@@ -206,7 +206,4 @@ Macros:
 %_with amrnb 1
 %_with_libmms 1
 %_with_LV2 1
-%ifarch armv6l armv6hl
 %_with_enable_rpi_build 1
-%endif
-
