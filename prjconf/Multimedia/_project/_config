@@ -1,2 +1,9 @@
 Prefer: python-setuptools
 Prefer: libffmpeg-devel
+
+%ifarch armv6l armv6hl
+%define _with_enable_rpi_build 1
+Macros:
+%_with_enable_rpi_build 1
+:Macros
+%endif
