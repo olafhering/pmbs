@@ -25,13 +25,13 @@ Prefer: libtwolame0
 Constraint: hostlabel QEMU_ARM
 %endif
 
-%ifarch armv6l armv6hl
+#%ifarch armv6l armv6hl
 # Enable RPi build for armv6
 %define _with_enable_rpi_build 1
 Macros:
 %_with_enable_rpi_build 1
 :Macros
-%endif
+#%endif
 
 # Because of pkgconfig() type BuildRequires
 Prefer: -libffmpeg_oldabi-devel
