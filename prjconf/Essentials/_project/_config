@@ -26,17 +26,8 @@ Constraint: hostlabel QEMU_ARM
 %endif
 
 %ifarch armv6l armv6hl
-Prefer: raspberrypi-gfx raspberrypi-gfx-devel
-# Enable RPi build for armv6
-#%define _with_enable_rpi_build 1
-#Macros:
-#%_with_enable_rpi_build 1
-#:Macros
-#%else
-#%define _with_enable_rpi_build 0
-#Macros:
-#%_with_enable_rpi_build 0
-#:Macros
+# Ignore Mesa-devel, since it conflicts with raspberrypi-gfx-devel
+Ignore: Mesa-devel
 %endif
 
 # Because of pkgconfig() type BuildRequires
