@@ -29,7 +29,7 @@ Constraint: hostlabel QEMU_ARM
 # Ignore Mesa-*devel, since it conflicts with raspberrypi-gfx-devel
 Ignore: Mesa-devel Mesa-libEGL-devel Mesa-libGLESv1_CM-devel Mesa-libGLESv2-devel
 Prefer: java-1_7_0-icedtea java-1_7_0-icedtea-devel
-Substitute: java java-1_7_0-icedtea
+#Substitute: java java-1_7_0-icedtea
 %endif
 
 # Because of pkgconfig() type BuildRequires
