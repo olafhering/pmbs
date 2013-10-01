@@ -30,6 +30,9 @@ Constraint: hostlabel QEMU_ARM
 Ignore: Mesa-devel Mesa-libEGL-devel Mesa-libGLESv1_CM-devel Mesa-libGLESv2-devel
 %endif
 
+# Add missing armv6* in %arm
+%define arm %arm armv6l armv6hl
+
 # Because of pkgconfig() type BuildRequires
 Prefer: -libffmpeg_oldabi-devel
 Prefer: -libffmpeg1-devel
