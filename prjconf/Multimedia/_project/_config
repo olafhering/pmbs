@@ -7,3 +7,8 @@ Macros:
 %_with_enable_rpi_build 1
 :Macros
 %endif
+
+%ifarch armv6l armv6hl
+# Ignore Mesa-*devel, since it conflicts with raspberrypi-gfx-devel (Packages: XBMC)
+Ignore: Mesa-devel Mesa-libEGL-devel Mesa-libGLESv1_CM-devel Mesa-libGLESv2-devel
+%endif
