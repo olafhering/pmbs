@@ -25,11 +25,6 @@ Prefer: libtwolame0
 Constraint: hostlabel QEMU_ARM
 %endif
 
-%ifarch armv6l armv6hl
-# Ignore Mesa-*devel, since it conflicts with raspberrypi-gfx-devel
-Ignore: Mesa-devel Mesa-libEGL-devel Mesa-libGLESv1_CM-devel Mesa-libGLESv2-devel
-%endif
-
 # Because of pkgconfig() type BuildRequires
 Prefer: -libffmpeg_oldabi-devel
 Prefer: -libffmpeg1-devel
