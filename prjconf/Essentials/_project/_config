@@ -25,6 +25,11 @@ Prefer: libtwolame0
 Constraint: hostlabel QEMU_ARM
 %endif
 
+%if "%_repository" == "openSUSE_Factory_ARM"
+# Suspend Factory_ARM build to save power (temporary disable)
+Constraint: hostlabel DISABLE_FACTORY_ARM
+%endif
+
 # Because of pkgconfig() type BuildRequires
 Prefer: -libffmpeg_oldabi-devel
 Prefer: -libffmpeg1-devel
