@@ -35,7 +35,7 @@ Support: xz
 Substitute: mjpegtools-devel libmjpegutils-devel=
 # Because pkgconfig() style BuildRequires
 Prefer: -libcdio-mini-devel
-%if %suse_version < 1210
+%if 0%{?suse_version} < 1210
 # Because Packman provides it own version and there was a rename
 Prefer: -libquicktime
 %endif
