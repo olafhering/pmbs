@@ -25,6 +25,11 @@ Prefer: libtwolame0
 Constraint: hostlabel QEMU_ARM
 %endif
 
+%ifarch armv6l armv6hl
+# Prefer raspberry pi openGL ES libs instead of Mesa openGL ES libs
+Prefer: raspberrypi-gfx raspberrypi-gfx-devel
+%endif
+
 # Because of pkgconfig() type BuildRequires
 Prefer: -libffmpeg_oldabi-devel
 Prefer: -libffmpeg1-devel
