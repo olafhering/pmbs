@@ -150,7 +150,6 @@ Support:    build-compare
 %define _with_pulseaudio 1
 %define _with_sdl 1
 %define _with_aalib 1
-%define _with_arts 1
 %define _with_esd 1
 %define _with_jack 1
 %define _with_gnome_vfs 1
@@ -185,7 +184,6 @@ Macros:
 %_with_pulseaudio 1
 %_with_sdl 1
 %_with_aalib 1
-%_with_arts 1
 %_with_esd 1
 %_with_jack 1
 %_with_gnome_vfs 1
