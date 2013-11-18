@@ -29,6 +29,7 @@ Constraint: hostlabel QEMU_ARM
 # Prefer raspberry pi openGL ES libs (built from sources) instead of Mesa openGL ES libs (and pre-built libs)
 #Prefer: raspberrypi-gfx raspberrypi-gfx-devel
 Prefer: raspberrypi-userland raspberrypi-userland-devel
+Prefer: -Mesa-libEGL1 -Mesa-libEGL-devel
 %endif
 
 # Because of pkgconfig() type BuildRequires
