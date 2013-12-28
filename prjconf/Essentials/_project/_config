@@ -175,6 +175,8 @@ Support:    build-compare
 # Needed because of gstreamer-0_10-plugins-bad. Should dissapear in the future, once slv2 and lv2core 
 # are in openSUSE.
 %define _with_LV2 1
+%define _with_mpg123 1
+%define _with_faad 1
 
 
 Macros:
@@ -207,3 +209,5 @@ Macros:
 %_with amrnb 1
 %_with_libmms 1
 %_with_LV2 1
+%_with_mpg123 1
+%_with_faad 1
