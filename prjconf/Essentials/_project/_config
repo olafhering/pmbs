@@ -20,6 +20,11 @@ Prefer: libvpx1
 Prefer: libtwolame0
 %endif
 
+#AArch64 and armv6 are built using QEMU
+%ifarch aarch64 armv6l armv6hl
+%define qemu_user_space_build 1
+%endif
+
 %if "%qemu_user_space_build" == "1"
 # Reenable armv6l build only on QEMU_ARM workers
 Constraint: hostlabel QEMU_ARM
