@@ -28,6 +28,10 @@ Prefer: libtwolame0
 %if "%qemu_user_space_build" == "1"
 # Reenable armv6l build only on QEMU_ARM workers
 Constraint: hostlabel QEMU_ARM
+Macros:
+%qemu_user_space_build 1
+%_without_mono 1
+:Macros
 %endif
 
 %ifarch armv6l armv6hl
