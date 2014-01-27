@@ -25,6 +25,7 @@ Prefer: libtwolame0
 Constraint: sandbox chroot
 %endif
 
+# Avoid armv7 build error: "getbinaries: missing packages: kernel-obs-build"
 %ifarch armv7l armv7hl
 VMinstall: !kernel-obs-build
 %endif
