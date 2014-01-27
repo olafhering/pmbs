@@ -25,6 +25,10 @@ Prefer: libtwolame0
 Constraint: sandbox chroot
 %endif
 
+%ifarch armv7l armv7hl
+VMinstall: !kernel-obs-build
+%endif
+
 #AArch64 and armv6 are built using QEMU
 %ifarch aarch64 armv6l armv6hl
 %define qemu_user_space_build 1
