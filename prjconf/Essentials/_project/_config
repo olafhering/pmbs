@@ -20,6 +20,9 @@ Prefer: libvpx1
 Prefer: libtwolame0
 %endif
 
+# %arm seems to be missing armv6l/armv6hl
+%define arm %arm armv6l armv6hl
+
 # swkj11.site KVM worker is broken with QEMU armv6 builds, so only use chroot workers for armv6
 %ifarch armv6l armv6hl
 Constraint: sandbox chroot
