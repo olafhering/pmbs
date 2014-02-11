@@ -25,7 +25,7 @@ Prefer: libtwolame0
 
 %ifarch armv6l armv6hl
 # swkj11.site KVM worker is broken with QEMU armv6 builds, so only use chroot workers for armv6
-#Constraint: sandbox chroot
+Constraint: sandbox chroot
 # chroot workers do not need kernel-obs-build, only KVM workers. Do not install it to speed up the build (install time)
 #VMinstall: !kernel-obs-build
 VMinstall: kernel-obs-build
