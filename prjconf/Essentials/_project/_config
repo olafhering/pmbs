@@ -20,6 +20,10 @@ Prefer: libvpx1
 Prefer: libtwolame0
 %endif
 
+%if "%_repository" == "SLE_11_SP3"
+Substitute: gcc46 gcc47
+%endif
+
 # %arm seems to be missing armv6l/armv6hl
 %define arm %arm armv6l armv6hl
 
