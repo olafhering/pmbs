@@ -153,6 +153,7 @@ Substitute: pkgconfig(libpulse-mainloop-glib) libpulse-devel=
 Substitute: pkgconfig(libquicktime) libquicktime-devel=
 Substitute: pkgconfig(librcd) librcd-devel=
 Substitute: pkgconfig(libudev) libudev-devel=
+Substitute: pkgconfig(libva) libva-devel=
 Substitute: pkgconfig(libxml-2.0) libxml2-devel=
 Substitute: pkgconfig(lua) lua-devel=
 Substitute: pkgconfig(openal) openal-devel=
