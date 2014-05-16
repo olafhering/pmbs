@@ -101,6 +101,7 @@ Substitute: pkgconfig(libavdevice) libffmpeg-devel=
 Substitute: pkgconfig(libavformat) libffmpeg-devel=
 Substitute: pkgconfig(libavutil) libffmpeg-devel=
 Substitute: pkgconfig(libpostproc) libffmpeg-devel=
+Substitute: pkgconfig(libswresample) libffmpeg-devel=
 Substitute: pkgconfig(libswscale) libffmpeg-devel=
 Substitute: pkgconfig(libvlc) vlc-devel=
 Substitute: pkgconfig(libxml++) libxml++-devel=
