@@ -21,7 +21,7 @@ Prefer: libtwolame0
 Substitute: gcc46 gcc47
 %endif
 
-%if "%_repository" == "SLE_11_SP3"
+%if 0%{?suse_version} == 1110
 Substitute: gcc46 gcc47
 %endif
 
