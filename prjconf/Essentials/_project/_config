@@ -137,6 +137,7 @@ Substitute: pkgconfig(hunspell) hunspell-devel=
 Substitute: pkgconfig(libagg) libagg-devel=
 Substitute: pkgconfig(libass) libass-devel=
 Substitute: pkgconfig(libbml) libbml-devel=
+Substitute: pkgconfig(libcurl) libcurl-devel=
 Substitute: pkgconfig(libdrm_intel) libdrm-devel=
 Substitute: pkgconfig(libdrm) libdrm-devel=
 Substitute: pkgconfig(libdv) libdv-devel=
