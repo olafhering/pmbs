@@ -96,6 +96,7 @@ Prefer: liborc-0_4-0
 Substitute: pkgconfig(expat) libexpat-devel=
 %if 0%{?suse_version} <= 1140
 Substitute: pkgconfig(id3tag) libid3tag-devel=
+Substitute: pkgconfig(libvlc) vlc-devel=
 Substitute: pkgconfig(soundtouch) soundtouch-devel=
 %if 0%{?suse_version} <= 1120
 Substitute: pkgconfig(alsa) alsa-devel=
@@ -147,7 +148,6 @@ Substitute: pkgconfig(libpulse-mainloop-glib) libpulse-devel=
 Substitute: pkgconfig(libquicktime) libquicktime-devel=
 Substitute: pkgconfig(librcd) librcd-devel=
 Substitute: pkgconfig(libudev) libudev-devel=
-Substitute: pkgconfig(libvlc) vlc-devel=
 Substitute: pkgconfig(libxml++) libxml++-devel=
 Substitute: pkgconfig(libxml-2.0) libxml2-devel=
 Substitute: pkgconfig(lua) lua-devel=
