@@ -64,6 +64,8 @@ Prefer: raspberrypi-userland raspberrypi-userland-devel
 Prefer: -Mesa-libEGL1 -Mesa-libEGL-devel
 # omxplayer also provides ffmpeg libs, so prefer to use ffmpeg ones
 Prefer: -omxplayer
+# Substitute Mesa libs by RPi userland libs (should fix mpeg4ip and other packages)
+Substitute: Mesa-libEGL-devel raspberrypi-userland-devel
 %endif
 
 # Because of pkgconfig() type BuildRequires
