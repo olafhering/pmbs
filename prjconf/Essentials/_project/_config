@@ -189,6 +189,7 @@ Substitute: pkgconfig(xaw7) xorg-x11-devel=
 Substitute: pkgconfig(xi) xorg-x11-devel=
 Substitute: pkgconfig(xmu) xorg-x11-libXmu-devel=
 Substitute: pkgconfig(xt) xorg-x11-devel=
+Substitute: pkgconfig(xv) xorg-x11-devel=
 Substitute: pkgconfig(zlib) zlib-devel=
 %endif
 %endif
