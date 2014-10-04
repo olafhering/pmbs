@@ -185,8 +185,10 @@ Substitute: pkgconfig(vo-aacenc) libvo-aacenc-devel=
 Substitute: pkgconfig(x11) xorg-x11-libX11-devel=
 Substitute: pkgconfig(xext) xorg-x11-libXext-devel=
 Substitute: pkgconfig(xfixes) xorg-x11-libXfixes-devel=
+Substitute: pkgconfig(xaw7) xorg-x11-devel=
 Substitute: pkgconfig(xi) xorg-x11-devel=
 Substitute: pkgconfig(xmu) xorg-x11-libXmu-devel=
+Substitute: pkgconfig(xt) xorg-x11-devel=
 Substitute: pkgconfig(zlib) zlib-devel=
 %endif
 %endif
