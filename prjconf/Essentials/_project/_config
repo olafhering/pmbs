@@ -149,6 +149,7 @@ Substitute: pkgconfig(libcurl) libcurl-devel=
 Substitute: pkgconfig(libdrm_intel) libdrm-devel=
 Substitute: pkgconfig(libdrm) libdrm-devel=
 Substitute: pkgconfig(libdv) libdv-devel=
+Substitute: pkgconfig(libgme) libgme-devel=
 Substitute: pkgconfig(libguess) libguess-devel=
 Substitute: pkgconfig(liboil-0.3) liboil-devel=
 Substitute: pkgconfig(libpng14) libpng14-devel=
