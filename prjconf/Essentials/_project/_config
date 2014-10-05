@@ -112,6 +112,7 @@ Substitute: pkgconfig(libvlc) vlc-devel=
 Substitute: pkgconfig(libxml++) libxml++-devel=
 Substitute: pkgconfig(soundtouch) soundtouch-devel=
 %if 0%{?suse_version} <= 1120
+Substitute: libSDL-devel SDL-devel=
 Substitute: pkgconfig(alsa) alsa-devel=
 Substitute: pkgconfig(cairo) cairo-devel=
 Substitute: pkgconfig(dbus-1) dbus-1-devel=
