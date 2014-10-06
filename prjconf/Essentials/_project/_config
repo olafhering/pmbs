@@ -100,6 +100,7 @@ Prefer: liborc-0_4-0
 %if 0%{?suse_version} <= 1210
 Substitute: pkgconfig(expat) libexpat-devel=
 Substitute: pkgconfig(glu) Mesa-devel=
+Substitute: pkgconfig(ogg) libogg-devel=
 %if 0%{?suse_version} <= 1140
 Substitute: pkgconfig(id3tag) libid3tag-devel=
 Substitute: pkgconfig(libavcodec) libffmpeg-devel=
@@ -168,7 +169,6 @@ Substitute: pkgconfig(libudev) libudev-devel=
 Substitute: pkgconfig(libva) libva-devel=
 Substitute: pkgconfig(libxml-2.0) libxml2-devel=
 Substitute: pkgconfig(lua) lua-devel=
-Substitute: pkgconfig(ogg) libogg-devel=
 Substitute: pkgconfig(openal) openal-devel=
 Substitute: pkgconfig(orc-0.4) orc-devel=
 Substitute: pkgconfig(pango) pango-devel=
