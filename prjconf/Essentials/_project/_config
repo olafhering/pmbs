@@ -98,6 +98,7 @@ Prefer: liborc-0_4-0
 
 # Support pkgconfig() BuildRequires in old distros
 %if 0%{?suse_version} <= 1210
+Substitute: pkgconfig(glu) Mesa-devel=
 Substitute: pkgconfig(expat) libexpat-devel=
 %if 0%{?suse_version} <= 1140
 Substitute: pkgconfig(id3tag) libid3tag-devel=
