@@ -98,6 +98,7 @@ Prefer: liborc-0_4-0
 
 # Support pkgconfig() BuildRequires in old distros
 %if 0%{?suse_version} <= 1210
+Substitute: libxml2-tools libxml2=
 Substitute: pkgconfig(expat) libexpat-devel=
 Substitute: pkgconfig(glu) Mesa-devel=
 Substitute: pkgconfig(ogg) libogg-devel=
