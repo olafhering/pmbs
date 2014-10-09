@@ -103,6 +103,7 @@ Substitute: pkgconfig(expat) libexpat-devel=
 Substitute: pkgconfig(glu) Mesa-devel=
 Substitute: pkgconfig(libxslt) libxslt-devel=
 Substitute: pkgconfig(ogg) libogg-devel=
+Substitute: pkgconfig(yelp-xsl) yelp-xsl=
 %if 0%{?suse_version} <= 1140
 Substitute: pkgconfig(id3tag) libid3tag-devel=
 Substitute: pkgconfig(libavcodec) libffmpeg-devel=
