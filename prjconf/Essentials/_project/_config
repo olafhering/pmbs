@@ -100,6 +100,7 @@ Prefer: liborc-0_4-0
 %if 0%{?suse_version} <= 1210
 Substitute: libxml2-tools libxml2=
 Substitute: pkgconfig(expat) libexpat-devel=
+Substitute: pkgconfig(flac) libflac-devel=
 Substitute: pkgconfig(glu) Mesa-devel=
 Substitute: pkgconfig(libxslt) libxslt-devel=
 Substitute: pkgconfig(ogg) libogg-devel=
