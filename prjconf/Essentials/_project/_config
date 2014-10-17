@@ -99,14 +99,27 @@ Prefer: liborc-0_4-0
 # Support pkgconfig() BuildRequires in old distros
 %if 0%{?suse_version} <= 1210
 Substitute: libxml2-tools libxml2=
+Substitute: pkgconfig(QtDBus) libqt4-devel=
+Substitute: pkgconfig(QtNetwork) libqt4-devel=
+Substitute: pkgconfig(QtOpenGL) libqt4-devel=
 Substitute: pkgconfig(expat) libexpat-devel=
 Substitute: pkgconfig(flac) flac-devel=
 Substitute: pkgconfig(glu) Mesa-devel=
+Substitute: pkgconfig(libbs2b) libbs2b-devel=
+Substitute: pkgconfig(libcddb) libcddb-devel=
+Substitute: pkgconfig(libcdio) libcdio-devel=
+Substitute: pkgconfig(libcdio_cdda) libcdio-paranoia-devel=
+Substitute: pkgconfig(libmms) libmms-devel=
+Substitute: pkgconfig(libmodplug) libmodplug-devel=
+Substitute: pkgconfig(libpulse-simple) libpulse-devel=
+Substitute: pkgconfig(libsidplayfp) libsidplayfp-devel=
 Substitute: pkgconfig(libxslt) libxslt-devel=
+Substitute: pkgconfig(mad) libmad-devel=
 Substitute: pkgconfig(ogg) libogg-devel=
 Substitute: pkgconfig(openssl) openssl-devel=
 Substitute: pkgconfig(opus) libopus-devel=
 Substitute: pkgconfig(opusfile) opusfile-devel=
+Substitute: pkgconfig(wavpack) wavpack-devel=
 Substitute: pkgconfig(yelp-xsl) yelp-xsl=
 %if 0%{?suse_version} <= 1140
 Substitute: pkgconfig(id3tag) libid3tag-devel=
