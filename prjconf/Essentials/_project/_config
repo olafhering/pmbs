@@ -113,6 +113,7 @@ Substitute: pkgconfig(libmms) libmms-devel=
 Substitute: pkgconfig(libmodplug) libmodplug-devel=
 Substitute: pkgconfig(libpulse-simple) libpulse-devel=
 Substitute: pkgconfig(libsidplayfp) libsidplayfp-devel=
+Substitute: pkgconfig(libstilview) libstilview-devel=
 Substitute: pkgconfig(libxslt) libxslt-devel=
 Substitute: pkgconfig(mad) libmad-devel=
 Substitute: pkgconfig(ogg) libogg-devel=
