@@ -13,7 +13,6 @@ Prefer: libmp3lame0
 Prefer: libva1
 Prefer: libcdda_interface0
 Prefer: fribidi
-Prefer: liblash1
 Prefer: libgstreamer-0_10-0
 Prefer: libvpx1
 Prefer: libtwolame0
