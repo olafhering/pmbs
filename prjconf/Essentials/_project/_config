@@ -1210,7 +1210,9 @@ Substitute: pkgconfig(xineramaproto) xorg-x11-proto-devel
 Substitute: pkgconfig(xproxymngproto) xorg-x11-proto-devel
 #Substitute: pkgconfig(xproxymngproto) xorg-x11-proto-unstable-devel=
 %endif
+%if 0%{?suse_version} > 1110
 Support:    build-compare
+%endif
 
 %define _without_distributable 1
 %define _without_onlynondistributable 1
