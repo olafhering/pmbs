@@ -13,7 +13,6 @@ Prefer: libmp3lame0
 Prefer: libva1
 Prefer: libcdda_interface0
 Prefer: fribidi
-Prefer: libgstreamer-0_10-0
 Prefer: libvpx1
 Prefer: libtwolame0
 Substitute: gcc46 gcc47
@@ -149,7 +148,6 @@ Substitute: pkgconfig(librcd) librcd-devel=
 Substitute: pkgconfig(librtmp) librtmp-devel=
 Substitute: pkgconfig(libudev) libudev-devel=
 Substitute: pkgconfig(libva) libva-devel=
-Substitute: pkgconfig(libxml-2.0) libxml2-devel=
 Substitute: pkgconfig(lua) lua-devel=
 Substitute: pkgconfig(oldx) xorg-x11-devel=
 Substitute: pkgconfig(openal) openal-devel=
@@ -180,7 +178,6 @@ Substitute: pkgconfig(vo-aacenc) libvo-aacenc-devel=
 Substitute: pkgconfig(vorbisfile) libvorbis-devel=
 Substitute: pkgconfig(windowswm) xorg-x11-devel=
 Substitute: pkgconfig(windowswmproto) xorg-x11-proto-devel=
-Substitute: pkgconfig(x11) xorg-x11-libX11-devel=
 Substitute: pkgconfig(x11-xcb) xorg-x11-libX11-devel=   
 Substitute: pkgconfig(xau) xorg-x11-libXau-devel=
 Substitute: pkgconfig(xaw6) xorg-x11-devel=
@@ -228,7 +225,6 @@ Substitute: pkgconfig(xcursor) xorg-x11-devel=
 Substitute: pkgconfig(xdamage) xorg-x11-devel=
 Substitute: pkgconfig(xdmcp) xorg-x11-libXdmcp-devel=
 Substitute: pkgconfig(xevie) xorg-x11-devel=
-Substitute: pkgconfig(xext) xorg-x11-libXext-devel=
 Substitute: pkgconfig(xextproto) xorg-x11-proto-devel=
 Substitute: pkgconfig(xf86bigfontproto) xorg-x11-proto-devel=
 Substitute: pkgconfig(xf86dgaproto) xorg-x11-proto-devel=
@@ -239,20 +235,17 @@ Substitute: pkgconfig(xf86vidmodeproto) xorg-x11-proto-devel=
 Substitute: pkgconfig(xfixes) xorg-x11-libXfixes-devel=
 Substitute: pkgconfig(xfont) xorg-x11-devel=
 Substitute: pkgconfig(xfontcache) xorg-x11-devel=
-Substitute: pkgconfig(xft) xorg-x11-devel=
 Substitute: pkgconfig(xi) xorg-x11-devel=
 Substitute: pkgconfig(xinerama) xorg-x11-devel=
 Substitute: pkgconfig(xineramaproto) xorg-x11-proto-devel=
 Substitute: pkgconfig(xkbfile) xorg-x11-libxkbfile-devel=
 Substitute: pkgconfig(xkbui) xorg-x11-devel=
-Substitute: pkgconfig(xmu) xorg-x11-libXmu-devel=
 Substitute: pkgconfig(xmuu) xorg-x11-libXmu-devel=
 Substitute: pkgconfig(xorg-macros) xorg-x11-proto-devel=
 Substitute: pkgconfig(xp) xorg-x11-libXp-devel=
 Substitute: pkgconfig(xpm) xorg-x11-libXpm-devel=
 Substitute: pkgconfig(xprintapputil) xorg-x11-devel=
 Substitute: pkgconfig(xprintutil) xorg-x11-libXprintUtil-devel=
-Substitute: pkgconfig(xproto) xorg-x11-proto-devel=
 Substitute: pkgconfig(xproxymngproto) xorg-x11-proto-devel=
 Substitute: pkgconfig(xrandr) xorg-x11-devel=
 Substitute: pkgconfig(xrender) xorg-x11-libXrender-devel=
@@ -306,22 +299,18 @@ Substitute: pkgconfig(OpenIPMIutils) OpenIPMI-devel=
 Substitute: pkgconfig(Qt3Support) libqt4-devel=
 Substitute: pkgconfig(QtAssistantClient) libqt4-devel=
 Substitute: pkgconfig(QtCLucene) libqt4-devel=
-Substitute: pkgconfig(QtCore) libqt4-devel=
 Substitute: pkgconfig(QtDBus) libqt4-devel=
 Substitute: pkgconfig(QtDesigner) libqt4-devel=
 Substitute: pkgconfig(QtDesignerComponents) libqt4-devel=
-Substitute: pkgconfig(QtGui) libqt4-devel=
 Substitute: pkgconfig(QtHelp) libqt4-devel=
 Substitute: pkgconfig(QtMultimedia) libqt4-devel=
 Substitute: pkgconfig(QtNetwork) libqt4-devel=
-Substitute: pkgconfig(QtOpenGL) libqt4-devel=
 Substitute: pkgconfig(QtScript) libqt4-devel=
 Substitute: pkgconfig(QtScriptTools) libqt4-devel=
 Substitute: pkgconfig(QtSql) libqt4-devel=
 Substitute: pkgconfig(QtSvg) libqt4-devel=
 Substitute: pkgconfig(QtTest) libqt4-devel=
 Substitute: pkgconfig(QtUiTools) libqt4-devel=
-Substitute: pkgconfig(QtXml) libqt4-devel=
 Substitute: pkgconfig(WINGs) WindowMaker-devel=
 Substitute: pkgconfig(Wand) ImageMagick-devel=
 Substitute: pkgconfig(akonadi) libakonadiprotocolinternals-devel=
@@ -447,10 +436,8 @@ Substitute: pkgconfig(fftw3f) fftw3-devel=
 Substitute: pkgconfig(finch) finch-devel=
 Substitute: pkgconfig(flac) flac-devel=
 Substitute: pkgconfig(flac++) flac-devel=
-Substitute: pkgconfig(fontconfig) fontconfig-devel=
 Substitute: pkgconfig(fontenc) xorg-x11-libfontenc-devel
 Substitute: pkgconfig(fontutil) xorg-x11-fonts-devel
-Substitute: pkgconfig(freetype2) freetype2-devel
 Substitute: pkgconfig(fuse) fuse-devel=
 Substitute: pkgconfig(fusion) DirectFB-devel=
 Substitute: pkgconfig(gail) gtk2-devel=
@@ -487,12 +474,10 @@ Substitute: pkgconfig(glade-sharp-2.0) glade-sharp2=
 Substitute: pkgconfig(gladeui-1.0) libgladeui-1_0-devel=
 Substitute: pkgconfig(glesv1_cm) Mesa-devel=
 Substitute: pkgconfig(glesv2) Mesa-devel=
-Substitute: pkgconfig(glib-2.0) glib2-devel=
 Substitute: pkgconfig(glib-sharp-2.0) glib-sharp2=
 Substitute: pkgconfig(glibmm-2.4) glibmm2-devel=
 Substitute: pkgconfig(glitz) glitz-devel=
 Substitute: pkgconfig(glitz-glx) glitz-devel=
-Substitute: pkgconfig(glu) Mesa-devel=
 Substitute: pkgconfig(gmime-2.0) gmime-devel=
 Substitute: pkgconfig(gmime-2.4) gmime-2_4-devel=
 Substitute: pkgconfig(gmime-sharp) gmime-sharp=
@@ -533,7 +518,6 @@ Substitute: pkgconfig(gnopernicus-1.0) gnopernicus-devel=
 Substitute: pkgconfig(gnt) finch-devel=
 Substitute: pkgconfig(gnutls) libgnutls-devel=
 Substitute: pkgconfig(gnutls-extra) libgnutls-extra-devel=
-Substitute: pkgconfig(gobject-2.0) glib2-devel=
 Substitute: pkgconfig(gobject-introspection-1.0) gobject-introspection-devel=
 Substitute: pkgconfig(gobject-introspection-no-export-1.0) gobject-introspection-devel=
 Substitute: pkgconfig(goocanvas) goocanvas-devel=
@@ -541,7 +525,6 @@ Substitute: pkgconfig(gp11-0) gnome-keyring-devel=
 Substitute: pkgconfig(gsf-sharp) gsf-sharp=
 Substitute: pkgconfig(gsl) gsl-devel=
 Substitute: pkgconfig(gssdp-1.0) libgssdp-devel=
-Substitute: pkgconfig(gthread-2.0) glib2-devel=
 Substitute: pkgconfig(gtk+-2.0) gtk2-devel=
 Substitute: pkgconfig(gtk+-unix-print-2.0) gtk2-devel=
 Substitute: pkgconfig(gtk+-x11-2.0) gtk2-devel=
@@ -589,7 +572,6 @@ Substitute: pkgconfig(ini_config) libini_config-devel=
 Substitute: pkgconfig(ipod-sharp) ipod-sharp-devel=
 Substitute: pkgconfig(ipod-sharp-ui) ipod-sharp-devel=
 Substitute: pkgconfig(iso-codes) iso-codes-devel=
-Substitute: pkgconfig(jack) libjack-devel=
 Substitute: pkgconfig(jinglebase-0.3) libjingle-devel=
 Substitute: pkgconfig(jinglep2p-0.3) libjingle-devel=
 Substitute: pkgconfig(jinglesession-0.3) libjingle-devel=
@@ -632,8 +614,6 @@ Substitute: pkgconfig(libcompizconfig) libcompizconfig-devel=
 Substitute: pkgconfig(libconfig) libconfig-devel=
 Substitute: pkgconfig(libconfuse) libconfuse-devel=
 Substitute: pkgconfig(libcroco-0.6) libcroco-devel=
-Substitute: pkgconfig(libcrypto) libopenssl-devel=
-Substitute: pkgconfig(libcurl) libcurl-devel=
 Substitute: pkgconfig(libdaemon) libdaemon-devel=
 Substitute: pkgconfig(libdc1394-2) libdc1394-devel=
 Substitute: pkgconfig(libdecoration) compiz-devel=
@@ -817,7 +797,6 @@ Substitute: pkgconfig(libsoup-gnome-2.4) libsoup-devel=
 Substitute: pkgconfig(libspectre) libspectre-devel=
 Substitute: pkgconfig(libspi-1.0) at-spi-devel=
 Substitute: pkgconfig(libssh2) libssh2-devel=
-Substitute: pkgconfig(libssl) libopenssl-devel=
 Substitute: pkgconfig(libstartup-notification-1.0) startup-notification-devel=
 Substitute: pkgconfig(libstreamanalyzer) strigi-devel=
 Substitute: pkgconfig(libstreams) strigi-devel=
@@ -854,7 +833,6 @@ Substitute: pkgconfig(libwvutils) wvstreams-devel=
 Substitute: pkgconfig(libxine) libxine-devel=
 Substitute: pkgconfig(libxklavier) libxklavier-devel=
 Substitute: pkgconfig(libxml++-2.6) libxml++-devel=
-Substitute: pkgconfig(libxml-2.0) libxml2-devel=
 Substitute: pkgconfig(libxslt) libxslt-devel=
 Substitute: pkgconfig(libxul) mozilla-xulrunner192-devel=
 Substitute: pkgconfig(libxul-embedding) mozilla-xulrunner192-devel=
@@ -923,7 +901,6 @@ Substitute: pkgconfig(openhpi) openhpi-devel=
 Substitute: pkgconfig(openhpiutils) openhpi-devel=
 Substitute: pkgconfig(openobex) openobex-devel=
 Substitute: pkgconfig(openpa) mvapich2-devel=
-Substitute: pkgconfig(openssl) libopenssl-devel=
 Substitute: pkgconfig(opensync-1.0) libopensync-devel=
 Substitute: pkgconfig(openwsman) libwsman-devel=
 Substitute: pkgconfig(openwsman++) libwsman-devel=
@@ -1066,14 +1043,12 @@ Substitute: pkgconfig(xevie) xorg-x11-devel
 Substitute: pkgconfig(xfixes) xorg-x11-libXfixes-devel
 Substitute: pkgconfig(xfont) xorg-x11-devel
 Substitute: pkgconfig(xfontcache) xorg-x11-devel
-Substitute: pkgconfig(xft) xorg-x11-devel
 Substitute: pkgconfig(xgnokii) gnokii-devel=
 Substitute: pkgconfig(xi) xorg-x11-devel
 Substitute: pkgconfig(xinerama) xorg-x11-devel
 Substitute: pkgconfig(xkbfile) xorg-x11-libxkbfile-devel
 Substitute: pkgconfig(xkbui) xorg-x11-devel
 Substitute: pkgconfig(xml2po) gnome-doc-utils-devel=
-Substitute: pkgconfig(xmu) xorg-x11-libXmu-devel
 Substitute: pkgconfig(xmuu) xorg-x11-libXmu-devel
 Substitute: pkgconfig(xorg-evdev) xorg-x11-driver-input
 Substitute: pkgconfig(xorg-joystick) xorg-x11-driver-input
@@ -1164,8 +1139,6 @@ Substitute: pkgconfig(vncproto) xorg-x11-proto-devel
 #Substitute: pkgconfig(vncproto) xorg-x11-proto-unstable-devel=
 Substitute: pkgconfig(windowswmproto) xorg-x11-proto-devel
 #Substitute: pkgconfig(windowswmproto) xorg-x11-proto-unstable-devel=
-Substitute: pkgconfig(x11) xorg-x11-libX11-devel
-#Substitute: pkgconfig(x11) xorg-x11-libX11-unstable-devel=
 Substitute: pkgconfig(x11-xcb) xorg-x11-libX11-devel
 #Substitute: pkgconfig(x11-xcb) xorg-x11-libX11-unstable-devel=
 Substitute: pkgconfig(xcb) xorg-x11-libxcb-devel
@@ -1218,8 +1191,6 @@ Substitute: pkgconfig(xcliplistproto) xorg-x11-proto-devel
 #Substitute: pkgconfig(xcliplistproto) xorg-x11-proto-unstable-devel=
 Substitute: pkgconfig(xcmiscproto) xorg-x11-proto-devel
 #Substitute: pkgconfig(xcmiscproto) xorg-x11-proto-unstable-devel=
-Substitute: pkgconfig(xext) xorg-x11-libXext-devel
-#Substitute: pkgconfig(xext) xorg-x11-libXext-unstable-devel=
 Substitute: pkgconfig(xextproto) xorg-x11-proto-devel
 #Substitute: pkgconfig(xextproto) xorg-x11-proto-unstable-devel=
 Substitute: pkgconfig(xf86bigfontproto) xorg-x11-proto-devel
@@ -1236,8 +1207,6 @@ Substitute: pkgconfig(xf86vidmodeproto) xorg-x11-proto-devel
 #Substitute: pkgconfig(xf86vidmodeproto) xorg-x11-proto-unstable-devel=
 Substitute: pkgconfig(xineramaproto) xorg-x11-proto-devel
 #Substitute: pkgconfig(xineramaproto) xorg-x11-proto-unstable-devel=
-Substitute: pkgconfig(xproto) xorg-x11-proto-devel
-#Substitute: pkgconfig(xproto) xorg-x11-proto-unstable-devel=
 Substitute: pkgconfig(xproxymngproto) xorg-x11-proto-devel
 #Substitute: pkgconfig(xproxymngproto) xorg-x11-proto-unstable-devel=
 %endif
