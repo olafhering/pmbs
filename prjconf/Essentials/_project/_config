@@ -86,6 +86,7 @@ Prefer: xulrunner-devel
 %endif
 %if 0%{?suse_version} == 1140
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
+Substitute: pkgconfig(id3tag) libid3tag-devel=
 %endif
 %if 0%{?suse_version} <= 1120
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel=
