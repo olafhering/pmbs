@@ -966,7 +966,6 @@ Substitute: pkgconfig(scim) scim-devel=
 Substitute: pkgconfig(scim-gtkutils) scim-devel=
 Substitute: pkgconfig(scim-x11utils) scim-devel=
 Substitute: pkgconfig(scim_kdeutils) skim=
-Substitute: pkgconfig(sdl) SDL-devel=
 Substitute: pkgconfig(seed) libseed-devel=
 Substitute: pkgconfig(shared-mime-info) shared-mime-info=
 Substitute: pkgconfig(shout) libshout-devel=
