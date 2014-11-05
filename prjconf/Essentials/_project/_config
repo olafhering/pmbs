@@ -1,6 +1,7 @@
 # SLE-11-SP2 has -x86/-32bit versions
 %if 0%{?sles_version} == 11 
 Prefer: popt
+Prefer: libcaca0
 Prefer: libtheora0
 Prefer: librcc0
 Prefer: librcd0
