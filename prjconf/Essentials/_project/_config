@@ -2,7 +2,6 @@
 %if 0%{?sles_version} == 11 
 Prefer: popt
 Prefer: libcaca0
-Prefer: libtheora0
 Prefer: librcc0
 Prefer: librcd0
 Prefer: libvpx0
@@ -993,6 +992,7 @@ Substitute: pkgconfig(tdb) libtdb-devel=
 Substitute: pkgconfig(telepathy-farsight) telepathy-farsight-devel=
 Substitute: pkgconfig(telepathy-glib) telepathy-glib-devel=
 Substitute: pkgconfig(tevent) libtevent-devel=
+Substitute: pkgconfig(theora) libtheora-devel=
 Substitute: pkgconfig(tomoe) tomoe-devel=
 Substitute: pkgconfig(tomoe-gtk) tomoe-gtk-devel=
 Substitute: pkgconfig(totem-plparser) totem-pl-parser-devel=
