@@ -1278,8 +1278,10 @@ Macros:
 %_with_lame 1
 %_with_twolame 1
 %_with_amrwb 1
-%_with amrnb 1
+%_with_amrnb 1
 %_with_libmms 1
 %_with_LV2 1
 %_with_mpg123 1
 %_with_faad 1
+# For libmlt video stabilization plugin.
+%_with_vidstab
