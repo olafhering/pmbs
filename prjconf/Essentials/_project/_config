@@ -1284,4 +1284,4 @@ Macros:
 %_with_mpg123 1
 %_with_faad 1
 # For libmlt video stabilization plugin.
-%_with_vidstab
+%_with_vidstab 1
