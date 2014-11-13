@@ -274,6 +274,7 @@ Substitute: pkgconfig(zlib) zlib-devel=
 
 #
 %if 0%{?suse_version} == 1110
+Substitute: xsltproc libxslt=
 Substitute: libSDL-devel SDL-devel=
 Substitute: libSDL_mixer-devel SDL_mixer-devel=
 %endif
