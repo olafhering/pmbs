@@ -20,6 +20,7 @@ Substitute: gcc46 gcc47
 
 %if 0%{?suse_version} >= 1310
 # prefer the small systemd for building
+Conflict: libudev1:udev-mini
 Prefer: libudev-mini-devel libudev-mini1 udev-debuginfo libudev1-debuginfo
 Prefer: systemd-mini systemd-mini-devel
 Prefer: systemd-mini-devel:systemd-mini
