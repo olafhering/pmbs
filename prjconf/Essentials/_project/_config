@@ -19,8 +19,12 @@ Substitute: gcc46 gcc47
 %endif
 
 %if 0%{?suse_version} >= 1310
-Prefer: udev-mini
-Prefer: libudev-mini1
+# prefer the small systemd for building
+Prefer: libudev-mini-devel libudev-mini1 udev-debuginfo libudev1-debuginfo
+Prefer: systemd-mini systemd-mini-devel
+Prefer: systemd-mini-devel:systemd-mini
+Prefer: udev-mini libcom_err2-mini libext2fs2-mini
+Prefer: libudev1:udev
 %endif
 
 %if 0%{?suse_version} == 1110
