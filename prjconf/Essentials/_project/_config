@@ -18,8 +18,9 @@ Prefer: libtwolame0
 Substitute: gcc46 gcc47
 %endif
 
-%if 0%{?suse_version} == 1310
+%if 0%{?suse_version} >= 1310
 Prefer: udev-mini
+Prefer: libudev-mini1
 %endif
 
 %if 0%{?suse_version} == 1110
