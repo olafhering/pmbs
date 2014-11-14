@@ -87,6 +87,7 @@ Prefer: xulrunner-devel
 %if 0%{?suse_version} == 1140
 Prefer: python-Jinja2
 Prefer: python-Pygments
+Prefer: python-docutils
 Substitute: xsltproc libxslt=
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
 Substitute: pkgconfig(id3tag) libid3tag-devel=
