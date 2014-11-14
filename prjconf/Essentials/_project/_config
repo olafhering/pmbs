@@ -80,6 +80,7 @@ Prefer: -libquicktime
 Prefer: python-Jinja2
 Prefer: python-Pygments
 Prefer: python-docutils
+Substitute: libxml2-tools libxml2=
 Substitute: xsltproc libxslt=
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
 Substitute: pkgconfig(id3tag) libid3tag-devel=
@@ -87,14 +88,11 @@ Substitute: pkgconfig(id3tag) libid3tag-devel=
 
 Prefer: liborc-0_4-0
 
-%if 0%{?suse_version} <= 1210
-Substitute: libxml2-tools libxml2=
-%endif
-
 # Support pkgconfig() BuildRequires in old distros
 #
 %if 0%{?suse_version} == 1110
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel=
+Substitute: libxml2-tools libxml2=
 Substitute: xsltproc libxslt=
 Substitute: libSDL-devel SDL-devel=
 Substitute: libSDL_mixer-devel SDL_mixer-devel=
