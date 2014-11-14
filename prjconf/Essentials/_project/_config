@@ -85,6 +85,7 @@ Prefer: -libquicktime
 Prefer: xulrunner-devel
 %endif
 %if 0%{?suse_version} == 1140
+Prefer: python-Jinja2
 Substitute: xsltproc libxslt=
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
 Substitute: pkgconfig(id3tag) libid3tag-devel=
