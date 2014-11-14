@@ -18,10 +18,6 @@ Prefer: libtwolame0
 Substitute: gcc46 gcc47
 %endif
 
-%if 0%{?suse_version} == 1110
-Substitute: gcc46 gcc47
-%endif
-
 # %arm seems to be missing armv6l/armv6hl
 %define arm %arm armv6l armv6hl
 
