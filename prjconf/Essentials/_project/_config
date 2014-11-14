@@ -76,10 +76,6 @@ Prefer: -libquicktime
 %endif
 
 
-# The XUL thing...
-%if 0%{?suse_version} == 1210
-Prefer: xulrunner-devel
-%endif
 %if 0%{?suse_version} == 1140
 Prefer: python-Jinja2
 Prefer: python-Pygments
