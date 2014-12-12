@@ -85,6 +85,7 @@ Substitute: libxslt-tools libxslt=
 Substitute: xsltproc libxslt=
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
 Substitute: pkgconfig(id3tag) libid3tag-devel=
+Substitute: pkgconfig(libffi) libffi45-devel=
 %endif
 
 Prefer: liborc-0_4-0
