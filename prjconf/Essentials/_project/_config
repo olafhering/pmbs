@@ -16,6 +16,7 @@ Prefer: fribidi
 Prefer: libvpx1
 Prefer: libtwolame0
 Prefer: libpng16-compat-devel
+Substitute: libpng-devel libpng12-devel=
 Substitute: gcc46 gcc47
 %endif
 
