@@ -15,6 +15,7 @@ Prefer: libcdda_interface0
 Prefer: fribidi
 Prefer: libvpx1
 Prefer: libtwolame0
+Prefer: libpng-devel
 Substitute: gcc46 gcc47
 %endif
 
