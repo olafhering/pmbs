@@ -17,7 +17,6 @@ Prefer: libvpx1
 Prefer: libtwolame0
 #Prefer: libpng-devel
 #Substitute: libpng-devel libpng12-devel=
-%_with_libpng12_real_devel_pkg 1
 Substitute: gcc46 gcc47
 %endif
 
@@ -1079,6 +1078,9 @@ Support:    build-compare
 %define _with_mpg123 1
 %define _with_faad 1
 %define _with_vidstab 1
+%if 0%{?suse_version} == 1110
+%define _with_libpng12_real_devel_pkg 1
+%endif
 
 
 Macros:
@@ -1115,3 +1117,4 @@ Macros:
 %_with_faad 1
 # For libmlt video stabilization plugin.
 %_with_vidstab 1
+%_with_libpng12_real_devel_pkg 1
