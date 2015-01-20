@@ -1117,6 +1117,3 @@ Macros:
 %_with_faad 1
 # For libmlt video stabilization plugin.
 %_with_vidstab 1
-%if 0%{?suse_version} == 1110
-%_with_libpng12_real_devel_pkg 1
-%endif
