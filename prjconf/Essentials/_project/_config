@@ -749,7 +749,6 @@ Substitute: pkgconfig(pciaccess) libpciaccess0-devel=
 Substitute: pkgconfig(phonon) phonon-devel=
 Substitute: pkgconfig(pidgin) pidgin-devel=
 Substitute: pkgconfig(pilot-link) libpisock-devel=
-Substitute: pkgconfig(pixman-1) libpixman-1-0-devel=
 Substitute: pkgconfig(podsleuth) podsleuth-devel=
 Substitute: pkgconfig(polkit) PolicyKit-devel=
 Substitute: pkgconfig(polkit-dbus) PolicyKit-devel=
@@ -862,7 +861,6 @@ Substitute: pkgconfig(xcb-icccm) xorg-x11-devel
 Substitute: pkgconfig(xcb-image) xorg-x11-devel
 Substitute: pkgconfig(xcb-keysyms) xorg-x11-devel
 Substitute: pkgconfig(xcb-property) xorg-x11-devel
-Substitute: pkgconfig(xcb-renderutil) xorg-x11-devel
 Substitute: pkgconfig(xcb-reply) xorg-x11-devel
 Substitute: pkgconfig(xcb-wm) xorg-x11-devel
 Substitute: pkgconfig(xcb-xinput) xorg-x11-libxcb-unstable-devel
@@ -892,7 +890,6 @@ Substitute: pkgconfig(xpm) xorg-x11-libXpm-devel
 Substitute: pkgconfig(xprintapputil) xorg-x11-devel
 Substitute: pkgconfig(xprintutil) xorg-x11-libXprintUtil-devel
 Substitute: pkgconfig(xrandr) xorg-x11-devel
-Substitute: pkgconfig(xrender) xorg-x11-libXrender-devel
 Substitute: pkgconfig(xres) xorg-x11-devel
 Substitute: pkgconfig(xscrnsaver) xorg-x11-devel
 Substitute: pkgconfig(xsp) xsp=
@@ -973,7 +970,6 @@ Substitute: pkgconfig(windowswmproto) xorg-x11-proto-devel
 #Substitute: pkgconfig(windowswmproto) xorg-x11-proto-unstable-devel=
 Substitute: pkgconfig(x11-xcb) xorg-x11-libX11-devel
 #Substitute: pkgconfig(x11-xcb) xorg-x11-libX11-unstable-devel=
-Substitute: pkgconfig(xcb) xorg-x11-libxcb-devel
 #Substitute: pkgconfig(xcb) xorg-x11-libxcb-unstable-devel=
 Substitute: pkgconfig(xcb-composite) xorg-x11-libxcb-devel
 #Substitute: pkgconfig(xcb-composite) xorg-x11-libxcb-unstable-devel=
@@ -989,8 +985,6 @@ Substitute: pkgconfig(xcb-randr) xorg-x11-libxcb-devel
 #Substitute: pkgconfig(xcb-randr) xorg-x11-libxcb-unstable-devel=
 Substitute: pkgconfig(xcb-record) xorg-x11-libxcb-devel
 #Substitute: pkgconfig(xcb-record) xorg-x11-libxcb-unstable-devel=
-Substitute: pkgconfig(xcb-render) xorg-x11-libxcb-devel
-#Substitute: pkgconfig(xcb-render) xorg-x11-libxcb-unstable-devel=
 Substitute: pkgconfig(xcb-res) xorg-x11-libxcb-devel
 #Substitute: pkgconfig(xcb-res) xorg-x11-libxcb-unstable-devel=
 Substitute: pkgconfig(xcb-screensaver) xorg-x11-libxcb-devel
