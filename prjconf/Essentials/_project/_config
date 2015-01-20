@@ -17,7 +17,7 @@ Prefer: libvpx1
 Prefer: libtwolame0
 #Prefer: libpng-devel
 #Substitute: libpng-devel libpng12-devel=
-%with_libpng12_real_devel_pkg 1
+%_with_libpng12_real_devel_pkg 1
 Substitute: gcc46 gcc47
 %endif
 
