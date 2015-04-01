@@ -65,6 +65,9 @@ Prefer: -omxplayer
 Prefer: -libffmpeg_oldabi-devel
 Prefer: -libffmpeg1-devel
 
+# Factory got its own ffmpeg after 13.2
+Prefer: libffmpeg-devel
+
 %if 0%{?suse_version} < 1220
 Support: xz
 # Because there are too many packages that need to update its BuildRequires
