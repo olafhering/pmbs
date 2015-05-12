@@ -1113,3 +1113,4 @@ Macros:
 # For libmlt video stabilization plugin.
 %_with_vidstab 1
 %_without_wayland 1
+:Macros
