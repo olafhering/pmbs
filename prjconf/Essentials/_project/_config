@@ -1076,6 +1076,7 @@ Support:    build-compare
 %define _with_faad 1
 %define _with_vidstab 1
 %define _without_wayland 1
+%define _with_wayland 1
 
 
 Macros:
@@ -1112,5 +1113,14 @@ Macros:
 %_with_faad 1
 # For libmlt video stabilization plugin.
 %_with_vidstab 1
+:Macros
+
+%if 0%{?suse_version} >= 1320
+Macros:
+%_with_wayland 1
+:Macros
+%else
+Macros:
 %_without_wayland 1
 :Macros
+%endif
