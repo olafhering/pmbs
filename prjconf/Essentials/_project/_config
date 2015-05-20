@@ -80,6 +80,16 @@ Prefer: -libquicktime
 %endif
 %endif
 
+%if 0%{?suse_version} == 1315
+# For missing-provides-SLE_12.spec
+Prefer: libmcrypt
+Prefer: libvncclient0
+Prefer: librdmacm1
+Prefer: libmicrohttpd10
+Prefer: libglut3
+Prefer: libconfig9
+Prefer: libImath-2_1-11
+%endif
 
 %if 0%{?suse_version} == 1140
 Prefer: python-Jinja2
