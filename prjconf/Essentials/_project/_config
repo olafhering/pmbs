@@ -89,6 +89,7 @@ Prefer: libmicrohttpd10
 Prefer: libglut3
 Prefer: libconfig9
 Prefer: libImath-2_1-11
+Prefer: libwx_gtk2u_core-2_8-0-compat-lib-stl
 %endif
 
 %if 0%{?suse_version} == 1140
