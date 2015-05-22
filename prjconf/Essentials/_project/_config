@@ -96,6 +96,7 @@ Prefer: libwx_gtk2u_core-2_8-0-compat-lib-stl
 Prefer: python-Jinja2
 Prefer: python-Pygments
 Prefer: python-docutils
+Substitute: makeinfo texinfo=
 Substitute: libxml2-tools libxml2=
 Substitute: libxslt-tools libxslt=
 Substitute: xsltproc libxslt=
