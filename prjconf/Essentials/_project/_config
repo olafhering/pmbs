@@ -61,6 +61,12 @@ Prefer: -Mesa-libEGL1 -Mesa-libEGL-devel
 Prefer: -omxplayer
 %endif
 
+%ifarch armv7l armv7hl
+# raspberrypi 2 is armv7l, so prefer Mesa here
+Prefer: Mesa-libEGL-devel
+Prefer: -raspberrypi-gfx-devel raspberrypi-userland-devel
+%endif
+
 # Because of pkgconfig() type BuildRequires
 Prefer: -libffmpeg_oldabi-devel
 Prefer: -libffmpeg1-devel
