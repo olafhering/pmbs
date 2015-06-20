@@ -105,6 +105,7 @@ Prefer: python-docutils
 Substitute: makeinfo texinfo=
 Substitute: libxml2-tools libxml2=
 Substitute: libxslt-tools libxslt=
+Substitute: libXrandr-devel xorg-x11-devel=
 Substitute: xsltproc libxslt=
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
 Substitute: pkgconfig(id3tag) libid3tag-devel=
