@@ -108,9 +108,11 @@ Substitute: libxml2-tools libxml2=
 Substitute: libxslt-tools libxslt=
 Substitute: libXrandr-devel xorg-x11-devel=
 Substitute: xsltproc libxslt=
-Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
 Substitute: pkgconfig(id3tag) libid3tag-devel=
+Substitute: pkgconfig(libevent) libevent-devel=
+Substitute: pkgconfig(libevent_pthreads) libevent-devel=
 Substitute: pkgconfig(libffi) libffi45-devel=
+Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner20-devel=
 %endif
 
 Prefer: liborc-0_4-0
