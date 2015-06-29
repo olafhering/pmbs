@@ -103,6 +103,7 @@ Prefer: python-Jinja2
 Prefer: python-Pygments
 Prefer: python-docutils
 Prefer: lv2-devel
+Prefer: mozilla-xulrunner192-devel
 Substitute: makeinfo texinfo=
 Substitute: libxml2-tools libxml2=
 Substitute: libxslt-tools libxslt=
