@@ -104,6 +104,7 @@ Prefer: python-Pygments
 Prefer: python-docutils
 Prefer: lapack-devel
 Prefer: lv2-devel
+Prefer: librdf0
 Prefer: mozilla-xulrunner192-devel
 Prefer: libmjpegutils-devel
 Substitute: makeinfo texinfo=
