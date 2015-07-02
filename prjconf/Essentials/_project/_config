@@ -77,7 +77,7 @@ Prefer: libffmpeg-devel
 %if 0%{?suse_version} < 1220
 Support: xz
 # Because there are too many packages that need to update its BuildRequires
-Substitute: mjpegtools-devel libmjpegutils-devel=
+#ubstitute: mjpegtools-devel libmjpegutils-devel=
 # Because pkgconfig() style BuildRequires
 Prefer: -libcdio-mini-devel
 %if 0%{?suse_version} < 1210
