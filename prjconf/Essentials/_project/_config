@@ -102,6 +102,7 @@ Prefer: libwx_gtk2u_core-2_8-0-compat-lib-stl
 Prefer: python-Jinja2
 Prefer: python-Pygments
 Prefer: python-docutils
+Prefer: lapack-devel
 Prefer: lv2-devel
 Prefer: mozilla-xulrunner192-devel
 Substitute: makeinfo texinfo=
