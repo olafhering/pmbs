@@ -1140,7 +1140,7 @@ Macros:
 %_with_faad 1
 # For libmlt video stabilization plugin.
 %_with_vidstab 1
-%_with_crippled_stk 1
+%_without_crippled_stk 1
 :Macros
 
 %if 0%{?suse_version} >= 1320
