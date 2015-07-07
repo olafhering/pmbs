@@ -24,12 +24,16 @@ Substitute: gcc46 gcc47
 %define arm %arm armv6l armv6hl
 
 %ifarch armv6l armv6hl
-# swkj11.site KVM worker is broken with QEMU armv6 builds, so only use chroot workers for armv6
-#Constraint: sandbox chroot
-# chroot workers do not need kernel-obs-build, only KVM workers. Do not install it to speed up the build (install time)
-#VMinstall: !kernel-obs-build
+%if 0%{?suse_version} == 1310
+# 13.1 kernel-obs-build installation takes hours, so only use chroot workers without kernel installation
+Constraint: sandbox chroot
+# chroot workers do not need kernel-obs-build, only KVM workers. Do not install it to speed up the build (install time) and prevent hang
+VMinstall: !kernel-obs-build
+%else
+# 13.2 and later are OK with kernel-obs
 VMinstall: kernel-obs-build
 VMInstall: kernel-obs-build
+%endif
 %endif
 
 # Avoid armv7 build error: "getbinaries: missing packages: kernel-obs-build"
