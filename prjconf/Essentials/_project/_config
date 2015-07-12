@@ -61,6 +61,7 @@ Macros:
 #Prefer: raspberrypi-gfx raspberrypi-gfx-devel
 Prefer: raspberrypi-userland raspberrypi-userland-devel
 Prefer: -Mesa-libEGL1 -Mesa-libEGL-devel
+Substitute: Mesa-libEG-devel raspberrypi-userland
 # omxplayer also provides ffmpeg libs, so prefer to use ffmpeg ones
 Prefer: -omxplayer
 %endif
