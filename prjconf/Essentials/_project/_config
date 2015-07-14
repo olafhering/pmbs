@@ -631,10 +631,6 @@ Substitute: pkgconfig(libpcsclite) pcsc-lite-devel=
 Substitute: pkgconfig(libpkcs11-helper-1) pkcs11-helper-devel=
 Substitute: pkgconfig(libpkcs15init) opensc-devel=
 Substitute: pkgconfig(libplanner-1) planner-devel=
-%if 0
-Substitute: pkgconfig(libpng) libpng-devel=
-Substitute: pkgconfig(libpng12) libpng-devel=
-%endif
 Substitute: pkgconfig(libpoldiff) setools-devel=
 Substitute: pkgconfig(libproxy-1.0) libproxy-devel=
 Substitute: pkgconfig(libpst) libpst-devel=
