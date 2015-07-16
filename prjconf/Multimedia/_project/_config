@@ -1,5 +1,4 @@
 Prefer: python-setuptools
-Prefer: libffmpeg-devel
 Prefer: clucene-core-devel
 Prefer: python-wxWidgets-2_9
 
