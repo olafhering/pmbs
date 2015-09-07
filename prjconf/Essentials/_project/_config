@@ -17,6 +17,7 @@ Prefer: libvpx1
 Prefer: libtwolame0
 Prefer: librdf0
 Prefer: libpng12-compat-devel
+Substitute: gcc47 gcc48
 Substitute: gcc46 gcc48
 %endif
 
