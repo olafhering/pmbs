@@ -17,7 +17,7 @@ Prefer: libvpx1
 Prefer: libtwolame0
 Prefer: librdf0
 Prefer: libpng12-compat-devel
-Substitute: gcc46 gcc47
+Substitute: gcc46 gcc48
 %endif
 
 # %arm seems to be missing armv6l/armv6hl
