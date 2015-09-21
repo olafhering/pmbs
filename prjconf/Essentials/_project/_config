@@ -116,6 +116,7 @@ Substitute: libxslt-tools libxslt=
 Substitute: libXrandr-devel xorg-x11-devel=
 Substitute: xsltproc libxslt=
 Substitute: pkgconfig(id3tag) libid3tag-devel=
+Substitute: pkgconfig(libdiscid) libdiscid-devel=
 Substitute: pkgconfig(libevent) libevent-devel=
 Substitute: pkgconfig(libevent_pthreads) libevent-devel=
 Substitute: pkgconfig(libffi) libffi45-devel=
