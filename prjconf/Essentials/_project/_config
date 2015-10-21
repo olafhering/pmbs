@@ -61,7 +61,7 @@ Macros:
 # Prefer raspberry pi openGL ES libs (built from sources) instead of Mesa openGL ES libs (and pre-built libs)
 #Prefer: raspberrypi-gfx raspberrypi-gfx-devel
 Prefer: raspberrypi-userland raspberrypi-userland-devel
-Prefer: -Mesa-libEGL1 -Mesa-libEGL-devel
+Prefer: -Mesa-libEGL1 -Mesa-libEGL-devel -Mesa-libGLESv1_CM1 -Mesa-libGLESv1_CM-devel -Mesa-libGLESv2-2 -Mesa-libGLESv2-devel 
 # omxplayer also provides ffmpeg libs, so prefer to use ffmpeg ones
 Prefer: -omxplayer
 %endif
