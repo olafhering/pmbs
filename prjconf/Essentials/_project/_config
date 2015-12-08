@@ -1157,7 +1157,7 @@ Macros:
 %_without_dca 1
 %_without_openjpeg 1
 %_without_webp 1
-:Macros                                                                                                                                                                                                                                                                
+:Macros
 %endif
 
 %if 0%{?suse_version} >= 1320
