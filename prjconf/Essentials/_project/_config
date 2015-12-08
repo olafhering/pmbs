@@ -1106,6 +1106,13 @@ Support:    build-compare
 %define _without_wayland 1
 %define _with_wayland 1
 
+%if 0%{?suse_version} < 1310
+%define _without_celt 1
+%define _without_dca 1
+%define _without_openjpeg 1
+%define _without_webp 1
+%endif
+
 
 Macros:
 %vendor http://packman.links2linux.de
@@ -1143,6 +1150,15 @@ Macros:
 %_with_vidstab 1
 %_without_crippled_stk 1
 :Macros
+
+%if 0%{?suse_version} < 1310
+Macros:
+%_without_celt 1
+%_without_dca 1
+%_without_openjpeg 1
+%_without_webp 1
+:Macros                                                                                                                                                                                                                                                                
+%endif
 
 %if 0%{?suse_version} >= 1320
 Macros:
