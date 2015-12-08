@@ -1110,7 +1110,6 @@ Support:    build-compare
 %define _without_celt 1
 %define _without_dca 1
 %define _without_openjpeg 1
-%define _without_webp 1
 %endif
 
 
@@ -1156,7 +1155,6 @@ Macros:
 %_without_celt 1
 %_without_dca 1
 %_without_openjpeg 1
-%_without_webp 1
 :Macros
 %endif
 
