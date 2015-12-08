@@ -1107,8 +1107,6 @@ Support:    build-compare
 %define _with_wayland 1
 
 %if 0%{?suse_version} < 1310
-%define _without_celt 1
-%define _without_dca 1
 %define _without_openjpeg 1
 %endif
 
@@ -1152,8 +1150,6 @@ Macros:
 
 %if 0%{?suse_version} < 1310
 Macros:
-%_without_celt 1
-%_without_dca 1
 %_without_openjpeg 1
 :Macros
 %endif
