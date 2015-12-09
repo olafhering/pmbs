@@ -1106,11 +1106,6 @@ Support:    build-compare
 %define _without_wayland 1
 %define _with_wayland 1
 
-%if 0%{?suse_version} < 1310
-%define _without_openjpeg 1
-%endif
-
-
 Macros:
 %vendor http://packman.links2linux.de
 %packager packman@links2linux.de
@@ -1149,6 +1144,7 @@ Macros:
 :Macros
 
 %if 0%{?suse_version} < 1310
+%define _without_openjpeg 1
 Macros:
 %_without_openjpeg 1
 :Macros
