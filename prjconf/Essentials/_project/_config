@@ -5,9 +5,7 @@ Prefer: libcaca0
 Prefer: librcc0
 Prefer: librcd0
 Prefer: libvpx0
-Prefer: libavcodec54
 Prefer: libfaad2
-Prefer: libswscale2
 Prefer: libx264-125
 Prefer: libmp3lame0
 Prefer: libva1
