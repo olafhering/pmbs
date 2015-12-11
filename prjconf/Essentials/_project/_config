@@ -1147,11 +1147,13 @@ Macros:
 %if 0%{?suse_version} < 1310
 %define _without_openjpeg 1
 %define _without_vlc_dbus 1
+%define _without_vlc_gst 1
 %define _without_vlc_lua 1
 %define _without_vlc_qt5 1
 Macros:
 %_without_openjpeg 1
 %_without_vlc_dbus 1
+%_without_vlc_gst 1
 %_without_vlc_lua 1
 %_without_vlc_qt5 1
 :Macros
