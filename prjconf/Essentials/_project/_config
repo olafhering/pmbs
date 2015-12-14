@@ -74,9 +74,6 @@ Prefer: -raspberrypi-gfx-devel raspberrypi-userland-devel
 Prefer: -libffmpeg_oldabi-devel
 Prefer: -libffmpeg1-devel
 
-# Factory got its own ffmpeg after 13.2
-Prefer: libffmpeg-devel
-
 Prefer: opencv-devel
 
 %if 0%{?suse_version} < 1220
