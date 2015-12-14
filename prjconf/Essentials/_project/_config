@@ -124,6 +124,33 @@ Prefer: liborc-0_4-0
 
 # Support pkgconfig() BuildRequires in old distros
 #
+%if 0%{?suse_version} == 1320
+Substitute: pkgconfig(form) ncurses-devel=
+Substitute: pkgconfig(form6) ncurses-devel=
+Substitute: pkgconfig(formw) ncurses-devel=
+Substitute: pkgconfig(formw6) ncurses-devel=
+Substitute: pkgconfig(menu) ncurses-devel=
+Substitute: pkgconfig(menu6) ncurses-devel=
+Substitute: pkgconfig(menuw) ncurses-devel=
+Substitute: pkgconfig(menuw6) ncurses-devel=
+Substitute: pkgconfig(ncurses) ncurses-devel=
+Substitute: pkgconfig(ncurses++) ncurses-devel=
+Substitute: pkgconfig(ncurses++6) ncurses-devel=
+Substitute: pkgconfig(ncurses++w) ncurses-devel=
+Substitute: pkgconfig(ncurses++w6) ncurses-devel=
+Substitute: pkgconfig(ncurses6) ncurses-devel=
+Substitute: pkgconfig(ncursesw) ncurses-devel=
+Substitute: pkgconfig(ncursesw6) ncurses-devel=
+Substitute: pkgconfig(panel) ncurses-devel=
+Substitute: pkgconfig(panel6) ncurses-devel=
+Substitute: pkgconfig(panelw) ncurses-devel=
+Substitute: pkgconfig(panelw6) ncurses-devel=
+Substitute: pkgconfig(tic) ncurses-devel=
+Substitute: pkgconfig(tic6) ncurses-devel=
+Substitute: pkgconfig(tinfo) ncurses-devel=
+Substitute: pkgconfig(tinfo6) ncurses-devel=
+%endif
+#
 %if 0%{?suse_version} == 1110
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel=
 Substitute: libxml2-tools libxml2=
