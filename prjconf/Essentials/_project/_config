@@ -1251,6 +1251,7 @@ Macros:
 %define _without_SDL_image 1
 %define _without_freerdp 1
 %define _without_gnutls 1
+%define _without_libva_drm 1
 %define _without_libvncclient 1
 %define _without_opencv 1
 %define _without_openjpeg 1
@@ -1264,6 +1265,7 @@ Macros:
 %_without_SDL_image 1
 %_without_freerdp 1
 %_without_gnutls 1
+%_without_libva_drm 1
 %_without_libvncclient 1
 %_without_opencv 1
 %_without_openjpeg 1
