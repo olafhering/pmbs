@@ -1252,6 +1252,7 @@ Macros:
 %define _without_gnutls 1
 %define _without_opencv 1
 %define _without_openjpeg 1
+%define _without_vlc_gst 1
 %define _without_vlc_ncurses 1
 %define _without_vlc_qt5 1
 Macros:
@@ -1260,6 +1261,7 @@ Macros:
 %_with_vlc_qt4 1
 %_without_opencv 1
 %_without_openjpeg 1
+%_without_vlc_gst 1
 %_without_vlc_ncurses 1
 %_without_vlc_qt5 1
 :Macros
