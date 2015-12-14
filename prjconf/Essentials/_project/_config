@@ -1220,6 +1220,7 @@ Macros:
 %define _without_vdpau 1
 %define _without_vlc_dbus 1
 %define _without_vlc_gst 1
+%define _without_vlc_jpeg 1
 %define _without_vlc_ncurses 1
 %define _without_vlc_pulse 1
 %define _without_vlc_qt5 1
@@ -1235,6 +1236,7 @@ Macros:
 %_without_vdpau 1
 %_without_vlc_dbus 1
 %_without_vlc_gst 1
+%_without_vlc_jpeg 1
 %_without_vlc_ncurses 1
 %_without_vlc_pulse 1
 %_without_vlc_qt5 1
