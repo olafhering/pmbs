@@ -1197,6 +1197,7 @@ Macros:
 %_without_vlc_ncurses 1
 :Macros
 %endif
+%endif
 #
 #
 %if 0%{?suse_version} == 01310
