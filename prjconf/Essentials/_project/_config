@@ -1193,8 +1193,10 @@ Macros:
 %else
 # SLE12
 %define _without_vlc_ncurses 1
+%define _without_vlc_qt5_x11extra 1
 Macros:
 %_without_vlc_ncurses 1
+%_without_vlc_qt5_x11extra 1
 :Macros
 %endif
 %endif
