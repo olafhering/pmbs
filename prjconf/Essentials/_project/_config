@@ -1211,32 +1211,34 @@ Macros:
 #
 #
 %if 0%{?suse_version} == 01140
+%define _with_vlc_qt4 1
 %define _without_freerdp 1
 %define _without_gnutls 1
 %define _without_libva_drm 1
 %define _without_libvncclient 1
 %define _without_openjpeg 1
+%define _without_vdpau 1
 %define _without_vlc_dbus 1
 %define _without_vlc_gst 1
-%define _without_vlc_pulse 1
 %define _without_vlc_ncurses 1
+%define _without_vlc_pulse 1
 %define _without_vlc_qt5 1
 %define _without_vlc_rsvg 1
-%define _without_vdpau 1
 %define _without_vpx 1
 Macros:
+%_with_vlc_qt4 1
 %_without_freerdp 1
 %_without_gnutls 1
 %_without_libva_drm 1
 %_without_libvncclient 1
 %_without_openjpeg 1
+%_without_vdpau 1
 %_without_vlc_dbus 1
 %_without_vlc_gst 1
-%_without_vlc_pulse 1
 %_without_vlc_ncurses 1
+%_without_vlc_pulse 1
 %_without_vlc_qt5 1
 %_without_vlc_rsvg 1
-%_without_vdpau 1
 %_without_vpx 1
 :Macros
 %endif
