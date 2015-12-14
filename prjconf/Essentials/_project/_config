@@ -1149,12 +1149,35 @@ Macros:
 %_without_onlynondistributable 1
 :Macros
 
-%if 0%{?suse_version} >= 1320
-Macros:
-%_with_wayland 1
+%if 0%{?suse_version} == 01320
 :Macros
-%else
 Macros:
-%_without_wayland 1
+%endif
+#
+#
+%if 0%{?suse_version} == 01315
+Macros:
+:Macros
+%endif
+#
+#
+%if 0%{?suse_version} == 01310
+Macros:
+:Macros
+%endif
+#
+#
+%if 0%{?suse_version} == 01140
+%define _without_openjpeg 1
+Macros:
+%_without_openjpeg 1
+:Macros
+%endif
+#
+#
+%if 0%{?suse_version} == 01110
+%define _without_openjpeg 1
+Macros:
+%_without_openjpeg 1
 :Macros
 %endif
