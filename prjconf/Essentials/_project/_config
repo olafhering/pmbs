@@ -1211,13 +1211,17 @@ Macros:
 #
 #
 %if 0%{?suse_version} == 01140
+%define _without_freerdp 1
 %define _without_openjpeg 1
 %define _without_vlc_ncurses 1
 %define _without_vlc_qt5 1
+%define _without_vlc_rsvg 1
 Macros:
+%_without_freerdp 1
 %_without_openjpeg 1
 %_without_vlc_ncurses 1
 %_without_vlc_qt5 1
+%_without_vlc_rsvg 1
 :Macros
 %endif
 #
