@@ -1221,6 +1221,7 @@ Macros:
 %define _without_vlc_ncurses 1
 %define _without_vlc_qt5 1
 %define _without_vlc_rsvg 1
+%define _without_vdpau 1
 %define _without_vpx 1
 Macros:
 %_without_freerdp 1
@@ -1233,6 +1234,7 @@ Macros:
 %_without_vlc_ncurses 1
 %_without_vlc_qt5 1
 %_without_vlc_rsvg 1
+%_without_vdpau 1
 %_without_vpx 1
 :Macros
 %endif
