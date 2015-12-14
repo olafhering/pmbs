@@ -1247,10 +1247,12 @@ Macros:
 #
 #
 %if 0%{?suse_version} == 01110
+%_with_vlc_qt4 1
 %define _without_openjpeg 1
 %define _without_vlc_ncurses 1
 %define _without_vlc_qt5 1
 Macros:
+%_with_vlc_qt4 1
 %_without_openjpeg 1
 %_without_vlc_ncurses 1
 %_without_vlc_qt5 1
