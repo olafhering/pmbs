@@ -1097,6 +1097,8 @@ Support:    build-compare
 %define _with_twolame 1
 %define _with_vidstab 1
 %define _with_wayland 1
+%define _with_x264 1
+%define _with_x265 1
 %define _without_distributable 1
 %define _without_onlynondistributable 1
 %define _without_wayland 1
@@ -1131,6 +1133,8 @@ Macros:
 %_with_twolame 1
 # For libmlt video stabilization plugin.
 %_with_vidstab 1
+%_with_x264 1
+%_with_x265 1
 %_without_crippled_stk 1
 %_without_distributable 1
 %_without_onlynondistributable 1
