@@ -1215,6 +1215,7 @@ Macros:
 %define _without_gnutls 1
 %define _without_libvncclient 1
 %define _without_openjpeg 1
+%define _without_vlc_dbus 1
 %define _without_vlc_gst 1
 %define _without_vlc_pulse 1
 %define _without_vlc_ncurses 1
@@ -1226,6 +1227,7 @@ Macros:
 %_without_gnutls 1
 %_without_libvncclient 1
 %_without_openjpeg 1
+%_without_vlc_dbus 1
 %_without_vlc_gst 1
 %_without_vlc_pulse 1
 %_without_vlc_ncurses 1
