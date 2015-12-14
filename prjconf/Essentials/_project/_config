@@ -1180,13 +1180,21 @@ Macros:
 :Macros
 
 %if 0%{?suse_version} == 01320
-:Macros
-Macros:
 %endif
 #
 #
 %if 0%{?suse_version} == 01315
+%if 0%{?is_opensuse}
+# Leap
+%define _without_vlc_ncurses 1
 Macros:
+%_without_vlc_ncurses 1
+:Macros
+%else
+# SLE12
+%define _without_vlc_ncurses 1
+Macros:
+%_without_vlc_ncurses 1
 :Macros
 %endif
 #
