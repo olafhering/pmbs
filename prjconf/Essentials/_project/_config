@@ -1255,6 +1255,7 @@ Macros:
 %define _without_libvncclient 1
 %define _without_opencv 1
 %define _without_openjpeg 1
+%define _without_vdpau 1
 %define _without_vlc_dbus 1
 %define _without_vlc_egl 1
 %define _without_vlc_gst 1
@@ -1272,6 +1273,7 @@ Macros:
 %_without_libvncclient 1
 %_without_opencv 1
 %_without_openjpeg 1
+%_without_vdpau 1
 %_without_vlc_dbus 1
 %_without_vlc_egl 1
 %_without_vlc_gst 1
