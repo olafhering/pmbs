@@ -1213,6 +1213,7 @@ Macros:
 %if 0%{?suse_version} == 01140
 %define _without_freerdp 1
 %define _without_gnutls 1
+%define _without_libva_drm 1
 %define _without_libvncclient 1
 %define _without_openjpeg 1
 %define _without_vlc_dbus 1
@@ -1226,6 +1227,7 @@ Macros:
 Macros:
 %_without_freerdp 1
 %_without_gnutls 1
+%_without_libva_drm 1
 %_without_libvncclient 1
 %_without_openjpeg 1
 %_without_vlc_dbus 1
