@@ -1259,8 +1259,10 @@ Macros:
 %if 0%{?suse_version} == 01110
 %if "%{_target_cpu}" == "i586"
 %define _without_vlc_optimization 1
+%define _without_vlc_mmx_sse 1
 Macros:
 %_without_vlc_optimization 1
+%_without_vlc_mmx_sse 1
 :Macros
 %endif
 %define _with_vlc_qt4 1
