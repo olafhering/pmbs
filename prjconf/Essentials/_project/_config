@@ -1233,7 +1233,6 @@ Macros:
 %define _without_vlc_svgdec 1
 %define _without_vlc_pulse 1
 %define _without_vlc_qt5 1
-%define _without_vlc_rsvg 1
 %define _without_vpx 1
 Macros:
 %_with_vlc_qt4 1
@@ -1250,7 +1249,6 @@ Macros:
 %_without_vlc_svgdec 1
 %_without_vlc_pulse 1
 %_without_vlc_qt5 1
-%_without_vlc_rsvg 1
 %_without_vpx 1
 :Macros
 %endif
@@ -1278,7 +1276,7 @@ Macros:
 %define _without_vlc_ncurses 1
 %define _without_vlc_pulse 1
 %define _without_vlc_qt5 1
-%define _without_vlc_rsvg 1
+%define _without_vlc_svgdec 1
 %define _without_vlc_xcb 1
 Macros:
 %_with_vlc_qt4 1
@@ -1296,7 +1294,7 @@ Macros:
 %_without_vlc_ncurses 1
 %_without_vlc_pulse 1
 %_without_vlc_qt5 1
-%_without_vlc_rsvg 1
+%_without_vlc_svgdec 1
 %_without_vlc_xcb 1
 :Macros
 %endif
