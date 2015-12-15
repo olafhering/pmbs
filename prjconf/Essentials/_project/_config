@@ -1204,8 +1204,10 @@ Macros:
 #
 %if 0%{?suse_version} == 01310
 %define _without_vlc_ncurses 1
+%define _without_vlc_svgdec 1
 Macros:
 %_without_vlc_ncurses 1
+%_without_vlc_svgdec 1
 :Macros
 %endif
 #
@@ -1228,6 +1230,7 @@ Macros:
 %define _without_vlc_gst 1
 %define _without_vlc_jpeg 1
 %define _without_vlc_ncurses 1
+%define _without_vlc_svgdec 1
 %define _without_vlc_pulse 1
 %define _without_vlc_qt5 1
 %define _without_vlc_rsvg 1
@@ -1244,6 +1247,7 @@ Macros:
 %_without_vlc_gst 1
 %_without_vlc_jpeg 1
 %_without_vlc_ncurses 1
+%_without_vlc_svgdec 1
 %_without_vlc_pulse 1
 %_without_vlc_qt5 1
 %_without_vlc_rsvg 1
