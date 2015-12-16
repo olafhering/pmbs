@@ -1180,6 +1180,10 @@ Macros:
 :Macros
 
 %if 0%{?suse_version} == 01320
+%define _without_vlc_svgdec 1
+Macros:
+%_without_vlc_svgdec 1
+:Macros
 %endif
 #
 #
