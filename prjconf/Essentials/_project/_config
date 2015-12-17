@@ -87,6 +87,16 @@ Prefer: -libquicktime
 %endif
 
 %if 0%{?suse_version} == 1315
+# libav can't be the prefered solution, as it is not in Factory but also provides libswscale
+Prefer: libavcodec-devel
+Prefer: libavdevice-devel
+Prefer: libavfilter-devel
+Prefer: libavformat-devel
+Prefer: libavresample-devel
+Prefer: libavutil-devel
+Prefer: libpostproc-devel
+Prefer: libswresample-devel
+Prefer: libswscale-devel
 # For missing-provides-SLE_12.spec
 Prefer: libImath-2_1-11
 Prefer: libconfig9
