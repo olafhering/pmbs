@@ -162,6 +162,10 @@ Substitute: pkgconfig(tinfo) ncurses-devel=
 Substitute: pkgconfig(tinfo6) ncurses-devel=
 %endif
 #
+%if 0%{?suse_version} == 1315
+Substitute: pkgconfig(tinfo) ncurses-devel=
+%endif
+#
 %if 0%{?suse_version} == 1110
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel=
 Substitute: libxml2-tools libxml2=
