@@ -8,3 +8,10 @@ Macros:
 %_with_enable_rpi_build 1
 :Macros
 %endif
+%if 0%{?suse_version} > 1315
+%define _with_carla 1
+Macros:
+%_with_carla 1
+:Macros
+%endif
+
