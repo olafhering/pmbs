@@ -75,6 +75,7 @@ Prefer: -libffmpeg_oldabi-devel
 Prefer: -libffmpeg1-devel
 
 Prefer: opencv-devel
+Prefer: vlc-devel
 
 %if 0%{?suse_version} < 1220
 Support: xz
