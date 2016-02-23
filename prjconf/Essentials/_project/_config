@@ -87,7 +87,7 @@ Prefer: -libquicktime
 %endif
 %endif
 
-%if 0
+%if 1
 Prefer: libavcodec-devel
 Prefer: libavdevice-devel
 Prefer: libavfilter-devel
