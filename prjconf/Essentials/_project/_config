@@ -995,8 +995,8 @@ Substitute: pkgconfig(zlib) zlib-devel=
 Substitute: pkgconfig(zvbi-0.2) zvbi-devel=
 # Choice, more than rpm provides pkgconfig(foo)
 # Adjust the following manually
-#Substitute: pkgconfig(QtWebKit) libQtWebKit-devel=
-Substitute: pkgconfig(QtWebKit) libqt4-devel=
+Substitute: pkgconfig(QtWebKit) libQtWebKit-devel=
+#Substitute: pkgconfig(QtWebKit) libqt4-devel=
 #Substitute: pkgconfig(QtXmlPatterns) libQtWebKit-devel=
 Substitute: pkgconfig(QtXmlPatterns) libqt4-devel=
 Substitute: pkgconfig(applewmproto) xorg-x11-proto-devel
