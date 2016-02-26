@@ -1118,6 +1118,7 @@ Substitute: pkgconfig(xineramaproto) xorg-x11-proto-devel
 #Substitute: pkgconfig(xineramaproto) xorg-x11-proto-unstable-devel=
 Substitute: pkgconfig(xproxymngproto) xorg-x11-proto-devel
 #Substitute: pkgconfig(xproxymngproto) xorg-x11-proto-unstable-devel=
+Substitute: pkgconfig(python) python-devel=
 %endif
 %if 0%{?suse_version} > 1010
 Support:    build-compare
