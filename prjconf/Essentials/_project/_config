@@ -127,6 +127,7 @@ Prefer: python-Jinja2
 Prefer: python-Pygments
 Prefer: python-docutils
 Prefer: lapack-devel
+Prefer: libxine2-devel
 Prefer: lv2-devel
 Prefer: librdf0
 Prefer: mozilla-xulrunner192-devel
