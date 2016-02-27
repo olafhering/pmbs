@@ -183,6 +183,7 @@ Substitute: pkgconfig(tinfo) ncurses-devel=
 %if 0%{?suse_version} == 1110
 Substitute: pkgconfig(npapi-sdk) mozilla-xulrunner192-devel=
 Substitute: libxml2-tools libxml2=
+Substitute: makeinfo texinfo=
 Substitute: xsltproc libxslt=
 Substitute: libxslt-tools libxslt=
 Substitute: libSDL-devel SDL-devel=
