@@ -77,6 +77,8 @@ Prefer: -libffmpeg1-devel
 Prefer: opencv-devel
 Prefer: vlc-devel
 
+Prefer: libxml++26-devel
+
 %if 0%{?suse_version} < 1220
 Support: xz
 # Because pkgconfig() style BuildRequires
