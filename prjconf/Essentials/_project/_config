@@ -1216,6 +1216,15 @@ Macros:
 %_without_onlynondistributable 1
 :Macros
 
+# Factory
+%if 0%{?suse_version} > 01320
+%define _without_freerdp 1
+Macros:
+%_without_freerdp 1
+:Macros
+%endif
+#
+#
 %if 0%{?suse_version} == 01320
 %define _without_vlc_svgdec 1
 Macros:
