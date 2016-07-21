@@ -89,7 +89,6 @@ Prefer: -libquicktime
 %endif
 %endif
 
-%if 1
 Prefer: libavcodec-devel
 Prefer: libavdevice-devel
 Prefer: libavfilter-devel
@@ -99,17 +98,6 @@ Prefer: libavutil-devel
 Prefer: libpostproc-devel
 Prefer: libswresample-devel
 Prefer: libswscale-devel
-%else
-Prefer: libavcodec-2.8-devel
-Prefer: libavdevice-2.8-devel
-Prefer: libavfilter-2.8-devel
-Prefer: libavformat-2.8-devel
-Prefer: libavresample-2.8-devel
-Prefer: libavutil-2.8-devel
-Prefer: libpostproc-2.8-devel
-Prefer: libswresample-2.8-devel
-Prefer: libswscale-2.8-devel
-%endif
 
 %if 0%{?suse_version} == 1315
 # For missing-provides-SLE_12.spec
