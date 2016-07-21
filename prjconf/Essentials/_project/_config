@@ -99,6 +99,19 @@ Prefer: libpostproc-devel
 Prefer: libswresample-devel
 Prefer: libswscale-devel
 
+%if 0%{?suse_version} == 1320
+# Avoid conflict between ffmpeg-2.8 and ffmpeg-3.0
+Prefer: libavcodec-3.0-devel
+Prefer: libavdevice-3.0-devel
+Prefer: libavfilter-3.0-devel
+Prefer: libavformat-3.0-devel
+Prefer: libavresample-3.0-devel
+Prefer: libavutil-3.0-devel
+Prefer: libpostproc-3.0-devel
+Prefer: libswresample-3.0-devel
+Prefer: libswscale-3.0-devel
+%endif
+#
 %if 0%{?suse_version} == 1315
 # For missing-provides-SLE_12.spec
 Prefer: libImath-2_1-11
