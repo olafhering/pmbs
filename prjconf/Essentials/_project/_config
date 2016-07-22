@@ -110,6 +110,7 @@ Prefer: libavutil-3.0-devel
 Prefer: libpostproc-3.0-devel
 Prefer: libswresample-3.0-devel
 Prefer: libswscale-3.0-devel
+Prefer: -libswscale-devel
 %endif
 #
 %if 0%{?suse_version} == 1315
