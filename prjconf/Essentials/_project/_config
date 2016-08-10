@@ -23,7 +23,7 @@ Substitute: gcc46 gcc48
 %define arm %arm armv6l armv6hl
 
 %ifarch armv6l armv6hl
-%if 0%{?suse_version} == 01310
+%if 0%{?suse_version} == 1310
 # 13.1 kernel-obs-build installation takes hours, so only use chroot workers without kernel installation
 Constraint: sandbox chroot
 # chroot workers do not need kernel-obs-build, only KVM workers. Do not install it to speed up the build (install time) and prevent hang
@@ -1236,7 +1236,7 @@ Macros:
 :Macros
 
 # Factory
-%if 0%{?suse_version} > 01320
+%if 0%{?suse_version} > 1320
 %define _without_freerdp 1
 Macros:
 %_without_freerdp 1
@@ -1244,7 +1244,7 @@ Macros:
 %endif
 #
 #
-%if 0%{?suse_version} == 01320
+%if 0%{?suse_version} == 1320
 %define _with_vlc_atmo 1
 %define _without_vlc_svgdec 1
 %define _without_zbar 1
@@ -1256,7 +1256,7 @@ Macros:
 %endif
 #
 #
-%if 0%{?suse_version} == 01315
+%if 0%{?suse_version} == 1315
 %if 0%{?is_opensuse}
 # Leap
 %define _with_vlc_atmo 1
@@ -1287,7 +1287,7 @@ Macros:
 %endif
 #
 #
-%if 0%{?suse_version} == 01310
+%if 0%{?suse_version} == 1310
 %define _with_vlc_atmo 1
 %define _without_vlc_ncurses 1
 %define _without_vlc_svgdec 1
@@ -1299,7 +1299,7 @@ Macros:
 %endif
 #
 #
-%if 0%{?suse_version} == 01110
+%if 0%{?suse_version} == 1110
 %if "%{_target_cpu}" == "i586"
 %define _without_vlc_optimization 1
 Macros:
