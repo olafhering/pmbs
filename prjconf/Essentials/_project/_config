@@ -89,15 +89,15 @@ Prefer: -libquicktime
 %endif
 %endif
 
-Prefer: libavcodec-devel
-Prefer: libavdevice-devel
-Prefer: libavfilter-devel
-Prefer: libavformat-devel
-Prefer: libavresample-devel
-Prefer: libavutil-devel
-Prefer: libpostproc-devel
-Prefer: libswresample-devel
-Prefer: libswscale-devel
+#Prefer: libavcodec-devel
+#Prefer: libavdevice-devel
+#Prefer: libavfilter-devel
+#Prefer: libavformat-devel
+#Prefer: libavresample-devel
+#Prefer: libavutil-devel
+#Prefer: libpostproc-devel
+#Prefer: libswresample-devel
+#Prefer: libswscale-devel
 
 %if 0%{?suse_version} == 1320
 # Avoid conflict between ffmpeg-2.8 and ffmpeg-3.0
