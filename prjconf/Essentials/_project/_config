@@ -120,16 +120,6 @@ Prefer: -libswscale-devel
 #
 %if 0%{?sle_version} == 120200
 # Leap 42.2
-# Avoid conflict between ffmpeg-2.8 and ffmpeg-3.1
-Prefer: libavcodec-3.1-devel
-Prefer: libavdevice-3.1-devel
-Prefer: libavfilter-3.1-devel
-Prefer: libavformat-3.1-devel
-Prefer: libavresample-3.1-devel
-Prefer: libavutil-3.1-devel
-Prefer: libpostproc-3.1-devel
-Prefer: libswresample-3.1-devel
-Prefer: libswscale-3.1-devel
 %endif
 #
 %if 0%{?sle_version} == 120100
