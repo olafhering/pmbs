@@ -99,6 +99,8 @@ Prefer: libavutil-devel
 Prefer: libpostproc-devel
 Prefer: libswresample-devel
 Prefer: libswscale-devel
+# Avoid conflict between libffmpeg_oldabi and ffmpeg2
+Prefer: -libffmpeg_oldabi-devel
 %endif
 
 %if 0%{?suse_version} == 1320
