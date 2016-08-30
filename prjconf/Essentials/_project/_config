@@ -89,6 +89,7 @@ Prefer: -libquicktime
 %endif
 
 %if 0%{?suse_version} > 1320
+%if 0
 Prefer: libavcodec-devel
 Prefer: libavdevice-devel
 Prefer: libavfilter-devel
@@ -99,6 +100,7 @@ Prefer: libpostproc-devel
 Prefer: libswresample-devel
 Prefer: libswscale-devel
 # Avoid conflict between libffmpeg_oldabi and ffmpeg2
+%endif
 %endif
 
 %if 0%{?suse_version} == 1320
