@@ -101,7 +101,7 @@ Prefer: libswresample-devel
 Prefer: libswscale-devel
 # Avoid conflict between libffmpeg_oldabi and ffmpeg2
 %endif
-Prefer: -ffmpeg2-devel
+Prefer: ffmpeg2-devel
 %endif
 
 %if 0%{?suse_version} == 1320
