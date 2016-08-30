@@ -91,7 +91,7 @@ Prefer: -libquicktime
 %endif
 
 %if 0%{?suse_version} > 1320
-%if 0
+%if 1
 Prefer: libavcodec-devel
 Prefer: libavdevice-devel
 Prefer: libavfilter-devel
