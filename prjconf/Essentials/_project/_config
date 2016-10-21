@@ -137,6 +137,8 @@ Prefer: -libavutil-devel
 Prefer: -libpostproc-devel
 Prefer: -libswresample-devel
 Prefer: -libswscale-devel
+# Avoid conflict between ffmpeg.rpm and ffmpeg-3.1.rpm
+Prefer: ffmpeg-3.1
 # Avoid conflict between ffmpeg-2.8 and ffmpeg-3.1
 Prefer: libavcodec-3.1-devel
 Prefer: libavdevice-3.1-devel
