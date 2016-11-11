@@ -1,24 +1,3 @@
-# SLE-11-SP2 has -x86/-32bit versions
-%if 0%{?sles_version} == 11 
-Prefer: popt
-Prefer: libcaca0
-Prefer: librcc0
-Prefer: librcd0
-Prefer: libvpx0
-Prefer: libfaad2
-Prefer: libx264-125
-Prefer: libmp3lame0
-Prefer: libva1
-Prefer: libcdda_interface0
-Prefer: fribidi
-Prefer: libvpx1
-Prefer: libtwolame0
-Prefer: librdf0
-Prefer: libpng12-compat-devel
-Substitute: gcc47 gcc48
-Substitute: gcc46 gcc48
-%endif
-
 # %arm seems to be missing armv6l/armv6hl
 %define arm %arm armv6l armv6hl
 
