@@ -206,6 +206,10 @@ Substitute: pkgconfig(tinfo6) ncurses-devel=
 Substitute: pkgconfig(tinfo) ncurses-devel=
 %endif
 #
+%if 0%{?suse_version} == 1310
+Substitute: pkgconfig(libmikmod) libmikmod-devel=
+%endif
+#
 %if 0%{?suse_version} > 1010
 Support:    build-compare
 %endif
