@@ -353,6 +353,7 @@ Macros:
 %else
 # SLE12
 %define _with_vlc_atmo 1
+%define _without_gpac 1
 %define _without_graphicsmagic 1
 %define _without_vlc_kde4 1
 %define _without_vlc_ncurses 1
@@ -361,6 +362,7 @@ Macros:
 %define _without_zbar 1
 Macros:
 %_with_vlc_atmo 1
+%_without_gpac 1
 %_without_graphicsmagic 1
 %_without_vlc_kde4 1
 %_without_vlc_ncurses 1
