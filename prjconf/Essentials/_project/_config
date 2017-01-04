@@ -107,18 +107,18 @@ Prefer: -libavutil-devel
 Prefer: -libpostproc-devel
 Prefer: -libswresample-devel
 Prefer: -libswscale-devel
-# Avoid conflict between ffmpeg.rpm and ffmpeg-3.1.rpm
-Prefer: ffmpeg-3.1
-# Avoid conflict between ffmpeg-2.8 and ffmpeg-3.1
-Prefer: libavcodec-3.1-devel
-Prefer: libavdevice-3.1-devel
-Prefer: libavfilter-3.1-devel
-Prefer: libavformat-3.1-devel
-Prefer: libavresample-3.1-devel
-Prefer: libavutil-3.1-devel
-Prefer: libpostproc-3.1-devel
-Prefer: libswresample-3.1-devel
-Prefer: libswscale-3.1-devel
+# Avoid conflict between ffmpeg.rpm and ffmpeg-3.2.rpm
+Prefer: ffmpeg-3.2
+# Avoid conflict between ffmpeg-2.8 and ffmpeg-3.2
+Prefer: libavcodec-3.2-devel
+Prefer: libavdevice-3.2-devel
+Prefer: libavfilter-3.2-devel
+Prefer: libavformat-3.2-devel
+Prefer: libavresample-3.2-devel
+Prefer: libavutil-3.2-devel
+Prefer: libpostproc-3.2-devel
+Prefer: libswresample-3.2-devel
+Prefer: libswscale-3.2-devel
 %endif
 # !Leap
 %else
