@@ -133,6 +133,18 @@ Prefer: librdmacm1
 Prefer: libvncclient0
 Prefer: libwx_gtk2u_core-2_8-0-compat-lib-stl
 Prefer: oxygen5-icon-theme
+# Avoid conflict between ffmpeg-2.8 and ffmpeg from Backports
+Prefer: -libavcodec-devel
+Prefer: -libavdevice-devel
+Prefer: -libavfilter-devel
+Prefer: -libavformat-devel
+Prefer: -libavresample-devel
+Prefer: -libavutil-devel
+Prefer: -libpostproc-devel
+Prefer: -libswresample-devel
+Prefer: -libswscale-devel
+# Avoid conflict between ffmpeg.rpm and ffmpeg-3.2.rpm
+Prefer: ffmpeg-3.2
 # Avoid conflict between ffmpeg-2.8 and ffmpeg-3.2
 Prefer: libavcodec-3.2-devel
 Prefer: libavdevice-3.2-devel
