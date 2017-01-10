@@ -361,7 +361,6 @@ Macros:
 %define _without_graphicsmagic 1
 %define _without_vlc_kde4 1
 %define _without_vlc_ncurses 1
-%define _without_vlc_qt5_x11extra 1
 %define _without_vlc_svgdec 1
 %define _without_zbar 1
 Macros:
@@ -371,7 +370,6 @@ Macros:
 %_without_graphicsmagic 1
 %_without_vlc_kde4 1
 %_without_vlc_ncurses 1
-%_without_vlc_qt5_x11extra 1
 %_without_vlc_svgdec 1
 %_without_zbar 1
 :Macros
