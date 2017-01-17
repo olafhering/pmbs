@@ -209,10 +209,12 @@ Substitute: pkgconfig(tinfo6) ncurses-devel=
 #
 %if 0%{?suse_version} == 1315
 Substitute: pkgconfig(tinfo) ncurses-devel=
+Substitute: pkgconfig(libcap) libcap-devel=
 %endif
 #
 %if 0%{?suse_version} == 1310
 Substitute: pkgconfig(libmikmod) libmikmod-devel=
+Substitute: pkgconfig(libcap) libcap-devel=
 %endif
 #
 %if 0%{?suse_version} > 1010
