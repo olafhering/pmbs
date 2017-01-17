@@ -205,6 +205,7 @@ Substitute: pkgconfig(tic) ncurses-devel=
 Substitute: pkgconfig(tic6) ncurses-devel=
 Substitute: pkgconfig(tinfo) ncurses-devel=
 Substitute: pkgconfig(tinfo6) ncurses-devel=
+Substitute: pkgconfig(libcap) libcap-devel=
 %endif
 #
 %if 0%{?suse_version} == 1315
