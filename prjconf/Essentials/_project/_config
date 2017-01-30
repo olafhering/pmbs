@@ -57,6 +57,13 @@ Prefer: vlc-devel
 
 Prefer: libxml++26-devel
 
+# Undo splitdebug:_debug in OBS:SLE_12:Backports
+%if 0%{?suse_version} == 1315
+%if 0%{?is_opensuse}
+%else
+RepoType: rpm-md:rsyncable
+%endif
+%endif
 
 %if 0%{?suse_version} > 1320
 %if 1
