@@ -359,6 +359,13 @@ Macros:
 #
 %if 0%{?sle_version} == 120100
 # Leap 42.1
+%ifarch %ix86
+# no netcdf-32bit
+%define _without_netcdf 1
+Macros:
+%_without_netcdf 1
+:Macros
+%endif
 %define _with_vlc_atmo 1
 %define _without_vlc_ncurses 1
 Macros:
