@@ -155,9 +155,6 @@ Substitute: pkgconfig(tinfo) ncurses-devel=
 Substitute: pkgconfig(libcap) libcap-devel=
 %endif
 #
-%if 0%{?suse_version} > 1010
-Support:    build-compare
-%endif
 
 %define BUILD_ORIG 1
 %define BUILD_ORIG_ADDON 1
