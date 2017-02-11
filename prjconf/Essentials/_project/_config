@@ -81,21 +81,6 @@ Prefer: libswscale-devel
 #refer: ffmpeg2-devel
 %endif
 
-%if 0%{?suse_version} == 1320
-# Avoid conflict between ffmpeg-2.8 and ffmpeg-3.0
-Prefer: libavcodec-3.0-devel
-Prefer: libavdevice-3.0-devel
-Prefer: libavfilter-3.0-devel
-Prefer: libavformat-3.0-devel
-Prefer: libavresample-3.0-devel
-Prefer: libavutil-3.0-devel
-Prefer: libpostproc-3.0-devel
-Prefer: libswresample-3.0-devel
-Prefer: libswscale-3.0-devel
-Prefer: -libswscale-devel
-# vtk needs libjawt.so
-Prefer: java-1_7_0-openjdk-headless
-%endif
 #
 %if 0%{?suse_version} == 1315
 %if 0%{?is_opensuse}
@@ -188,34 +173,6 @@ Prefer: -libswscale-devel
 Prefer: liborc-0_4-0
 
 # Support pkgconfig() BuildRequires in old distros
-#
-%if 0%{?suse_version} == 1320
-Substitute: pkgconfig(form) ncurses-devel=
-Substitute: pkgconfig(form6) ncurses-devel=
-Substitute: pkgconfig(formw) ncurses-devel=
-Substitute: pkgconfig(formw6) ncurses-devel=
-Substitute: pkgconfig(menu) ncurses-devel=
-Substitute: pkgconfig(menu6) ncurses-devel=
-Substitute: pkgconfig(menuw) ncurses-devel=
-Substitute: pkgconfig(menuw6) ncurses-devel=
-Substitute: pkgconfig(ncurses) ncurses-devel=
-Substitute: pkgconfig(ncurses++) ncurses-devel=
-Substitute: pkgconfig(ncurses++6) ncurses-devel=
-Substitute: pkgconfig(ncurses++w) ncurses-devel=
-Substitute: pkgconfig(ncurses++w6) ncurses-devel=
-Substitute: pkgconfig(ncurses6) ncurses-devel=
-Substitute: pkgconfig(ncursesw) ncurses-devel=
-Substitute: pkgconfig(ncursesw6) ncurses-devel=
-Substitute: pkgconfig(panel) ncurses-devel=
-Substitute: pkgconfig(panel6) ncurses-devel=
-Substitute: pkgconfig(panelw) ncurses-devel=
-Substitute: pkgconfig(panelw6) ncurses-devel=
-Substitute: pkgconfig(tic) ncurses-devel=
-Substitute: pkgconfig(tic6) ncurses-devel=
-Substitute: pkgconfig(tinfo) ncurses-devel=
-Substitute: pkgconfig(tinfo6) ncurses-devel=
-Substitute: pkgconfig(libcap) libcap-devel=
-%endif
 #
 %if 0%{?suse_version} == 1315
 Substitute: pkgconfig(tinfo) ncurses-devel=
@@ -316,18 +273,6 @@ Macros:
 %define _without_freerdp 1
 Macros:
 %_without_freerdp 1
-:Macros
-%endif
-#
-#
-%if 0%{?suse_version} == 1320
-%define _with_vlc_atmo 1
-%define _without_vlc_svgdec 1
-%define _without_zbar 1
-Macros:
-%_with_vlc_atmo 1
-%_without_vlc_svgdec 1
-%_without_zbar 1
 :Macros
 %endif
 #
