@@ -2,16 +2,8 @@
 %define arm %arm armv6l armv6hl
 
 %ifarch armv6l armv6hl
-%if 0%{?suse_version} == 1310
-# 13.1 kernel-obs-build installation takes hours, so only use chroot workers without kernel installation
-Constraint: sandbox chroot
-# chroot workers do not need kernel-obs-build, only KVM workers. Do not install it to speed up the build (install time) and prevent hang
-VMinstall: !kernel-obs-build
-%else
-# 13.2 and later are OK with kernel-obs
 VMinstall: kernel-obs-build
 VMInstall: kernel-obs-build
-%endif
 %endif
 
 # Avoid armv7 build error: "getbinaries: missing packages: kernel-obs-build"
@@ -155,20 +147,6 @@ Prefer: libswscale-3.2-devel
 #
 %endif
 #
-%if 0%{?suse_version} == 1310
-# Avoid conflict between ffmpeg-2.8 and ffmpeg-3.0
-Prefer: libavcodec-3.0-devel
-Prefer: libavdevice-3.0-devel
-Prefer: libavfilter-3.0-devel
-Prefer: libavformat-3.0-devel
-Prefer: libavresample-3.0-devel
-Prefer: libavutil-3.0-devel
-Prefer: libpostproc-3.0-devel
-Prefer: libswresample-3.0-devel
-Prefer: libswscale-3.0-devel
-Prefer: -libswscale-devel
-%endif
-#
 
 Prefer: liborc-0_4-0
 
@@ -176,11 +154,6 @@ Prefer: liborc-0_4-0
 #
 %if 0%{?suse_version} == 1315
 Substitute: pkgconfig(tinfo) ncurses-devel=
-Substitute: pkgconfig(libcap) libcap-devel=
-%endif
-#
-%if 0%{?suse_version} == 1310
-Substitute: pkgconfig(libmikmod) libmikmod-devel=
 Substitute: pkgconfig(libcap) libcap-devel=
 %endif
 #
@@ -331,17 +304,4 @@ Macros:
 :Macros
 %endif
 %endif
-#
-#
-%if 0%{?suse_version} == 1310
-%define _with_vlc_atmo 1
-%define _without_vlc_ncurses 1
-%define _without_vlc_svgdec 1
-Macros:
-%_with_vlc_atmo 1
-%_without_vlc_ncurses 1
-%_without_vlc_svgdec 1
-:Macros
-%endif
-#
 #
