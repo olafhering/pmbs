@@ -1,5 +1,5 @@
 %if "%_repository" == "Factory"
-Required: force-disabled
+Required: enough-build-resources
 %endif
 # %arm seems to be missing armv6l/armv6hl
 %define arm %arm armv6l armv6hl
