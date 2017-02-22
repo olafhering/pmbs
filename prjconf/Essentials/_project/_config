@@ -161,7 +161,6 @@ Substitute: pkgconfig(libcap) libcap-devel=
 
 %define BUILD_ORIG 1
 %define BUILD_ORIG_ADDON 1
-%define _with_LV2 1
 %define _with_a52 1
 %define _with_aalib 1
 %define _with_amrnb 1
@@ -204,7 +203,6 @@ Macros:
 %packman_bs 1
 %BUILD_ORIG 1
 %BUILD_ORIG_ADDON 1
-%_with_LV2 1
 %_with_a52 1
 %_with_aalib 1
 %_with_amrnb 1
