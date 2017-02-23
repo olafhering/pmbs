@@ -114,7 +114,7 @@ Prefer: libswscale-3.2-devel
 # SLE12
 # For missing-provides-SLE_12.spec
 ### Prefer: libImath-2_1-11
-### Prefer: libconfig9
+Prefer: libconfig9
 Prefer: libglut3
 ### Prefer: libmcrypt
 ### Prefer: libmicrohttpd10
