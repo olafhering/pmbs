@@ -119,7 +119,7 @@ Prefer: libglut3
 Prefer: libmcrypt
 Prefer: libmicrohttpd10
 Prefer: librdmacm1
-### Prefer: libvncclient0
+Prefer: libvncclient0
 ### Prefer: libwx_gtk2u_core-2_8-0-compat-lib-stl
 ### Prefer: oxygen5-icon-theme
 ### Prefer: liblirc_client0
