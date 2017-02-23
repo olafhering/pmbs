@@ -113,17 +113,17 @@ Prefer: libswscale-3.2-devel
 %else
 # SLE12
 # For missing-provides-SLE_12.spec
-Prefer: libImath-2_1-11
-Prefer: libconfig9
-Prefer: libglut3
-Prefer: libmcrypt
-Prefer: libmicrohttpd10
-Prefer: librdmacm1
-Prefer: libvncclient0
-Prefer: libwx_gtk2u_core-2_8-0-compat-lib-stl
-Prefer: oxygen5-icon-theme
-Prefer: liblirc_client0
-Prefer: libcddb2
+### Prefer: libImath-2_1-11
+### Prefer: libconfig9
+### Prefer: libglut3
+### Prefer: libmcrypt
+### Prefer: libmicrohttpd10
+### Prefer: librdmacm1
+### Prefer: libvncclient0
+### Prefer: libwx_gtk2u_core-2_8-0-compat-lib-stl
+### Prefer: oxygen5-icon-theme
+### Prefer: liblirc_client0
+### Prefer: libcddb2
 # Avoid conflict between ffmpeg-2.8 and ffmpeg from Backports
 Prefer: -libavcodec-devel
 Prefer: -libavdevice-devel
