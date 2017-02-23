@@ -1,6 +1,5 @@
 Prefer: python-setuptools
 Prefer: clucene-core-devel
-Prefer: python-wxWidgets-2_9
 Prefer: -omxplayer
 
 %ifarch armv6l armv6hl
