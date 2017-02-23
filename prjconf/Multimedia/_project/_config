@@ -1,3 +1,22 @@
+# for freetuxtv. For some reason libcurl+libvlc+samba-libs prefers krb5-mini instead of krb5 in Leap
+%if 0%{?suse_version} == 1315
+%if 0%{?is_opensuse}
+#
+%if 0%{?sle_version} == 120200
+# Leap 42.2
+Conflict: libcurl4:krb5-mini
+Prefer: libcurl4:krb5
+%endif
+#
+%if 0%{?sle_version} == 120100
+# Leap 42.1
+Conflict: libcurl4:krb5-mini
+Prefer: libcurl4:krb5
+%endif
+#
+%endif
+%endif
+#
 Prefer: clucene-core-devel
 Prefer: -omxplayer
 
