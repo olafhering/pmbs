@@ -44,9 +44,6 @@ Prefer: Mesa-libEGL-devel
 Prefer: -raspberrypi-gfx-devel raspberrypi-userland-devel
 %endif
 
-# libmp4v2 was dropped, just discard BuildRequires
-Substitute: libmp4v2-devel
-
 Prefer: opencv-devel
 Prefer: vlc-devel
 
@@ -86,8 +83,6 @@ Prefer: libswscale-devel
 #
 %if 0%{?sle_version} == 120100
 # Leap 42.1
-# xmms2 was dropped, just discard BuildRequires
-Substitute: xmms2-devel
 # Avoid conflict between ffmpeg-2.8 and ffmpeg from leap
 Prefer: -libavcodec-devel
 Prefer: -libavdevice-devel
