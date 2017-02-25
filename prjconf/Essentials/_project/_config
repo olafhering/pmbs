@@ -44,9 +44,6 @@ Prefer: Mesa-libEGL-devel
 Prefer: -raspberrypi-gfx-devel raspberrypi-userland-devel
 %endif
 
-# Because of pkgconfig() type BuildRequires
-Prefer: -libffmpeg_oldabi-devel
-
 Prefer: opencv-devel
 Prefer: vlc-devel
 
