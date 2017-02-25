@@ -44,6 +44,9 @@ Prefer: Mesa-libEGL-devel
 Prefer: -raspberrypi-gfx-devel raspberrypi-userland-devel
 %endif
 
+# xmms2 was dropped, just discard BuildRequires
+Substitute: xmms2-devel
+
 # libmp4v2 was dropped, just discard BuildRequires
 Substitute: libmp4v2-devel
 
