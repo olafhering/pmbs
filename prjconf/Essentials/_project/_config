@@ -58,6 +58,8 @@ RepoType: rpm-md:rsyncable
 %endif
 
 %if 0%{?suse_version} > 1320
+# k3b.spec has this ...
+Substitute: gstreamer010-devel
 %if 1
 Prefer: libavcodec-devel
 Prefer: libavdevice-devel
