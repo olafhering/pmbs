@@ -33,3 +33,9 @@ Macros:
 :Macros
 %endif
 
+%define _with_cmus 1
+%define _with_audacious 1
+Macros:
+%_with_cmus 1
+%_with_audacious 1
+:Macros
