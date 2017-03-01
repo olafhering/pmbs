@@ -12,6 +12,10 @@ Prefer: libcurl4:krb5
 # Leap 42.1
 Conflict: libcurl4:krb5-mini
 Prefer: libcurl4:krb5
+%define _without_xmms2 1
+Macros:
+%_without_xmms2 1
+:Macros
 %endif
 #
 %endif
@@ -36,10 +40,8 @@ Macros:
 %define _with_audacious 1
 %define _with_cmus 1
 %define _with_libXNVCtrl 1
-%define _without_xmms2 1
 Macros:
 %_with_audacious 1
 %_with_cmus 1
 %_with_libXNVCtrl 1
-%_without_xmms2 1
 :Macros
