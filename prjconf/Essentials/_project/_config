@@ -113,6 +113,12 @@ Prefer: libswscale-3.2-devel
 # !Leap
 %else
 # SLE12
+### have choice for libitm1 >= 4.8.5-30.1 needed by gcc48: libitm1 libitm1-gcc6
+### have choice for libtsan0 >= 4.8.5-30.1 needed by gcc48: libtsan0 libtsan0-gcc6
+### have choice for libatomic1 >= 4.8.5-30.1 needed by gcc48: libatomic1 libatomic1-gcc6
+Prefer: libitm1
+Prefer: libtsan0
+Prefer: libatomic1
 Substitute: system-group-hardware
 # For missing-provides-SLE_12.spec
 Prefer: libmcrypt
