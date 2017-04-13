@@ -119,6 +119,12 @@ Prefer: libswscale-3.2-devel
 Prefer: libitm1
 Prefer: libtsan0
 Prefer: libatomic1
+### have choice for libcilkrts5 >= 5.3.1+r233831-1.2 needed by gcc5: libcilkrts5 libcilkrts5-gcc6
+### have choice for liblsan0 >= 5.3.1+r233831-1.2 needed by gcc5: liblsan0 liblsan0-gcc6
+### have choice for libubsan0 >= 5.3.1+r233831-1.2 needed by gcc5: libubsan0-gcc6 libubsan0
+Prefer: libcilkrts5
+Prefer: liblsan0
+Prefer: libubsan0
 Substitute: system-group-hardware
 # For missing-provides-SLE_12.spec
 Prefer: libmcrypt
