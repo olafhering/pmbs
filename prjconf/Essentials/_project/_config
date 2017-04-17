@@ -125,6 +125,10 @@ Prefer: libatomic1
 Prefer: libcilkrts5
 Prefer: liblsan0
 Prefer: libubsan0
+#
+Substitute: gcc5 gcc6
+Substitute: gcc5-c++ gcc6-c++
+#
 Substitute: system-group-hardware
 # For missing-provides-SLE_12.spec
 Prefer: libmcrypt
