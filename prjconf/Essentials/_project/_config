@@ -250,8 +250,10 @@ Macros:
 # Factory
 %if 0%{?suse_version} > 1320
 %define _without_freerdp 1
+%define _without_imagemagick 1
 Macros:
 %_without_freerdp 1
+%_without_imagemagick 1
 :Macros
 %endif
 #
