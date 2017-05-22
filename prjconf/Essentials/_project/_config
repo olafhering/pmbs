@@ -38,6 +38,8 @@ Prefer: Mesa-libEGL1 Mesa-libEGL-devel Mesa-libGLESv1_CM1 Mesa-libGLESv1_CM-deve
 Prefer: -omxplayer
 Substitute: post-build-checks-malwarescan bash
 Substitute: post-build-checks bash
+Substitute: rpmlint-mini bash
+Substitute: rpmlint-Factory bash
 Substitute: clamav-database bash
 Substitute: clamav bash
 %endif
@@ -48,6 +50,8 @@ Prefer: Mesa-libEGL-devel
 Prefer: -raspberrypi-gfx-devel raspberrypi-userland-devel
 Substitute: post-build-checks-malwarescan bash
 Substitute: post-build-checks bash
+Substitute: rpmlint-mini bash
+Substitute: rpmlint-Factory bash
 Substitute: clamav-database bash
 Substitute: clamav bash
 %endif
