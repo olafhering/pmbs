@@ -91,6 +91,11 @@ Prefer: libswscale-devel
 %if 0%{?suse_version} == 1315
 %if 0%{?is_opensuse}
 #
+%if 0%{?sle_version} == 120300
+# Leap 42.3
+Substitute: system-group-hardware
+%endif
+#
 %if 0%{?sle_version} == 120200
 # Leap 42.2
 Substitute: system-group-hardware
