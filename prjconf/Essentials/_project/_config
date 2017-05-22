@@ -36,12 +36,20 @@ Prefer: -raspberrypi-userland -raspberrypi-userland-devel
 Prefer: Mesa-libEGL1 Mesa-libEGL-devel Mesa-libGLESv1_CM1 Mesa-libGLESv1_CM-devel Mesa-libGLESv2-2 Mesa-libGLESv2-devel 
 # omxplayer also provides ffmpeg libs, so prefer to use ffmpeg ones
 Prefer: -omxplayer
+Substitute: post-build-checks-malwarescan bash
+Substitute: post-build-checks bash
+Substitute: clamav-database bash
+Substitute: clamav bash
 %endif
 
 %ifarch armv7l armv7hl
 # raspberrypi 2 is armv7l, so prefer Mesa here
 Prefer: Mesa-libEGL-devel
 Prefer: -raspberrypi-gfx-devel raspberrypi-userland-devel
+Substitute: post-build-checks-malwarescan bash
+Substitute: post-build-checks bash
+Substitute: clamav-database bash
+Substitute: clamav bash
 %endif
 
 Prefer: opencv-devel
