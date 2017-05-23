@@ -204,7 +204,7 @@ Substitute: pkgconfig(libcap) libcap-devel=
 %define _with_lame 1
 %define _with_libdca 1
 %define _with_libmpeg2 1
-%define _with_librtmp 1
+%define _without_librtmp 1
 %define _with_mad 1
 %define _with_modplug 1
 %define _with_mpg123 1
@@ -245,7 +245,7 @@ Macros:
 %_with_lame 1
 %_with_libdca 1
 %_with_libmpeg2 1
-%_with_librtmp 1
+%_without_librtmp 1
 %_with_mad 1
 %_with_modplug 1
 %_with_mpg123 1
