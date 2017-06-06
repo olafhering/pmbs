@@ -103,6 +103,7 @@ Substitute: system-group-hardware
 #
 %if 0%{?sle_version} == 120100
 # Leap 42.1
+# for mpv
 Substitute: pkgconfig(lua-5.1) pkgconfig(lua)
 #
 Substitute: system-group-hardware
@@ -132,6 +133,10 @@ Prefer: libswscale-3.2-devel
 # !Leap
 %else
 # SLE12
+# for mpv
+Substitute: pkgconfig(lua-5.1) pkgconfig(lua)
+Substitute: pkgconfig(wayland-egl)
+Substitute: python3-docutils python-docutils
 ### have choice for libitm1 >= 4.8.5-30.1 needed by gcc48: libitm1 libitm1-gcc6
 ### have choice for libtsan0 >= 4.8.5-30.1 needed by gcc48: libtsan0 libtsan0-gcc6
 ### have choice for libatomic1 >= 4.8.5-30.1 needed by gcc48: libatomic1 libatomic1-gcc6
