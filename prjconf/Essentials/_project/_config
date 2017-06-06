@@ -103,6 +103,8 @@ Substitute: system-group-hardware
 #
 %if 0%{?sle_version} == 120100
 # Leap 42.1
+Substitute: pkgconfig(lua-5.1) pkgconfig(lua)
+#
 Substitute: system-group-hardware
 # Avoid conflict between ffmpeg-2.8 and ffmpeg from leap
 Prefer: -libavcodec-devel
