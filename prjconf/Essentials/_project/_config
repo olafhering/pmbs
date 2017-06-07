@@ -105,8 +105,6 @@ Substitute: system-group-hardware
 # Leap 42.1
 # for mpv
 Substitute: pkgconfig(lua-5.1) pkgconfig(lua)
-# for k3b
-Substitute: libkcddb-devel cmake(KF5Cddb)
 #
 Substitute: system-group-hardware
 # Avoid conflict between ffmpeg-2.8 and ffmpeg from leap
