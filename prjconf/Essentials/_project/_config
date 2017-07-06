@@ -200,7 +200,7 @@ Substitute: pkgconfig(libcap) libcap-devel=
 %define _with_amrnb 1
 %define _with_amrwb 1
 %define _with_dcadec 1
-%define _with_directfb 1
+%define _without_directfb 1
 %define _with_esd 1
 %define _with_faac 1
 %define _with_faad 1
@@ -241,7 +241,7 @@ Macros:
 %_with_amrnb 1
 %_with_amrwb 1
 %_with_dcadec 1
-%_with_directfb 1
+%_without_directfb 1
 %_with_esd 1
 %_with_faac 1
 %_with_faad 1
