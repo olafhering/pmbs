@@ -137,6 +137,7 @@ Prefer: libswscale-3.2-devel
 # gcc5 can not coexist
 Substitute: gcc5 gcc6
 Substitute: libcilkrts5-gcc5
+Substitute: liblsan0-gcc5
 # for mpv
 Substitute: pkgconfig(lua-5.1) pkgconfig(lua)
 Substitute: pkgconfig(wayland-egl)
