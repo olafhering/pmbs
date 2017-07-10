@@ -339,6 +339,7 @@ Macros:
 %define _without_freerdp 1
 %define _without_gpac 1
 %define _without_graphicsmagic 1
+%define _without_sndio 1
 %define _without_vlc_kde4 1
 %define _without_vlc_ncurses 1
 %define _without_vlc_svgdec 1
@@ -349,6 +350,7 @@ Macros:
 %_without_freerdp 1
 %_without_gpac 1
 %_without_graphicsmagic 1
+%_without_sndio 1
 %_without_vlc_kde4 1
 %_without_vlc_ncurses 1
 %_without_vlc_svgdec 1
