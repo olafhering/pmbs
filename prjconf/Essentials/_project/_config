@@ -94,6 +94,7 @@ Substitute: libboost_date_time-devel boost_1_61-devel
 Substitute: libboost_filesystem-devel boost_1_61-devel
 Substitute: libboost_locale-devel boost_1_61-devel
 Substitute: libboost_program_options-devel boost_1_61-devel
+Substitute: libboost_regex-devel boost_1_61-devel
 Substitute: libboost_serialization-devel boost_1_61-devel
 Substitute: libboost_system-devel boost_1_61-devel
 Substitute: libboost_thread-devel boost_1_61-devel
