@@ -87,6 +87,7 @@ Prefer: libswscale-devel
 
 #
 %if 0%{?suse_version} == 1315
+%if 0%{?is_opensuse}
 # Development happens for Tumbleweed
 Substitute: libboost_atomic-devel boost_1_61-devel
 Substitute: libboost_chrono-devel boost_1_61-devel
@@ -98,7 +99,6 @@ Substitute: libboost_regex-devel boost_1_61-devel
 Substitute: libboost_serialization-devel boost_1_61-devel
 Substitute: libboost_system-devel boost_1_61-devel
 Substitute: libboost_thread-devel boost_1_61-devel
-%if 0%{?is_opensuse}
 #
 %if 0%{?sle_version} == 120300
 # Leap 42.3
@@ -145,6 +145,17 @@ Prefer: libswscale-3.2-devel
 # !Leap
 %else
 # SLE12
+# Development happens for Tumbleweed
+Substitute: libboost_atomic-devel boost_1_54-devel
+Substitute: libboost_chrono-devel boost_1_54-devel
+Substitute: libboost_date_time-devel boost_1_54-devel
+Substitute: libboost_filesystem-devel boost_1_54-devel
+Substitute: libboost_locale-devel boost_1_54-devel
+Substitute: libboost_program_options-devel boost_1_54-devel
+Substitute: libboost_regex-devel boost_1_54-devel
+Substitute: libboost_serialization-devel boost_1_54-devel
+Substitute: libboost_system-devel boost_1_54-devel
+Substitute: libboost_thread-devel boost_1_54-devel
 # gcc5 can not coexist
 Substitute: gcc5 gcc6
 Substitute: libcilkrts5-gcc5
