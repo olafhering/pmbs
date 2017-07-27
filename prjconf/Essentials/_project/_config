@@ -88,19 +88,40 @@ Prefer: libswscale-devel
 #
 %if 0%{?suse_version} == 1315
 # Development happens for Tumbleweed
-Substitute: libboost_atomic-devel boost-devel
-Substitute: libboost_chrono-devel boost-devel
-Substitute: libboost_date_time-devel boost-devel
-Substitute: libboost_filesystem-devel boost-devel
-Substitute: libboost_headers-devel boost-devel
-Substitute: libboost_iostreams-devel boost-devel
-Substitute: libboost_locale-devel boost-devel
-Substitute: libboost_program_options-devel boost-devel
-Substitute: libboost_regex-devel boost-devel
-Substitute: libboost_serialization-devel boost-devel
-Substitute: libboost_system-devel boost-devel
-Substitute: libboost_test-devel boost-devel
-Substitute: libboost_thread-devel boost-devel
+Substitute: libboost_atomic-devel boost-devel=
+Substitute: libboost_chrono-devel boost-devel=
+Substitute: libboost_container-devel boost-devel=
+Substitute: libboost_context-devel boost-devel=
+Substitute: libboost_coroutine-devel boost-devel=
+Substitute: libboost_date_time-devel boost-devel=
+Substitute: libboost_fiber-devel boost-devel=
+Substitute: libboost_filesystem-devel boost-devel=
+Substitute: libboost_graph-devel boost-devel=
+Substitute: libboost_graph_parallel-devel boost-devel=
+Substitute: libboost_headers-devel boost-devel=
+Substitute: libboost_iostreams-devel boost-devel=
+Substitute: libboost_locale-devel boost-devel=
+Substitute: libboost_log-devel boost-devel=
+Substitute: libboost_math-devel boost-devel=
+Substitute: libboost_mpi-devel boost-devel=
+Substitute: libboost_mpi_python-devel boost-devel=
+Substitute: libboost_mpi_python3-devel boost-devel=
+Substitute: libboost_numpy-devel boost-devel=
+Substitute: libboost_numpy3-devel boost-devel=
+Substitute: libboost_program_options-devel boost-devel=
+Substitute: libboost_python-devel boost-devel=
+Substitute: libboost_python3-devel boost-devel=
+Substitute: libboost_random-devel boost-devel=
+Substitute: libboost_regex-devel boost-devel=
+Substitute: libboost_serialization-devel boost-devel=
+Substitute: libboost_signals-devel boost-devel=
+Substitute: libboost_system-devel boost-devel=
+Substitute: libboost_test-devel boost-devel=
+Substitute: libboost_thread-devel boost-devel=
+Substitute: libboost_timer-devel boost-devel=
+Substitute: libboost_type_erasure-devel boost-devel=
+Substitute: libboost_wave-devel boost-devel=
+#
 %if 0%{?is_opensuse}
 #
 %if 0%{?sle_version} == 120300
