@@ -105,12 +105,14 @@ Substitute: libboost_thread-devel boost-devel
 #
 %if 0%{?sle_version} == 120300
 # Leap 42.3
+Substitute: group(audio)
 Substitute: group(video)
 Substitute: system-group-hardware
 %endif
 #
 %if 0%{?sle_version} == 120200
 # Leap 42.2
+Substitute: group(audio)
 Substitute: group(video)
 Substitute: system-group-hardware
 %endif
@@ -120,6 +122,7 @@ Substitute: system-group-hardware
 # for mpv
 Substitute: pkgconfig(lua-5.1) pkgconfig(lua)
 #
+Substitute: group(audio)
 Substitute: group(video)
 Substitute: system-group-hardware
 # Avoid conflict between ffmpeg-2.8 and ffmpeg from leap
@@ -169,6 +172,7 @@ Prefer: libcilkrts5
 Prefer: liblsan0
 Prefer: libubsan0
 #
+Substitute: group(audio)
 Substitute: group(video)
 Substitute: system-group-hardware
 # For missing-provides-SLE_12.spec
