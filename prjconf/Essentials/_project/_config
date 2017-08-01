@@ -56,7 +56,7 @@ Substitute: clamav-database bash
 Substitute: clamav bash
 %endif
 
-Prefer: perl-libintl-perl
+Substitute: perl(Locale::Textdomain) perl-libintl-perl
 Prefer: opencv-devel
 Prefer: vlc-devel
 
