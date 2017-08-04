@@ -173,6 +173,8 @@ Prefer: libswscale-3.2-devel
 # !Leap
 %else
 # SLE12
+# for freshplayerplugin
+Substitute: ragel-6 ragel
 # gcc5 can not coexist
 Substitute: gcc5 gcc6
 Substitute: libcilkrts5-gcc5
