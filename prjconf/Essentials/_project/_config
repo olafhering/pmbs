@@ -348,10 +348,12 @@ Macros:
 #
 %if 0%{?sle_version} == 120200
 # Leap 42.2
+%define _without_freerdp2 1
 %define _without_freerdp 1
 %define _with_vlc_atmo 1
 %define _without_vlc_ncurses 1
 Macros:
+%_without_freerdp2 1
 %_without_freerdp 1
 %_with_vlc_atmo 1
 %_without_vlc_ncurses 1
