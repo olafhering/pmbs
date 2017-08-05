@@ -6,12 +6,20 @@
 # Leap 42.3
 Conflict: libcurl4:krb5-mini
 Prefer: libcurl4:krb5
+%define _with_bino_equalizer 1
+Macros:
+%_with_bino_equalizer 1
+:Macros
 %endif
 #
 %if 0%{?sle_version} == 120200
 # Leap 42.2
 Conflict: libcurl4:krb5-mini
 Prefer: libcurl4:krb5
+%define _with_bino_equalizer 1
+Macros:
+%_with_bino_equalizer 1
+:Macros
 %endif
 #
 %if 0%{?sle_version} == 120100
