@@ -234,6 +234,7 @@ Prefer: libswscale-3.2-devel
 # Support pkgconfig() BuildRequires in old distros
 #
 %if 0%{?suse_version} == 1315
+Substitute: hostname net-tools
 Substitute: pkgconfig(freeglut) freeglut-devel=
 Substitute: pkgconfig(tinfo) ncurses-devel=
 Substitute: pkgconfig(libcap) libcap-devel=
