@@ -1,9 +1,12 @@
-# for freetuxtv. For some reason libcurl+libvlc+samba-libs prefers krb5-mini instead of krb5 in Leap
+%if 0%{?suse_version} > 1320
+Substitute: openmpi-devel openmpi-devel openmpi-config
+%endif
 %if 0%{?suse_version} == 1315
 %if 0%{?is_opensuse}
 #
 %if 0%{?sle_version} == 120300
 # Leap 42.3
+# for freetuxtv. For some reason libcurl+libvlc+samba-libs prefers krb5-mini instead of krb5 in Leap
 Conflict: libcurl4:krb5-mini
 Prefer: libcurl4:krb5
 %define _with_bino_equalizer 1
