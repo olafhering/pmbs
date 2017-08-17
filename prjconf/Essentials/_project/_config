@@ -240,6 +240,7 @@ Substitute: pkgconfig(libcap) libcap-devel=
 Substitute: pkgconfig(libjpeg) libjpeg8-devel=
 Substitute: pkgconfig(lirc) lirc-devel=
 Substitute: pkgconfig(tinfo) ncurses-devel=
+Substitute: pkgconfig(yajl) libyajl-devel=
 %endif
 #
 
