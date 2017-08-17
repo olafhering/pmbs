@@ -242,6 +242,7 @@ Substitute: pkgconfig(lirc) lirc-devel=
 Substitute: pkgconfig(tinfo) ncurses-devel=
 Substitute: pkgconfig(yajl) libyajl-devel=
 Substitute: pkgconfig(libglvnd) libglvnd-devel=
+Substitute: pkgconfig(mariadb) libmysqlclient-devel=
 %endif
 #
 
