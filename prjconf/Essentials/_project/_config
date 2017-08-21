@@ -173,7 +173,6 @@ Prefer: libswscale-3.2-devel
 # !Leap
 %else
 # SLE12
-Substitute: pkgconfig(libnfs) bash
 # for freshplayerplugin
 Substitute: ragel-6 ragel
 # gcc5 can not coexist
