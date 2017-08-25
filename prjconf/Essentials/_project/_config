@@ -16,7 +16,8 @@ VMInstall: !kernel-obs-build
 %endif
 
 #AArch64 and armv6 are built using QEMU
-%ifarch aarch64 armv6l armv6hl
+# %ifarch aarch64 armv6l armv6hl
+%ifarch armv6l armv6hl
 %define qemu_user_space_build 1
 %endif
 
