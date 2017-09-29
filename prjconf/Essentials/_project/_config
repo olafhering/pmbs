@@ -137,37 +137,6 @@ Substitute: group(video)
 Substitute: system-group-hardware
 %endif
 #
-%if 0%{?sle_version} == 120100
-# Leap 42.1
-# for mpv
-Substitute: pkgconfig(lua-5.1) pkgconfig(lua)
-#
-Substitute: group(audio)
-Substitute: group(video)
-Substitute: system-group-hardware
-# Avoid conflict between ffmpeg-2.8 and ffmpeg from leap
-Prefer: -libavcodec-devel
-Prefer: -libavdevice-devel
-Prefer: -libavfilter-devel
-Prefer: -libavformat-devel
-Prefer: -libavresample-devel
-Prefer: -libavutil-devel
-Prefer: -libpostproc-devel
-Prefer: -libswresample-devel
-Prefer: -libswscale-devel
-# Avoid conflict between ffmpeg.rpm and ffmpeg-3.2.rpm
-Prefer: ffmpeg-3.2
-# Avoid conflict between ffmpeg-2.8 and ffmpeg-3.2
-Prefer: libavcodec-3.2-devel
-Prefer: libavdevice-3.2-devel
-Prefer: libavfilter-3.2-devel
-Prefer: libavformat-3.2-devel
-Prefer: libavresample-3.2-devel
-Prefer: libavutil-3.2-devel
-Prefer: libpostproc-3.2-devel
-Prefer: libswresample-3.2-devel
-Prefer: libswscale-3.2-devel
-%endif
 # !Leap
 %else
 # SLE12
