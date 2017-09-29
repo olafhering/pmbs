@@ -82,8 +82,6 @@ Prefer: libpostproc-devel
 Prefer: libswresample-devel
 Prefer: libswscale-devel
 %endif
-# Avoid conflict between libffmpeg_oldabi and ffmpeg2
-#refer: ffmpeg2-devel
 %endif
 
 #
