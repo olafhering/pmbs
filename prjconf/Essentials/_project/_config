@@ -172,15 +172,15 @@ Prefer: libmicrohttpd10
 Prefer: libvncclient0
 # # Avoid conflict between ffmpeg-2.8 and ffmpeg from Backports 
 # Prefer: -ffmpeg2-devel 
-# Prefer: -libavcodec-devel 
-# Prefer: -libavdevice-devel 
-# Prefer: -libavfilter-devel 
-# Prefer: -libavformat-devel 
-# Prefer: -libavresample-devel 
-# Prefer: -libavutil-devel 
-# Prefer: -libpostproc-devel 
-# Prefer: -libswresample-devel 
-# Prefer: -libswscale-devel 
+Prefer: libavcodec-devel 
+Prefer: libavdevice-devel 
+Prefer: libavfilter-devel 
+Prefer: libavformat-devel 
+Prefer: libavresample-devel 
+Prefer: libavutil-devel 
+Prefer: libpostproc-devel 
+Prefer: libswresample-devel 
+Prefer: libswscale-devel 
 %endif
 #
 %endif
