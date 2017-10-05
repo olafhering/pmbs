@@ -10,8 +10,10 @@ Substitute: openmpi-devel openmpi-devel openmpi-config
 Conflict: libcurl4:krb5-mini
 Prefer: libcurl4:krb5
 %define _with_bino_equalizer 1
+%define _without_linphone_cplusplus 1
 Macros:
 %_with_bino_equalizer 1
+%_without_linphone_cplusplus 1
 :Macros
 %endif
 #
@@ -20,8 +22,10 @@ Macros:
 Conflict: libcurl4:krb5-mini
 Prefer: libcurl4:krb5
 %define _with_bino_equalizer 1
+%define _without_linphone_cplusplus 1
 Macros:
 %_with_bino_equalizer 1
+%_without_linphone_cplusplus 1
 :Macros
 %endif
 #
