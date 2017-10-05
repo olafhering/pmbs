@@ -29,16 +29,6 @@ Macros:
 :Macros
 %endif
 #
-%if 0%{?sle_version} == 120100
-# Leap 42.1
-Conflict: libcurl4:krb5-mini
-Prefer: libcurl4:krb5
-%define _without_xmms2 1
-Macros:
-%_without_xmms2 1
-:Macros
-%endif
-#
 %endif
 %endif
 #
