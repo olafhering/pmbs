@@ -86,6 +86,9 @@ Prefer: libswscale-devel
 
 #
 %if 0%{?suse_version} == 1315
+Substitute: cpp5 cpp6
+Substitute: gcc5 gcc6
+Substitute: gcc5-c++ gcc6-c++
 # Development happens for Tumbleweed
 Substitute: libboost_atomic-devel boost-devel=
 Substitute: libboost_chrono-devel boost-devel=
