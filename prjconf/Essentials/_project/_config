@@ -144,26 +144,10 @@ Substitute: system-group-hardware
 # SLE12
 # for freshplayerplugin
 Substitute: ragel-6 ragel
-# gcc5 can not coexist
-Substitute: gcc5 gcc6
-Substitute: libcilkrts5-gcc5
-Substitute: liblsan0-gcc5
 # for mpv
 Substitute: pkgconfig(lua-5.1) pkgconfig(lua)
 Substitute: pkgconfig(wayland-egl)
 Substitute: python3-docutils python-docutils
-### have choice for libitm1 >= 4.8.5-30.1 needed by gcc48: libitm1 libitm1-gcc6
-### have choice for libtsan0 >= 4.8.5-30.1 needed by gcc48: libtsan0 libtsan0-gcc6
-### have choice for libatomic1 >= 4.8.5-30.1 needed by gcc48: libatomic1 libatomic1-gcc6
-Prefer: libitm1
-Prefer: libtsan0
-Prefer: libatomic1
-### have choice for libcilkrts5 >= 5.3.1+r233831-1.2 needed by gcc5: libcilkrts5 libcilkrts5-gcc6
-### have choice for liblsan0 >= 5.3.1+r233831-1.2 needed by gcc5: liblsan0 liblsan0-gcc6
-### have choice for libubsan0 >= 5.3.1+r233831-1.2 needed by gcc5: libubsan0-gcc6 libubsan0
-Prefer: libcilkrts5
-Prefer: liblsan0
-Prefer: libubsan0
 #
 Substitute: group(audio)
 Substitute: group(video)
