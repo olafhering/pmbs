@@ -29,6 +29,13 @@ Macros:
 :Macros
 %endif
 #
+%else
+# SLE_12
+%define _without_linphone_cplusplus 1
+Macros:
+%_without_linphone_cplusplus 1
+:Macros
+%endif
 %endif
 %endif
 #
