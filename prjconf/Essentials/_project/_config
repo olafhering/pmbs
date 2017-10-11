@@ -70,17 +70,6 @@ RepoType: rpm-md:rsyncable
 %endif
 
 %if 0%{?suse_version} > 1320
-%if 0
-Prefer: libavcodec-devel
-Prefer: libavdevice-devel
-Prefer: libavfilter-devel
-Prefer: libavformat-devel
-Prefer: libavresample-devel
-Prefer: libavutil-devel
-Prefer: libpostproc-devel
-Prefer: libswresample-devel
-Prefer: libswscale-devel
-%endif
 %endif
 
 #
