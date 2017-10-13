@@ -144,15 +144,15 @@ Substitute: system-group-hardware
 Prefer: libmcrypt
 Prefer: libmicrohttpd10
 Prefer: libvncclient0
-Prefer: libavcodec-devel 
-Prefer: libavdevice-devel 
-Prefer: libavfilter-devel 
-Prefer: libavformat-devel 
-Prefer: libavresample-devel 
-Prefer: libavutil-devel 
-Prefer: libpostproc-devel 
-Prefer: libswresample-devel 
-Prefer: libswscale-devel 
+#refer: libavcodec-devel
+#refer: libavdevice-devel
+#refer: libavfilter-devel
+#refer: libavformat-devel
+#refer: libavresample-devel
+#refer: libavutil-devel
+#refer: libpostproc-devel
+#refer: libswresample-devel
+#refer: libswscale-devel
 %endif
 #
 %endif
