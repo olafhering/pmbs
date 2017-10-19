@@ -130,6 +130,7 @@ Substitute: system-group-hardware
 # !Leap
 %else
 # SLE12
+Conflict: libgcc_s1-gcc6:libgcc_s1
 # for freshplayerplugin
 Substitute: ragel-6 ragel
 # for mpv
