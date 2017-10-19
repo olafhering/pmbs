@@ -133,6 +133,7 @@ Substitute: system-group-hardware
 # unresolvable: conflict for provider of libgcc_s1 >= 6.2.1+r239768-1.1 needed by gcc6
 #     (provider libgcc_s1-gcc6 is conflicted by installed libgcc_s1)
 Ignore: gcc48:libgcc_s1
+Ignore: libgcc_s1:gcc48
 Preinstall: !libgcc_s1
 Preinstall: libgcc_s1-gcc6
 # for freshplayerplugin
