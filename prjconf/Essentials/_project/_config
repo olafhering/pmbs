@@ -186,7 +186,7 @@ Substitute: pkgconfig(yajl) libyajl-devel=
 %define _with_amrwb 1
 %define _with_dcadec 1
 %define _without_directfb 1
-%define _with_esd 1
+%define _without_esd 1
 %define _with_faac 1
 %define _with_faad 1
 %define _with_fdk_aac 1
@@ -224,7 +224,7 @@ Macros:
 %_with_amrwb 1
 %_with_dcadec 1
 %_without_directfb 1
-%_with_esd 1
+%_without_esd 1
 %_with_faac 1
 %_with_faad 1
 %_with_fdk_aac 1
