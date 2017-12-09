@@ -129,7 +129,6 @@ Substitute: system-group-hardware
 #
 # !Leap
 %else
-Substitute: pkgconfig(netcdf) glibc-devel
 # SLE12
 # unresolvable: conflict for provider of libgcc_s1 >= 6.2.1+r239768-1.1 needed by gcc6
 #     (provider libgcc_s1-gcc6 is conflicted by installed libgcc_s1)
