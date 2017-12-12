@@ -297,6 +297,7 @@ Macros:
 %else
 # SLE12
 %define _without_kodi_libbluray 1
+%define _without_vlc_libass 1
 %define _without_vlc_libbluray 1
 %define _with_vlc_atmo 1
 %define _without_freerdp2 1
@@ -310,6 +311,7 @@ Macros:
 %define _without_zbar 1
 Macros:
 %_without_kodi_libbluray 1
+%_without_vlc_libass 1
 %_without_vlc_libbluray 1
 %_with_vlc_atmo 1
 %_without_freerdp2 1
